@@ -1,0 +1,2436 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20201.20.0326.1623                               -->
+<workbook original-version='18.1' source-build='2020.1.2 (20201.20.0326.1623)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='서울시 전체 식품위생업소' inline='true' name='federated.0zgzqz11ryvp3911orh9i1thhwgq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='서울시 전체 식품위생업소' name='excel-direct.18b0z7d05m5zi31fqdf9g1nnr0iz'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/02-yscec/2020-1/데이터시각화/HW/서울시 전체 식품위생업소.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation all='true' name='유니온' type='union'>
+          <columns header='yes'>
+            <column datatype='integer' name='시군구코드' />
+            <column datatype='integer' name='업종코드' />
+            <column datatype='date' date-parse-format='yyyy' name='년도' />
+            <column datatype='integer' name='업소일련번호' />
+            <column datatype='string' name='업종명' />
+            <column datatype='integer' name='허가신고일' />
+            <column datatype='string' name='업소명' />
+            <column datatype='string' name='소재지도로명' />
+            <column datatype='string' name='소재지지번' />
+            <column datatype='real' name='영업장면적(㎡)' />
+            <column datatype='string' name='소재지전화번호' />
+            <column datatype='date' date-parse-format='yyyyMMdd' name='영업자시작일' />
+            <column datatype='string' name='법인명' />
+            <column datatype='date' date-parse-format='yyyyMMdd' name='소재지시작일' />
+            <column datatype='string' name='행정동명' />
+            <column datatype='date' date-parse-format='yyyyMMdd' name='폐업일자' />
+            <column datatype='string' name='폐업구분' />
+            <column datatype='string' name='폐업사유' />
+            <column datatype='string' name='업태명' />
+            <column datatype='integer' name='지상_부터' />
+            <column datatype='integer' name='지상_까지' />
+            <column datatype='integer' name='지하_부터' />
+            <column datatype='integer' name='지하_까지' />
+            <column datatype='integer' name='총층수' />
+            <column datatype='string' name='교육수료일자' />
+            <column datatype='string' name='모범음식점여부' />
+            <column datatype='string' name='급수시설' />
+            <column datatype='string' name='업소위치' />
+            <column datatype='string' name='종업원남' />
+            <column datatype='string' name='종업원여' />
+            <column datatype='string' name='급식소종류' />
+            <column datatype='integer' name='평균급식인원수' />
+            <column datatype='integer' name='최대급식인원수' />
+            <column datatype='integer' name='1일급식인원수' />
+            <column datatype='integer' name='일인당평균급식비' />
+            <column datatype='string' name='운영형태' />
+            <column datatype='real' name='영업장조리장면적(㎡)' />
+            <column datatype='real' name='영업장객실면적(㎡)' />
+            <column datatype='real' name='영업장무도장면적(㎡)' />
+            <column datatype='real' name='영업장기타면적(㎡)' />
+            <column datatype='real' name='업소내화장실면적(㎡)' />
+            <column datatype='real' name='타업소공동화장실면적(㎡)' />
+            <column datatype='real' name='영업장탈의실면적(㎡)' />
+            <column datatype='real' name='영업장객석면적(㎡)' />
+            <column datatype='real' name='작업장면적(㎡)' />
+            <column datatype='real' name='검사실면적(㎡)' />
+            <column datatype='real' name='진열(판매)대면적(㎡)' />
+            <column datatype='real' name='창고(보관소)면적(㎡)' />
+            <column datatype='string' name='허가(신고)번호' />
+            <column datatype='string' name='참고사항' />
+            <column datatype='integer' name='조건부허가시작일' />
+            <column datatype='integer' name='조건부허가종료일' />
+            <column datatype='string' name='조건부허가신고사유' />
+            <column datatype='string' name='신고조건' />
+            <column datatype='string' name='내외국인구분' />
+            <column datatype='string' name='국적' />
+            <column datatype='string' name='시트' />
+            <column datatype='string' name='테이블 이름' />
+          </columns>
+          <relation connection='excel-direct.18b0z7d05m5zi31fqdf9g1nnr0iz' name='서울시 강남구 전체 식품위생업소 현황' table='[&apos;서울시 강남구 전체 식품위생업소 현황$&apos;]' type='table'>
+            <columns gridOrigin='A1:BD10001:no:A1:BD10001:0' header='yes' outcome='2'>
+              <column datatype='integer' name='시군구코드' ordinal='0' />
+              <column datatype='integer' name='업종코드' ordinal='1' />
+              <column datatype='integer' name='년도' ordinal='2' />
+              <column datatype='integer' name='업소일련번호' ordinal='3' />
+              <column datatype='string' name='업종명' ordinal='4' />
+              <column datatype='integer' name='허가신고일' ordinal='5' />
+              <column datatype='string' name='업소명' ordinal='6' />
+              <column datatype='string' name='소재지도로명' ordinal='7' />
+              <column datatype='string' name='소재지지번' ordinal='8' />
+              <column datatype='real' name='영업장면적(㎡)' ordinal='9' />
+              <column datatype='string' name='소재지전화번호' ordinal='10' />
+              <column datatype='integer' name='영업자시작일' ordinal='11' />
+              <column datatype='string' name='법인명' ordinal='12' />
+              <column datatype='integer' name='소재지시작일' ordinal='13' />
+              <column datatype='string' name='행정동명' ordinal='14' />
+              <column datatype='integer' name='폐업일자' ordinal='15' />
+              <column datatype='string' name='폐업구분' ordinal='16' />
+              <column datatype='string' name='폐업사유' ordinal='17' />
+              <column datatype='string' name='업태명' ordinal='18' />
+              <column datatype='integer' name='지상_부터' ordinal='19' />
+              <column datatype='integer' name='지상_까지' ordinal='20' />
+              <column datatype='integer' name='지하_부터' ordinal='21' />
+              <column datatype='integer' name='지하_까지' ordinal='22' />
+              <column datatype='integer' name='총층수' ordinal='23' />
+              <column datatype='integer' name='교육수료일자' ordinal='24' />
+              <column datatype='string' name='모범음식점여부' ordinal='25' />
+              <column datatype='string' name='급수시설' ordinal='26' />
+              <column datatype='string' name='업소위치' ordinal='27' />
+              <column datatype='integer' name='종업원남' ordinal='28' />
+              <column datatype='integer' name='종업원여' ordinal='29' />
+              <column datatype='string' name='급식소종류' ordinal='30' />
+              <column datatype='integer' name='평균급식인원수' ordinal='31' />
+              <column datatype='integer' name='최대급식인원수' ordinal='32' />
+              <column datatype='integer' name='1일급식인원수' ordinal='33' />
+              <column datatype='integer' name='일인당평균급식비' ordinal='34' />
+              <column datatype='string' name='운영형태' ordinal='35' />
+              <column datatype='real' name='영업장조리장면적(㎡)' ordinal='36' />
+              <column datatype='real' name='영업장객실면적(㎡)' ordinal='37' />
+              <column datatype='real' name='영업장무도장면적(㎡)' ordinal='38' />
+              <column datatype='real' name='영업장기타면적(㎡)' ordinal='39' />
+              <column datatype='real' name='업소내화장실면적(㎡)' ordinal='40' />
+              <column datatype='real' name='타업소공동화장실면적(㎡)' ordinal='41' />
+              <column datatype='real' name='영업장탈의실면적(㎡)' ordinal='42' />
+              <column datatype='real' name='영업장객석면적(㎡)' ordinal='43' />
+              <column datatype='real' name='작업장면적(㎡)' ordinal='44' />
+              <column datatype='real' name='검사실면적(㎡)' ordinal='45' />
+              <column datatype='integer' name='진열(판매)대면적(㎡)' ordinal='46' />
+              <column datatype='integer' name='창고(보관소)면적(㎡)' ordinal='47' />
+              <column datatype='string' name='허가(신고)번호' ordinal='48' />
+              <column datatype='string' name='참고사항' ordinal='49' />
+              <column datatype='integer' name='조건부허가시작일' ordinal='50' />
+              <column datatype='integer' name='조건부허가종료일' ordinal='51' />
+              <column datatype='string' name='조건부허가신고사유' ordinal='52' />
+              <column datatype='string' name='신고조건' ordinal='53' />
+              <column datatype='string' name='내외국인구분' ordinal='54' />
+              <column datatype='string' name='국적' ordinal='55' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.18b0z7d05m5zi31fqdf9g1nnr0iz' name='서울시 강동구 전체 식품위생업소 현황' table='[&apos;서울시 강동구 전체 식품위생업소 현황$&apos;]' type='table'>
+            <columns gridOrigin='A1:BD10001:no:A1:BD10001:0' header='yes' outcome='2'>
+              <column datatype='integer' name='시군구코드' ordinal='0' />
+              <column datatype='integer' name='업종코드' ordinal='1' />
+              <column datatype='integer' name='년도' ordinal='2' />
+              <column datatype='integer' name='업소일련번호' ordinal='3' />
+              <column datatype='string' name='업종명' ordinal='4' />
+              <column datatype='integer' name='허가신고일' ordinal='5' />
+              <column datatype='string' name='업소명' ordinal='6' />
+              <column datatype='string' name='소재지도로명' ordinal='7' />
+              <column datatype='string' name='소재지지번' ordinal='8' />
+              <column datatype='real' name='영업장면적(㎡)' ordinal='9' />
+              <column datatype='string' name='소재지전화번호' ordinal='10' />
+              <column datatype='integer' name='영업자시작일' ordinal='11' />
+              <column datatype='string' name='법인명' ordinal='12' />
+              <column datatype='integer' name='소재지시작일' ordinal='13' />
+              <column datatype='string' name='행정동명' ordinal='14' />
+              <column datatype='integer' name='폐업일자' ordinal='15' />
+              <column datatype='string' name='폐업구분' ordinal='16' />
+              <column datatype='string' name='폐업사유' ordinal='17' />
+              <column datatype='string' name='업태명' ordinal='18' />
+              <column datatype='integer' name='지상_부터' ordinal='19' />
+              <column datatype='integer' name='지상_까지' ordinal='20' />
+              <column datatype='integer' name='지하_부터' ordinal='21' />
+              <column datatype='integer' name='지하_까지' ordinal='22' />
+              <column datatype='integer' name='총층수' ordinal='23' />
+              <column datatype='integer' name='교육수료일자' ordinal='24' />
+              <column datatype='string' name='모범음식점여부' ordinal='25' />
+              <column datatype='string' name='급수시설' ordinal='26' />
+              <column datatype='string' name='업소위치' ordinal='27' />
+              <column datatype='integer' name='종업원남' ordinal='28' />
+              <column datatype='integer' name='종업원여' ordinal='29' />
+              <column datatype='string' name='급식소종류' ordinal='30' />
+              <column datatype='integer' name='평균급식인원수' ordinal='31' />
+              <column datatype='integer' name='최대급식인원수' ordinal='32' />
+              <column datatype='integer' name='1일급식인원수' ordinal='33' />
+              <column datatype='integer' name='일인당평균급식비' ordinal='34' />
+              <column datatype='string' name='운영형태' ordinal='35' />
+              <column datatype='real' name='영업장조리장면적(㎡)' ordinal='36' />
+              <column datatype='real' name='영업장객실면적(㎡)' ordinal='37' />
+              <column datatype='real' name='영업장무도장면적(㎡)' ordinal='38' />
+              <column datatype='real' name='영업장기타면적(㎡)' ordinal='39' />
+              <column datatype='real' name='업소내화장실면적(㎡)' ordinal='40' />
+              <column datatype='real' name='타업소공동화장실면적(㎡)' ordinal='41' />
+              <column datatype='real' name='영업장탈의실면적(㎡)' ordinal='42' />
+              <column datatype='real' name='영업장객석면적(㎡)' ordinal='43' />
+              <column datatype='real' name='작업장면적(㎡)' ordinal='44' />
+              <column datatype='real' name='검사실면적(㎡)' ordinal='45' />
+              <column datatype='integer' name='진열(판매)대면적(㎡)' ordinal='46' />
+              <column datatype='integer' name='창고(보관소)면적(㎡)' ordinal='47' />
+              <column datatype='string' name='허가(신고)번호' ordinal='48' />
+              <column datatype='string' name='참고사항' ordinal='49' />
+              <column datatype='integer' name='조건부허가시작일' ordinal='50' />
+              <column datatype='integer' name='조건부허가종료일' ordinal='51' />
+              <column datatype='string' name='조건부허가신고사유' ordinal='52' />
+              <column datatype='string' name='신고조건' ordinal='53' />
+              <column datatype='string' name='내외국인구분' ordinal='54' />
+              <column datatype='string' name='국적' ordinal='55' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.18b0z7d05m5zi31fqdf9g1nnr0iz' name='서울시 강북구 전체 식품위생업소 현황' table='[&apos;서울시 강북구 전체 식품위생업소 현황$&apos;]' type='table'>
+            <columns gridOrigin='A1:BD10001:no:A1:BD10001:0' header='yes' outcome='6'>
+              <column datatype='integer' name='시군구코드' ordinal='0' />
+              <column datatype='integer' name='업종코드' ordinal='1' />
+              <column datatype='integer' name='년도' ordinal='2' />
+              <column datatype='integer' name='업소일련번호' ordinal='3' />
+              <column datatype='string' name='업종명' ordinal='4' />
+              <column datatype='integer' name='허가신고일' ordinal='5' />
+              <column datatype='string' name='업소명' ordinal='6' />
+              <column datatype='string' name='소재지도로명' ordinal='7' />
+              <column datatype='string' name='소재지지번' ordinal='8' />
+              <column datatype='real' name='영업장면적(㎡)' ordinal='9' />
+              <column datatype='string' name='소재지전화번호' ordinal='10' />
+              <column datatype='integer' name='영업자시작일' ordinal='11' />
+              <column datatype='string' name='법인명' ordinal='12' />
+              <column datatype='integer' name='소재지시작일' ordinal='13' />
+              <column datatype='string' name='행정동명' ordinal='14' />
+              <column datatype='integer' name='폐업일자' ordinal='15' />
+              <column datatype='string' name='폐업구분' ordinal='16' />
+              <column datatype='string' name='폐업사유' ordinal='17' />
+              <column datatype='string' name='업태명' ordinal='18' />
+              <column datatype='integer' name='지상_부터' ordinal='19' />
+              <column datatype='integer' name='지상_까지' ordinal='20' />
+              <column datatype='integer' name='지하_부터' ordinal='21' />
+              <column datatype='integer' name='지하_까지' ordinal='22' />
+              <column datatype='integer' name='총층수' ordinal='23' />
+              <column datatype='integer' name='교육수료일자' ordinal='24' />
+              <column datatype='string' name='모범음식점여부' ordinal='25' />
+              <column datatype='string' name='급수시설' ordinal='26' />
+              <column datatype='string' name='업소위치' ordinal='27' />
+              <column datatype='integer' name='종업원남' ordinal='28' />
+              <column datatype='integer' name='종업원여' ordinal='29' />
+              <column datatype='string' name='급식소종류' ordinal='30' />
+              <column datatype='integer' name='평균급식인원수' ordinal='31' />
+              <column datatype='integer' name='최대급식인원수' ordinal='32' />
+              <column datatype='integer' name='1일급식인원수' ordinal='33' />
+              <column datatype='integer' name='일인당평균급식비' ordinal='34' />
+              <column datatype='string' name='운영형태' ordinal='35' />
+              <column datatype='real' name='영업장조리장면적(㎡)' ordinal='36' />
+              <column datatype='real' name='영업장객실면적(㎡)' ordinal='37' />
+              <column datatype='real' name='영업장무도장면적(㎡)' ordinal='38' />
+              <column datatype='real' name='영업장기타면적(㎡)' ordinal='39' />
+              <column datatype='real' name='업소내화장실면적(㎡)' ordinal='40' />
+              <column datatype='real' name='타업소공동화장실면적(㎡)' ordinal='41' />
+              <column datatype='real' name='영업장탈의실면적(㎡)' ordinal='42' />
+              <column datatype='real' name='영업장객석면적(㎡)' ordinal='43' />
+              <column datatype='real' name='작업장면적(㎡)' ordinal='44' />
+              <column datatype='integer' name='검사실면적(㎡)' ordinal='45' />
+              <column datatype='real' name='진열(판매)대면적(㎡)' ordinal='46' />
+              <column datatype='real' name='창고(보관소)면적(㎡)' ordinal='47' />
+              <column datatype='string' name='허가(신고)번호' ordinal='48' />
+              <column datatype='string' name='참고사항' ordinal='49' />
+              <column datatype='integer' name='조건부허가시작일' ordinal='50' />
+              <column datatype='integer' name='조건부허가종료일' ordinal='51' />
+              <column datatype='string' name='조건부허가신고사유' ordinal='52' />
+              <column datatype='string' name='신고조건' ordinal='53' />
+              <column datatype='string' name='내외국인구분' ordinal='54' />
+              <column datatype='string' name='국적' ordinal='55' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.18b0z7d05m5zi31fqdf9g1nnr0iz' name='서울시 강서구 전체 식품위생업소 현황' table='[&apos;서울시 강서구 전체 식품위생업소 현황$&apos;]' type='table'>
+            <columns gridOrigin='A1:BD10001:no:A1:BD10001:0' header='yes' outcome='2'>
+              <column datatype='integer' name='시군구코드' ordinal='0' />
+              <column datatype='integer' name='업종코드' ordinal='1' />
+              <column datatype='integer' name='년도' ordinal='2' />
+              <column datatype='integer' name='업소일련번호' ordinal='3' />
+              <column datatype='string' name='업종명' ordinal='4' />
+              <column datatype='integer' name='허가신고일' ordinal='5' />
+              <column datatype='string' name='업소명' ordinal='6' />
+              <column datatype='string' name='소재지도로명' ordinal='7' />
+              <column datatype='string' name='소재지지번' ordinal='8' />
+              <column datatype='real' name='영업장면적(㎡)' ordinal='9' />
+              <column datatype='string' name='소재지전화번호' ordinal='10' />
+              <column datatype='integer' name='영업자시작일' ordinal='11' />
+              <column datatype='string' name='법인명' ordinal='12' />
+              <column datatype='integer' name='소재지시작일' ordinal='13' />
+              <column datatype='string' name='행정동명' ordinal='14' />
+              <column datatype='integer' name='폐업일자' ordinal='15' />
+              <column datatype='string' name='폐업구분' ordinal='16' />
+              <column datatype='string' name='폐업사유' ordinal='17' />
+              <column datatype='string' name='업태명' ordinal='18' />
+              <column datatype='integer' name='지상_부터' ordinal='19' />
+              <column datatype='integer' name='지상_까지' ordinal='20' />
+              <column datatype='integer' name='지하_부터' ordinal='21' />
+              <column datatype='integer' name='지하_까지' ordinal='22' />
+              <column datatype='integer' name='총층수' ordinal='23' />
+              <column datatype='integer' name='교육수료일자' ordinal='24' />
+              <column datatype='string' name='모범음식점여부' ordinal='25' />
+              <column datatype='string' name='급수시설' ordinal='26' />
+              <column datatype='string' name='업소위치' ordinal='27' />
+              <column datatype='integer' name='종업원남' ordinal='28' />
+              <column datatype='integer' name='종업원여' ordinal='29' />
+              <column datatype='string' name='급식소종류' ordinal='30' />
+              <column datatype='integer' name='평균급식인원수' ordinal='31' />
+              <column datatype='integer' name='최대급식인원수' ordinal='32' />
+              <column datatype='integer' name='1일급식인원수' ordinal='33' />
+              <column datatype='integer' name='일인당평균급식비' ordinal='34' />
+              <column datatype='string' name='운영형태' ordinal='35' />
+              <column datatype='real' name='영업장조리장면적(㎡)' ordinal='36' />
+              <column datatype='real' name='영업장객실면적(㎡)' ordinal='37' />
+              <column datatype='real' name='영업장무도장면적(㎡)' ordinal='38' />
+              <column datatype='real' name='영업장기타면적(㎡)' ordinal='39' />
+              <column datatype='real' name='업소내화장실면적(㎡)' ordinal='40' />
+              <column datatype='real' name='타업소공동화장실면적(㎡)' ordinal='41' />
+              <column datatype='real' name='영업장탈의실면적(㎡)' ordinal='42' />
+              <column datatype='real' name='영업장객석면적(㎡)' ordinal='43' />
+              <column datatype='real' name='작업장면적(㎡)' ordinal='44' />
+              <column datatype='real' name='검사실면적(㎡)' ordinal='45' />
+              <column datatype='real' name='진열(판매)대면적(㎡)' ordinal='46' />
+              <column datatype='integer' name='창고(보관소)면적(㎡)' ordinal='47' />
+              <column datatype='string' name='허가(신고)번호' ordinal='48' />
+              <column datatype='string' name='참고사항' ordinal='49' />
+              <column datatype='integer' name='조건부허가시작일' ordinal='50' />
+              <column datatype='integer' name='조건부허가종료일' ordinal='51' />
+              <column datatype='string' name='조건부허가신고사유' ordinal='52' />
+              <column datatype='string' name='신고조건' ordinal='53' />
+              <column datatype='string' name='내외국인구분' ordinal='54' />
+              <column datatype='string' name='국적' ordinal='55' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.18b0z7d05m5zi31fqdf9g1nnr0iz' name='서울시 관악구 전체 식품위생업소 현황' table='[&apos;서울시 관악구 전체 식품위생업소 현황$&apos;]' type='table'>
+            <columns gridOrigin='A1:BD10001:no:A1:BD10001:0' header='yes' outcome='2'>
+              <column datatype='integer' name='시군구코드' ordinal='0' />
+              <column datatype='integer' name='업종코드' ordinal='1' />
+              <column datatype='integer' name='년도' ordinal='2' />
+              <column datatype='integer' name='업소일련번호' ordinal='3' />
+              <column datatype='string' name='업종명' ordinal='4' />
+              <column datatype='integer' name='허가신고일' ordinal='5' />
+              <column datatype='string' name='업소명' ordinal='6' />
+              <column datatype='string' name='소재지도로명' ordinal='7' />
+              <column datatype='string' name='소재지지번' ordinal='8' />
+              <column datatype='real' name='영업장면적(㎡)' ordinal='9' />
+              <column datatype='string' name='소재지전화번호' ordinal='10' />
+              <column datatype='integer' name='영업자시작일' ordinal='11' />
+              <column datatype='string' name='법인명' ordinal='12' />
+              <column datatype='integer' name='소재지시작일' ordinal='13' />
+              <column datatype='string' name='행정동명' ordinal='14' />
+              <column datatype='integer' name='폐업일자' ordinal='15' />
+              <column datatype='string' name='폐업구분' ordinal='16' />
+              <column datatype='string' name='폐업사유' ordinal='17' />
+              <column datatype='string' name='업태명' ordinal='18' />
+              <column datatype='integer' name='지상_부터' ordinal='19' />
+              <column datatype='integer' name='지상_까지' ordinal='20' />
+              <column datatype='integer' name='지하_부터' ordinal='21' />
+              <column datatype='integer' name='지하_까지' ordinal='22' />
+              <column datatype='integer' name='총층수' ordinal='23' />
+              <column datatype='integer' name='교육수료일자' ordinal='24' />
+              <column datatype='string' name='모범음식점여부' ordinal='25' />
+              <column datatype='string' name='급수시설' ordinal='26' />
+              <column datatype='string' name='업소위치' ordinal='27' />
+              <column datatype='integer' name='종업원남' ordinal='28' />
+              <column datatype='integer' name='종업원여' ordinal='29' />
+              <column datatype='string' name='급식소종류' ordinal='30' />
+              <column datatype='integer' name='평균급식인원수' ordinal='31' />
+              <column datatype='integer' name='최대급식인원수' ordinal='32' />
+              <column datatype='integer' name='1일급식인원수' ordinal='33' />
+              <column datatype='integer' name='일인당평균급식비' ordinal='34' />
+              <column datatype='string' name='운영형태' ordinal='35' />
+              <column datatype='real' name='영업장조리장면적(㎡)' ordinal='36' />
+              <column datatype='real' name='영업장객실면적(㎡)' ordinal='37' />
+              <column datatype='real' name='영업장무도장면적(㎡)' ordinal='38' />
+              <column datatype='real' name='영업장기타면적(㎡)' ordinal='39' />
+              <column datatype='real' name='업소내화장실면적(㎡)' ordinal='40' />
+              <column datatype='real' name='타업소공동화장실면적(㎡)' ordinal='41' />
+              <column datatype='real' name='영업장탈의실면적(㎡)' ordinal='42' />
+              <column datatype='real' name='영업장객석면적(㎡)' ordinal='43' />
+              <column datatype='real' name='작업장면적(㎡)' ordinal='44' />
+              <column datatype='integer' name='검사실면적(㎡)' ordinal='45' />
+              <column datatype='integer' name='진열(판매)대면적(㎡)' ordinal='46' />
+              <column datatype='integer' name='창고(보관소)면적(㎡)' ordinal='47' />
+              <column datatype='string' name='허가(신고)번호' ordinal='48' />
+              <column datatype='string' name='참고사항' ordinal='49' />
+              <column datatype='integer' name='조건부허가시작일' ordinal='50' />
+              <column datatype='integer' name='조건부허가종료일' ordinal='51' />
+              <column datatype='string' name='조건부허가신고사유' ordinal='52' />
+              <column datatype='string' name='신고조건' ordinal='53' />
+              <column datatype='string' name='내외국인구분' ordinal='54' />
+              <column datatype='string' name='국적' ordinal='55' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.18b0z7d05m5zi31fqdf9g1nnr0iz' name='서울시 광진구 전체 식품위생업소 현황' table='[&apos;서울시 광진구 전체 식품위생업소 현황$&apos;]' type='table'>
+            <columns gridOrigin='A1:BD10001:no:A1:BD10001:0' header='yes' outcome='2'>
+              <column datatype='integer' name='시군구코드' ordinal='0' />
+              <column datatype='integer' name='업종코드' ordinal='1' />
+              <column datatype='integer' name='년도' ordinal='2' />
+              <column datatype='integer' name='업소일련번호' ordinal='3' />
+              <column datatype='string' name='업종명' ordinal='4' />
+              <column datatype='integer' name='허가신고일' ordinal='5' />
+              <column datatype='string' name='업소명' ordinal='6' />
+              <column datatype='string' name='소재지도로명' ordinal='7' />
+              <column datatype='string' name='소재지지번' ordinal='8' />
+              <column datatype='real' name='영업장면적(㎡)' ordinal='9' />
+              <column datatype='string' name='소재지전화번호' ordinal='10' />
+              <column datatype='integer' name='영업자시작일' ordinal='11' />
+              <column datatype='string' name='법인명' ordinal='12' />
+              <column datatype='integer' name='소재지시작일' ordinal='13' />
+              <column datatype='string' name='행정동명' ordinal='14' />
+              <column datatype='integer' name='폐업일자' ordinal='15' />
+              <column datatype='string' name='폐업구분' ordinal='16' />
+              <column datatype='string' name='폐업사유' ordinal='17' />
+              <column datatype='string' name='업태명' ordinal='18' />
+              <column datatype='integer' name='지상_부터' ordinal='19' />
+              <column datatype='integer' name='지상_까지' ordinal='20' />
+              <column datatype='integer' name='지하_부터' ordinal='21' />
+              <column datatype='integer' name='지하_까지' ordinal='22' />
+              <column datatype='integer' name='총층수' ordinal='23' />
+              <column datatype='integer' name='교육수료일자' ordinal='24' />
+              <column datatype='string' name='모범음식점여부' ordinal='25' />
+              <column datatype='string' name='급수시설' ordinal='26' />
+              <column datatype='string' name='업소위치' ordinal='27' />
+              <column datatype='integer' name='종업원남' ordinal='28' />
+              <column datatype='integer' name='종업원여' ordinal='29' />
+              <column datatype='string' name='급식소종류' ordinal='30' />
+              <column datatype='integer' name='평균급식인원수' ordinal='31' />
+              <column datatype='integer' name='최대급식인원수' ordinal='32' />
+              <column datatype='integer' name='1일급식인원수' ordinal='33' />
+              <column datatype='integer' name='일인당평균급식비' ordinal='34' />
+              <column datatype='string' name='운영형태' ordinal='35' />
+              <column datatype='real' name='영업장조리장면적(㎡)' ordinal='36' />
+              <column datatype='real' name='영업장객실면적(㎡)' ordinal='37' />
+              <column datatype='real' name='영업장무도장면적(㎡)' ordinal='38' />
+              <column datatype='real' name='영업장기타면적(㎡)' ordinal='39' />
+              <column datatype='real' name='업소내화장실면적(㎡)' ordinal='40' />
+              <column datatype='real' name='타업소공동화장실면적(㎡)' ordinal='41' />
+              <column datatype='real' name='영업장탈의실면적(㎡)' ordinal='42' />
+              <column datatype='real' name='영업장객석면적(㎡)' ordinal='43' />
+              <column datatype='real' name='작업장면적(㎡)' ordinal='44' />
+              <column datatype='integer' name='검사실면적(㎡)' ordinal='45' />
+              <column datatype='real' name='진열(판매)대면적(㎡)' ordinal='46' />
+              <column datatype='integer' name='창고(보관소)면적(㎡)' ordinal='47' />
+              <column datatype='string' name='허가(신고)번호' ordinal='48' />
+              <column datatype='string' name='참고사항' ordinal='49' />
+              <column datatype='integer' name='조건부허가시작일' ordinal='50' />
+              <column datatype='integer' name='조건부허가종료일' ordinal='51' />
+              <column datatype='string' name='조건부허가신고사유' ordinal='52' />
+              <column datatype='string' name='신고조건' ordinal='53' />
+              <column datatype='string' name='내외국인구분' ordinal='54' />
+              <column datatype='string' name='국적' ordinal='55' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.18b0z7d05m5zi31fqdf9g1nnr0iz' name='서울시 구로구 전체 식품위생업소 현황' table='[&apos;서울시 구로구 전체 식품위생업소 현황$&apos;]' type='table'>
+            <columns gridOrigin='A1:BD10001:no:A1:BD10001:0' header='yes' outcome='2'>
+              <column datatype='integer' name='시군구코드' ordinal='0' />
+              <column datatype='integer' name='업종코드' ordinal='1' />
+              <column datatype='integer' name='년도' ordinal='2' />
+              <column datatype='integer' name='업소일련번호' ordinal='3' />
+              <column datatype='string' name='업종명' ordinal='4' />
+              <column datatype='integer' name='허가신고일' ordinal='5' />
+              <column datatype='string' name='업소명' ordinal='6' />
+              <column datatype='string' name='소재지도로명' ordinal='7' />
+              <column datatype='string' name='소재지지번' ordinal='8' />
+              <column datatype='real' name='영업장면적(㎡)' ordinal='9' />
+              <column datatype='string' name='소재지전화번호' ordinal='10' />
+              <column datatype='integer' name='영업자시작일' ordinal='11' />
+              <column datatype='string' name='법인명' ordinal='12' />
+              <column datatype='integer' name='소재지시작일' ordinal='13' />
+              <column datatype='string' name='행정동명' ordinal='14' />
+              <column datatype='integer' name='폐업일자' ordinal='15' />
+              <column datatype='string' name='폐업구분' ordinal='16' />
+              <column datatype='string' name='폐업사유' ordinal='17' />
+              <column datatype='string' name='업태명' ordinal='18' />
+              <column datatype='integer' name='지상_부터' ordinal='19' />
+              <column datatype='integer' name='지상_까지' ordinal='20' />
+              <column datatype='integer' name='지하_부터' ordinal='21' />
+              <column datatype='integer' name='지하_까지' ordinal='22' />
+              <column datatype='integer' name='총층수' ordinal='23' />
+              <column datatype='integer' name='교육수료일자' ordinal='24' />
+              <column datatype='string' name='모범음식점여부' ordinal='25' />
+              <column datatype='string' name='급수시설' ordinal='26' />
+              <column datatype='string' name='업소위치' ordinal='27' />
+              <column datatype='integer' name='종업원남' ordinal='28' />
+              <column datatype='integer' name='종업원여' ordinal='29' />
+              <column datatype='string' name='급식소종류' ordinal='30' />
+              <column datatype='integer' name='평균급식인원수' ordinal='31' />
+              <column datatype='integer' name='최대급식인원수' ordinal='32' />
+              <column datatype='integer' name='1일급식인원수' ordinal='33' />
+              <column datatype='integer' name='일인당평균급식비' ordinal='34' />
+              <column datatype='string' name='운영형태' ordinal='35' />
+              <column datatype='real' name='영업장조리장면적(㎡)' ordinal='36' />
+              <column datatype='real' name='영업장객실면적(㎡)' ordinal='37' />
+              <column datatype='real' name='영업장무도장면적(㎡)' ordinal='38' />
+              <column datatype='real' name='영업장기타면적(㎡)' ordinal='39' />
+              <column datatype='real' name='업소내화장실면적(㎡)' ordinal='40' />
+              <column datatype='real' name='타업소공동화장실면적(㎡)' ordinal='41' />
+              <column datatype='real' name='영업장탈의실면적(㎡)' ordinal='42' />
+              <column datatype='real' name='영업장객석면적(㎡)' ordinal='43' />
+              <column datatype='real' name='작업장면적(㎡)' ordinal='44' />
+              <column datatype='integer' name='검사실면적(㎡)' ordinal='45' />
+              <column datatype='real' name='진열(판매)대면적(㎡)' ordinal='46' />
+              <column datatype='real' name='창고(보관소)면적(㎡)' ordinal='47' />
+              <column datatype='string' name='허가(신고)번호' ordinal='48' />
+              <column datatype='string' name='참고사항' ordinal='49' />
+              <column datatype='integer' name='조건부허가시작일' ordinal='50' />
+              <column datatype='integer' name='조건부허가종료일' ordinal='51' />
+              <column datatype='string' name='조건부허가신고사유' ordinal='52' />
+              <column datatype='string' name='신고조건' ordinal='53' />
+              <column datatype='string' name='내외국인구분' ordinal='54' />
+              <column datatype='string' name='국적' ordinal='55' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.18b0z7d05m5zi31fqdf9g1nnr0iz' name='서울시 금천구 전체 식품위생업소 현황' table='[&apos;서울시 금천구 전체 식품위생업소 현황$&apos;]' type='table'>
+            <columns gridOrigin='A1:BD10001:no:A1:BD10001:0' header='yes' outcome='2'>
+              <column datatype='integer' name='시군구코드' ordinal='0' />
+              <column datatype='integer' name='업종코드' ordinal='1' />
+              <column datatype='integer' name='년도' ordinal='2' />
+              <column datatype='integer' name='업소일련번호' ordinal='3' />
+              <column datatype='string' name='업종명' ordinal='4' />
+              <column datatype='integer' name='허가신고일' ordinal='5' />
+              <column datatype='string' name='업소명' ordinal='6' />
+              <column datatype='string' name='소재지도로명' ordinal='7' />
+              <column datatype='string' name='소재지지번' ordinal='8' />
+              <column datatype='real' name='영업장면적(㎡)' ordinal='9' />
+              <column datatype='string' name='소재지전화번호' ordinal='10' />
+              <column datatype='integer' name='영업자시작일' ordinal='11' />
+              <column datatype='string' name='법인명' ordinal='12' />
+              <column datatype='integer' name='소재지시작일' ordinal='13' />
+              <column datatype='string' name='행정동명' ordinal='14' />
+              <column datatype='integer' name='폐업일자' ordinal='15' />
+              <column datatype='string' name='폐업구분' ordinal='16' />
+              <column datatype='string' name='폐업사유' ordinal='17' />
+              <column datatype='string' name='업태명' ordinal='18' />
+              <column datatype='integer' name='지상_부터' ordinal='19' />
+              <column datatype='integer' name='지상_까지' ordinal='20' />
+              <column datatype='integer' name='지하_부터' ordinal='21' />
+              <column datatype='integer' name='지하_까지' ordinal='22' />
+              <column datatype='integer' name='총층수' ordinal='23' />
+              <column datatype='integer' name='교육수료일자' ordinal='24' />
+              <column datatype='string' name='모범음식점여부' ordinal='25' />
+              <column datatype='string' name='급수시설' ordinal='26' />
+              <column datatype='string' name='업소위치' ordinal='27' />
+              <column datatype='integer' name='종업원남' ordinal='28' />
+              <column datatype='integer' name='종업원여' ordinal='29' />
+              <column datatype='string' name='급식소종류' ordinal='30' />
+              <column datatype='integer' name='평균급식인원수' ordinal='31' />
+              <column datatype='integer' name='최대급식인원수' ordinal='32' />
+              <column datatype='integer' name='1일급식인원수' ordinal='33' />
+              <column datatype='integer' name='일인당평균급식비' ordinal='34' />
+              <column datatype='string' name='운영형태' ordinal='35' />
+              <column datatype='real' name='영업장조리장면적(㎡)' ordinal='36' />
+              <column datatype='real' name='영업장객실면적(㎡)' ordinal='37' />
+              <column datatype='real' name='영업장무도장면적(㎡)' ordinal='38' />
+              <column datatype='real' name='영업장기타면적(㎡)' ordinal='39' />
+              <column datatype='real' name='업소내화장실면적(㎡)' ordinal='40' />
+              <column datatype='real' name='타업소공동화장실면적(㎡)' ordinal='41' />
+              <column datatype='real' name='영업장탈의실면적(㎡)' ordinal='42' />
+              <column datatype='real' name='영업장객석면적(㎡)' ordinal='43' />
+              <column datatype='real' name='작업장면적(㎡)' ordinal='44' />
+              <column datatype='real' name='검사실면적(㎡)' ordinal='45' />
+              <column datatype='real' name='진열(판매)대면적(㎡)' ordinal='46' />
+              <column datatype='real' name='창고(보관소)면적(㎡)' ordinal='47' />
+              <column datatype='string' name='허가(신고)번호' ordinal='48' />
+              <column datatype='string' name='참고사항' ordinal='49' />
+              <column datatype='integer' name='조건부허가시작일' ordinal='50' />
+              <column datatype='integer' name='조건부허가종료일' ordinal='51' />
+              <column datatype='string' name='조건부허가신고사유' ordinal='52' />
+              <column datatype='string' name='신고조건' ordinal='53' />
+              <column datatype='string' name='내외국인구분' ordinal='54' />
+              <column datatype='string' name='국적' ordinal='55' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.18b0z7d05m5zi31fqdf9g1nnr0iz' name='서울시 노원구 전체 식품위생업소 현황' table='[&apos;서울시 노원구 전체 식품위생업소 현황$&apos;]' type='table'>
+            <columns gridOrigin='A1:BD10001:no:A1:BD10001:0' header='yes' outcome='2'>
+              <column datatype='integer' name='시군구코드' ordinal='0' />
+              <column datatype='integer' name='업종코드' ordinal='1' />
+              <column datatype='integer' name='년도' ordinal='2' />
+              <column datatype='integer' name='업소일련번호' ordinal='3' />
+              <column datatype='string' name='업종명' ordinal='4' />
+              <column datatype='integer' name='허가신고일' ordinal='5' />
+              <column datatype='string' name='업소명' ordinal='6' />
+              <column datatype='string' name='소재지도로명' ordinal='7' />
+              <column datatype='string' name='소재지지번' ordinal='8' />
+              <column datatype='real' name='영업장면적(㎡)' ordinal='9' />
+              <column datatype='string' name='소재지전화번호' ordinal='10' />
+              <column datatype='integer' name='영업자시작일' ordinal='11' />
+              <column datatype='string' name='법인명' ordinal='12' />
+              <column datatype='integer' name='소재지시작일' ordinal='13' />
+              <column datatype='string' name='행정동명' ordinal='14' />
+              <column datatype='integer' name='폐업일자' ordinal='15' />
+              <column datatype='string' name='폐업구분' ordinal='16' />
+              <column datatype='string' name='폐업사유' ordinal='17' />
+              <column datatype='string' name='업태명' ordinal='18' />
+              <column datatype='integer' name='지상_부터' ordinal='19' />
+              <column datatype='integer' name='지상_까지' ordinal='20' />
+              <column datatype='integer' name='지하_부터' ordinal='21' />
+              <column datatype='integer' name='지하_까지' ordinal='22' />
+              <column datatype='integer' name='총층수' ordinal='23' />
+              <column datatype='integer' name='교육수료일자' ordinal='24' />
+              <column datatype='string' name='모범음식점여부' ordinal='25' />
+              <column datatype='string' name='급수시설' ordinal='26' />
+              <column datatype='string' name='업소위치' ordinal='27' />
+              <column datatype='integer' name='종업원남' ordinal='28' />
+              <column datatype='integer' name='종업원여' ordinal='29' />
+              <column datatype='string' name='급식소종류' ordinal='30' />
+              <column datatype='integer' name='평균급식인원수' ordinal='31' />
+              <column datatype='integer' name='최대급식인원수' ordinal='32' />
+              <column datatype='integer' name='1일급식인원수' ordinal='33' />
+              <column datatype='integer' name='일인당평균급식비' ordinal='34' />
+              <column datatype='string' name='운영형태' ordinal='35' />
+              <column datatype='real' name='영업장조리장면적(㎡)' ordinal='36' />
+              <column datatype='real' name='영업장객실면적(㎡)' ordinal='37' />
+              <column datatype='real' name='영업장무도장면적(㎡)' ordinal='38' />
+              <column datatype='real' name='영업장기타면적(㎡)' ordinal='39' />
+              <column datatype='real' name='업소내화장실면적(㎡)' ordinal='40' />
+              <column datatype='real' name='타업소공동화장실면적(㎡)' ordinal='41' />
+              <column datatype='real' name='영업장탈의실면적(㎡)' ordinal='42' />
+              <column datatype='real' name='영업장객석면적(㎡)' ordinal='43' />
+              <column datatype='real' name='작업장면적(㎡)' ordinal='44' />
+              <column datatype='integer' name='검사실면적(㎡)' ordinal='45' />
+              <column datatype='real' name='진열(판매)대면적(㎡)' ordinal='46' />
+              <column datatype='real' name='창고(보관소)면적(㎡)' ordinal='47' />
+              <column datatype='string' name='허가(신고)번호' ordinal='48' />
+              <column datatype='string' name='참고사항' ordinal='49' />
+              <column datatype='integer' name='조건부허가시작일' ordinal='50' />
+              <column datatype='integer' name='조건부허가종료일' ordinal='51' />
+              <column datatype='string' name='조건부허가신고사유' ordinal='52' />
+              <column datatype='string' name='신고조건' ordinal='53' />
+              <column datatype='string' name='내외국인구분' ordinal='54' />
+              <column datatype='string' name='국적' ordinal='55' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.18b0z7d05m5zi31fqdf9g1nnr0iz' name='서울시 도봉구 전체 식품위생업소 현황' table='[&apos;서울시 도봉구 전체 식품위생업소 현황$&apos;]' type='table'>
+            <columns gridOrigin='A1:BD10001:no:A1:BD10001:0' header='yes' outcome='2'>
+              <column datatype='integer' name='시군구코드' ordinal='0' />
+              <column datatype='integer' name='업종코드' ordinal='1' />
+              <column datatype='integer' name='년도' ordinal='2' />
+              <column datatype='integer' name='업소일련번호' ordinal='3' />
+              <column datatype='string' name='업종명' ordinal='4' />
+              <column datatype='integer' name='허가신고일' ordinal='5' />
+              <column datatype='string' name='업소명' ordinal='6' />
+              <column datatype='string' name='소재지도로명' ordinal='7' />
+              <column datatype='string' name='소재지지번' ordinal='8' />
+              <column datatype='real' name='영업장면적(㎡)' ordinal='9' />
+              <column datatype='string' name='소재지전화번호' ordinal='10' />
+              <column datatype='integer' name='영업자시작일' ordinal='11' />
+              <column datatype='string' name='법인명' ordinal='12' />
+              <column datatype='integer' name='소재지시작일' ordinal='13' />
+              <column datatype='string' name='행정동명' ordinal='14' />
+              <column datatype='integer' name='폐업일자' ordinal='15' />
+              <column datatype='string' name='폐업구분' ordinal='16' />
+              <column datatype='string' name='폐업사유' ordinal='17' />
+              <column datatype='string' name='업태명' ordinal='18' />
+              <column datatype='integer' name='지상_부터' ordinal='19' />
+              <column datatype='integer' name='지상_까지' ordinal='20' />
+              <column datatype='integer' name='지하_부터' ordinal='21' />
+              <column datatype='integer' name='지하_까지' ordinal='22' />
+              <column datatype='integer' name='총층수' ordinal='23' />
+              <column datatype='integer' name='교육수료일자' ordinal='24' />
+              <column datatype='string' name='모범음식점여부' ordinal='25' />
+              <column datatype='string' name='급수시설' ordinal='26' />
+              <column datatype='string' name='업소위치' ordinal='27' />
+              <column datatype='integer' name='종업원남' ordinal='28' />
+              <column datatype='integer' name='종업원여' ordinal='29' />
+              <column datatype='string' name='급식소종류' ordinal='30' />
+              <column datatype='integer' name='평균급식인원수' ordinal='31' />
+              <column datatype='integer' name='최대급식인원수' ordinal='32' />
+              <column datatype='integer' name='1일급식인원수' ordinal='33' />
+              <column datatype='integer' name='일인당평균급식비' ordinal='34' />
+              <column datatype='string' name='운영형태' ordinal='35' />
+              <column datatype='real' name='영업장조리장면적(㎡)' ordinal='36' />
+              <column datatype='real' name='영업장객실면적(㎡)' ordinal='37' />
+              <column datatype='real' name='영업장무도장면적(㎡)' ordinal='38' />
+              <column datatype='real' name='영업장기타면적(㎡)' ordinal='39' />
+              <column datatype='real' name='업소내화장실면적(㎡)' ordinal='40' />
+              <column datatype='real' name='타업소공동화장실면적(㎡)' ordinal='41' />
+              <column datatype='real' name='영업장탈의실면적(㎡)' ordinal='42' />
+              <column datatype='real' name='영업장객석면적(㎡)' ordinal='43' />
+              <column datatype='real' name='작업장면적(㎡)' ordinal='44' />
+              <column datatype='real' name='검사실면적(㎡)' ordinal='45' />
+              <column datatype='real' name='진열(판매)대면적(㎡)' ordinal='46' />
+              <column datatype='integer' name='창고(보관소)면적(㎡)' ordinal='47' />
+              <column datatype='string' name='허가(신고)번호' ordinal='48' />
+              <column datatype='string' name='참고사항' ordinal='49' />
+              <column datatype='integer' name='조건부허가시작일' ordinal='50' />
+              <column datatype='integer' name='조건부허가종료일' ordinal='51' />
+              <column datatype='string' name='조건부허가신고사유' ordinal='52' />
+              <column datatype='string' name='신고조건' ordinal='53' />
+              <column datatype='string' name='내외국인구분' ordinal='54' />
+              <column datatype='string' name='국적' ordinal='55' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.18b0z7d05m5zi31fqdf9g1nnr0iz' name='서울시 동대문구 전체 식품위생업소 현황' table='[&apos;서울시 동대문구 전체 식품위생업소 현황$&apos;]' type='table'>
+            <columns gridOrigin='A1:BD356:no:A1:BD356:0' header='yes' outcome='2'>
+              <column datatype='integer' name='시군구코드' ordinal='0' />
+              <column datatype='integer' name='업종코드' ordinal='1' />
+              <column datatype='integer' name='년도' ordinal='2' />
+              <column datatype='integer' name='업소일련번호' ordinal='3' />
+              <column datatype='string' name='업종명' ordinal='4' />
+              <column datatype='integer' name='허가신고일' ordinal='5' />
+              <column datatype='string' name='업소명' ordinal='6' />
+              <column datatype='string' name='소재지도로명' ordinal='7' />
+              <column datatype='string' name='소재지지번' ordinal='8' />
+              <column datatype='real' name='영업장면적(㎡)' ordinal='9' />
+              <column datatype='string' name='소재지전화번호' ordinal='10' />
+              <column datatype='integer' name='영업자시작일' ordinal='11' />
+              <column datatype='string' name='법인명' ordinal='12' />
+              <column datatype='integer' name='소재지시작일' ordinal='13' />
+              <column datatype='string' name='행정동명' ordinal='14' />
+              <column datatype='integer' name='폐업일자' ordinal='15' />
+              <column datatype='string' name='폐업구분' ordinal='16' />
+              <column datatype='string' name='폐업사유' ordinal='17' />
+              <column datatype='string' name='업태명' ordinal='18' />
+              <column datatype='integer' name='지상_부터' ordinal='19' />
+              <column datatype='integer' name='지상_까지' ordinal='20' />
+              <column datatype='integer' name='지하_부터' ordinal='21' />
+              <column datatype='integer' name='지하_까지' ordinal='22' />
+              <column datatype='integer' name='총층수' ordinal='23' />
+              <column datatype='string' name='교육수료일자' ordinal='24' />
+              <column datatype='string' name='모범음식점여부' ordinal='25' />
+              <column datatype='string' name='급수시설' ordinal='26' />
+              <column datatype='string' name='업소위치' ordinal='27' />
+              <column datatype='string' name='종업원남' ordinal='28' />
+              <column datatype='string' name='종업원여' ordinal='29' />
+              <column datatype='string' name='급식소종류' ordinal='30' />
+              <column datatype='integer' name='평균급식인원수' ordinal='31' />
+              <column datatype='integer' name='최대급식인원수' ordinal='32' />
+              <column datatype='integer' name='1일급식인원수' ordinal='33' />
+              <column datatype='integer' name='일인당평균급식비' ordinal='34' />
+              <column datatype='string' name='운영형태' ordinal='35' />
+              <column datatype='real' name='영업장조리장면적(㎡)' ordinal='36' />
+              <column datatype='integer' name='영업장객실면적(㎡)' ordinal='37' />
+              <column datatype='integer' name='영업장무도장면적(㎡)' ordinal='38' />
+              <column datatype='real' name='영업장기타면적(㎡)' ordinal='39' />
+              <column datatype='integer' name='업소내화장실면적(㎡)' ordinal='40' />
+              <column datatype='integer' name='타업소공동화장실면적(㎡)' ordinal='41' />
+              <column datatype='integer' name='영업장탈의실면적(㎡)' ordinal='42' />
+              <column datatype='integer' name='영업장객석면적(㎡)' ordinal='43' />
+              <column datatype='real' name='작업장면적(㎡)' ordinal='44' />
+              <column datatype='integer' name='검사실면적(㎡)' ordinal='45' />
+              <column datatype='integer' name='진열(판매)대면적(㎡)' ordinal='46' />
+              <column datatype='real' name='창고(보관소)면적(㎡)' ordinal='47' />
+              <column datatype='string' name='허가(신고)번호' ordinal='48' />
+              <column datatype='string' name='참고사항' ordinal='49' />
+              <column datatype='integer' name='조건부허가시작일' ordinal='50' />
+              <column datatype='integer' name='조건부허가종료일' ordinal='51' />
+              <column datatype='string' name='조건부허가신고사유' ordinal='52' />
+              <column datatype='string' name='신고조건' ordinal='53' />
+              <column datatype='string' name='내외국인구분' ordinal='54' />
+              <column datatype='string' name='국적' ordinal='55' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.18b0z7d05m5zi31fqdf9g1nnr0iz' name='서울시 동작구 전체 식품위생업소 현황' table='[&apos;서울시 동작구 전체 식품위생업소 현황$&apos;]' type='table'>
+            <columns gridOrigin='A1:BD10001:no:A1:BD10001:0' header='yes' outcome='2'>
+              <column datatype='integer' name='시군구코드' ordinal='0' />
+              <column datatype='integer' name='업종코드' ordinal='1' />
+              <column datatype='integer' name='년도' ordinal='2' />
+              <column datatype='integer' name='업소일련번호' ordinal='3' />
+              <column datatype='string' name='업종명' ordinal='4' />
+              <column datatype='integer' name='허가신고일' ordinal='5' />
+              <column datatype='string' name='업소명' ordinal='6' />
+              <column datatype='string' name='소재지도로명' ordinal='7' />
+              <column datatype='string' name='소재지지번' ordinal='8' />
+              <column datatype='real' name='영업장면적(㎡)' ordinal='9' />
+              <column datatype='string' name='소재지전화번호' ordinal='10' />
+              <column datatype='integer' name='영업자시작일' ordinal='11' />
+              <column datatype='string' name='법인명' ordinal='12' />
+              <column datatype='integer' name='소재지시작일' ordinal='13' />
+              <column datatype='string' name='행정동명' ordinal='14' />
+              <column datatype='integer' name='폐업일자' ordinal='15' />
+              <column datatype='string' name='폐업구분' ordinal='16' />
+              <column datatype='string' name='폐업사유' ordinal='17' />
+              <column datatype='string' name='업태명' ordinal='18' />
+              <column datatype='integer' name='지상_부터' ordinal='19' />
+              <column datatype='integer' name='지상_까지' ordinal='20' />
+              <column datatype='integer' name='지하_부터' ordinal='21' />
+              <column datatype='integer' name='지하_까지' ordinal='22' />
+              <column datatype='integer' name='총층수' ordinal='23' />
+              <column datatype='integer' name='교육수료일자' ordinal='24' />
+              <column datatype='string' name='모범음식점여부' ordinal='25' />
+              <column datatype='string' name='급수시설' ordinal='26' />
+              <column datatype='string' name='업소위치' ordinal='27' />
+              <column datatype='integer' name='종업원남' ordinal='28' />
+              <column datatype='integer' name='종업원여' ordinal='29' />
+              <column datatype='string' name='급식소종류' ordinal='30' />
+              <column datatype='integer' name='평균급식인원수' ordinal='31' />
+              <column datatype='integer' name='최대급식인원수' ordinal='32' />
+              <column datatype='integer' name='1일급식인원수' ordinal='33' />
+              <column datatype='integer' name='일인당평균급식비' ordinal='34' />
+              <column datatype='string' name='운영형태' ordinal='35' />
+              <column datatype='real' name='영업장조리장면적(㎡)' ordinal='36' />
+              <column datatype='real' name='영업장객실면적(㎡)' ordinal='37' />
+              <column datatype='real' name='영업장무도장면적(㎡)' ordinal='38' />
+              <column datatype='real' name='영업장기타면적(㎡)' ordinal='39' />
+              <column datatype='real' name='업소내화장실면적(㎡)' ordinal='40' />
+              <column datatype='real' name='타업소공동화장실면적(㎡)' ordinal='41' />
+              <column datatype='real' name='영업장탈의실면적(㎡)' ordinal='42' />
+              <column datatype='real' name='영업장객석면적(㎡)' ordinal='43' />
+              <column datatype='real' name='작업장면적(㎡)' ordinal='44' />
+              <column datatype='real' name='검사실면적(㎡)' ordinal='45' />
+              <column datatype='real' name='진열(판매)대면적(㎡)' ordinal='46' />
+              <column datatype='real' name='창고(보관소)면적(㎡)' ordinal='47' />
+              <column datatype='string' name='허가(신고)번호' ordinal='48' />
+              <column datatype='string' name='참고사항' ordinal='49' />
+              <column datatype='integer' name='조건부허가시작일' ordinal='50' />
+              <column datatype='integer' name='조건부허가종료일' ordinal='51' />
+              <column datatype='string' name='조건부허가신고사유' ordinal='52' />
+              <column datatype='string' name='신고조건' ordinal='53' />
+              <column datatype='string' name='내외국인구분' ordinal='54' />
+              <column datatype='string' name='국적' ordinal='55' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.18b0z7d05m5zi31fqdf9g1nnr0iz' name='서울시 마포구 전체 식품위생업소 현황' table='[&apos;서울시 마포구 전체 식품위생업소 현황$&apos;]' type='table'>
+            <columns gridOrigin='A1:BD10001:no:A1:BD10001:0' header='yes' outcome='2'>
+              <column datatype='integer' name='시군구코드' ordinal='0' />
+              <column datatype='integer' name='업종코드' ordinal='1' />
+              <column datatype='integer' name='년도' ordinal='2' />
+              <column datatype='integer' name='업소일련번호' ordinal='3' />
+              <column datatype='string' name='업종명' ordinal='4' />
+              <column datatype='integer' name='허가신고일' ordinal='5' />
+              <column datatype='string' name='업소명' ordinal='6' />
+              <column datatype='string' name='소재지도로명' ordinal='7' />
+              <column datatype='string' name='소재지지번' ordinal='8' />
+              <column datatype='real' name='영업장면적(㎡)' ordinal='9' />
+              <column datatype='string' name='소재지전화번호' ordinal='10' />
+              <column datatype='integer' name='영업자시작일' ordinal='11' />
+              <column datatype='string' name='법인명' ordinal='12' />
+              <column datatype='integer' name='소재지시작일' ordinal='13' />
+              <column datatype='string' name='행정동명' ordinal='14' />
+              <column datatype='integer' name='폐업일자' ordinal='15' />
+              <column datatype='string' name='폐업구분' ordinal='16' />
+              <column datatype='string' name='폐업사유' ordinal='17' />
+              <column datatype='string' name='업태명' ordinal='18' />
+              <column datatype='integer' name='지상_부터' ordinal='19' />
+              <column datatype='integer' name='지상_까지' ordinal='20' />
+              <column datatype='integer' name='지하_부터' ordinal='21' />
+              <column datatype='integer' name='지하_까지' ordinal='22' />
+              <column datatype='integer' name='총층수' ordinal='23' />
+              <column datatype='integer' name='교육수료일자' ordinal='24' />
+              <column datatype='string' name='모범음식점여부' ordinal='25' />
+              <column datatype='string' name='급수시설' ordinal='26' />
+              <column datatype='string' name='업소위치' ordinal='27' />
+              <column datatype='integer' name='종업원남' ordinal='28' />
+              <column datatype='integer' name='종업원여' ordinal='29' />
+              <column datatype='string' name='급식소종류' ordinal='30' />
+              <column datatype='integer' name='평균급식인원수' ordinal='31' />
+              <column datatype='integer' name='최대급식인원수' ordinal='32' />
+              <column datatype='integer' name='1일급식인원수' ordinal='33' />
+              <column datatype='integer' name='일인당평균급식비' ordinal='34' />
+              <column datatype='string' name='운영형태' ordinal='35' />
+              <column datatype='real' name='영업장조리장면적(㎡)' ordinal='36' />
+              <column datatype='real' name='영업장객실면적(㎡)' ordinal='37' />
+              <column datatype='real' name='영업장무도장면적(㎡)' ordinal='38' />
+              <column datatype='real' name='영업장기타면적(㎡)' ordinal='39' />
+              <column datatype='real' name='업소내화장실면적(㎡)' ordinal='40' />
+              <column datatype='real' name='타업소공동화장실면적(㎡)' ordinal='41' />
+              <column datatype='real' name='영업장탈의실면적(㎡)' ordinal='42' />
+              <column datatype='real' name='영업장객석면적(㎡)' ordinal='43' />
+              <column datatype='real' name='작업장면적(㎡)' ordinal='44' />
+              <column datatype='real' name='검사실면적(㎡)' ordinal='45' />
+              <column datatype='real' name='진열(판매)대면적(㎡)' ordinal='46' />
+              <column datatype='real' name='창고(보관소)면적(㎡)' ordinal='47' />
+              <column datatype='string' name='허가(신고)번호' ordinal='48' />
+              <column datatype='string' name='참고사항' ordinal='49' />
+              <column datatype='integer' name='조건부허가시작일' ordinal='50' />
+              <column datatype='integer' name='조건부허가종료일' ordinal='51' />
+              <column datatype='string' name='조건부허가신고사유' ordinal='52' />
+              <column datatype='string' name='신고조건' ordinal='53' />
+              <column datatype='string' name='내외국인구분' ordinal='54' />
+              <column datatype='string' name='국적' ordinal='55' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.18b0z7d05m5zi31fqdf9g1nnr0iz' name='서울시 서대문구 전체 식품위생업소 현황' table='[&apos;서울시 서대문구 전체 식품위생업소 현황$&apos;]' type='table'>
+            <columns gridOrigin='A1:BD10001:no:A1:BD10001:0' header='yes' outcome='6'>
+              <column datatype='integer' name='시군구코드' ordinal='0' />
+              <column datatype='integer' name='업종코드' ordinal='1' />
+              <column datatype='integer' name='년도' ordinal='2' />
+              <column datatype='integer' name='업소일련번호' ordinal='3' />
+              <column datatype='string' name='업종명' ordinal='4' />
+              <column datatype='integer' name='허가신고일' ordinal='5' />
+              <column datatype='string' name='업소명' ordinal='6' />
+              <column datatype='string' name='소재지도로명' ordinal='7' />
+              <column datatype='string' name='소재지지번' ordinal='8' />
+              <column datatype='real' name='영업장면적(㎡)' ordinal='9' />
+              <column datatype='string' name='소재지전화번호' ordinal='10' />
+              <column datatype='integer' name='영업자시작일' ordinal='11' />
+              <column datatype='string' name='법인명' ordinal='12' />
+              <column datatype='integer' name='소재지시작일' ordinal='13' />
+              <column datatype='string' name='행정동명' ordinal='14' />
+              <column datatype='integer' name='폐업일자' ordinal='15' />
+              <column datatype='string' name='폐업구분' ordinal='16' />
+              <column datatype='string' name='폐업사유' ordinal='17' />
+              <column datatype='string' name='업태명' ordinal='18' />
+              <column datatype='integer' name='지상_부터' ordinal='19' />
+              <column datatype='integer' name='지상_까지' ordinal='20' />
+              <column datatype='integer' name='지하_부터' ordinal='21' />
+              <column datatype='integer' name='지하_까지' ordinal='22' />
+              <column datatype='integer' name='총층수' ordinal='23' />
+              <column datatype='integer' name='교육수료일자' ordinal='24' />
+              <column datatype='string' name='모범음식점여부' ordinal='25' />
+              <column datatype='string' name='급수시설' ordinal='26' />
+              <column datatype='string' name='업소위치' ordinal='27' />
+              <column datatype='integer' name='종업원남' ordinal='28' />
+              <column datatype='integer' name='종업원여' ordinal='29' />
+              <column datatype='string' name='급식소종류' ordinal='30' />
+              <column datatype='integer' name='평균급식인원수' ordinal='31' />
+              <column datatype='integer' name='최대급식인원수' ordinal='32' />
+              <column datatype='integer' name='1일급식인원수' ordinal='33' />
+              <column datatype='integer' name='일인당평균급식비' ordinal='34' />
+              <column datatype='string' name='운영형태' ordinal='35' />
+              <column datatype='real' name='영업장조리장면적(㎡)' ordinal='36' />
+              <column datatype='real' name='영업장객실면적(㎡)' ordinal='37' />
+              <column datatype='real' name='영업장무도장면적(㎡)' ordinal='38' />
+              <column datatype='real' name='영업장기타면적(㎡)' ordinal='39' />
+              <column datatype='real' name='업소내화장실면적(㎡)' ordinal='40' />
+              <column datatype='real' name='타업소공동화장실면적(㎡)' ordinal='41' />
+              <column datatype='real' name='영업장탈의실면적(㎡)' ordinal='42' />
+              <column datatype='real' name='영업장객석면적(㎡)' ordinal='43' />
+              <column datatype='real' name='작업장면적(㎡)' ordinal='44' />
+              <column datatype='real' name='검사실면적(㎡)' ordinal='45' />
+              <column datatype='integer' name='진열(판매)대면적(㎡)' ordinal='46' />
+              <column datatype='real' name='창고(보관소)면적(㎡)' ordinal='47' />
+              <column datatype='string' name='허가(신고)번호' ordinal='48' />
+              <column datatype='string' name='참고사항' ordinal='49' />
+              <column datatype='integer' name='조건부허가시작일' ordinal='50' />
+              <column datatype='integer' name='조건부허가종료일' ordinal='51' />
+              <column datatype='string' name='조건부허가신고사유' ordinal='52' />
+              <column datatype='string' name='신고조건' ordinal='53' />
+              <column datatype='string' name='내외국인구분' ordinal='54' />
+              <column datatype='string' name='국적' ordinal='55' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.18b0z7d05m5zi31fqdf9g1nnr0iz' name='서울시 서초구 전체 식품위생업소 현황' table='[&apos;서울시 서초구 전체 식품위생업소 현황$&apos;]' type='table'>
+            <columns gridOrigin='A1:BD10001:no:A1:BD10001:0' header='yes' outcome='2'>
+              <column datatype='integer' name='시군구코드' ordinal='0' />
+              <column datatype='integer' name='업종코드' ordinal='1' />
+              <column datatype='integer' name='년도' ordinal='2' />
+              <column datatype='integer' name='업소일련번호' ordinal='3' />
+              <column datatype='string' name='업종명' ordinal='4' />
+              <column datatype='integer' name='허가신고일' ordinal='5' />
+              <column datatype='string' name='업소명' ordinal='6' />
+              <column datatype='string' name='소재지도로명' ordinal='7' />
+              <column datatype='string' name='소재지지번' ordinal='8' />
+              <column datatype='real' name='영업장면적(㎡)' ordinal='9' />
+              <column datatype='string' name='소재지전화번호' ordinal='10' />
+              <column datatype='integer' name='영업자시작일' ordinal='11' />
+              <column datatype='string' name='법인명' ordinal='12' />
+              <column datatype='integer' name='소재지시작일' ordinal='13' />
+              <column datatype='string' name='행정동명' ordinal='14' />
+              <column datatype='integer' name='폐업일자' ordinal='15' />
+              <column datatype='string' name='폐업구분' ordinal='16' />
+              <column datatype='string' name='폐업사유' ordinal='17' />
+              <column datatype='string' name='업태명' ordinal='18' />
+              <column datatype='integer' name='지상_부터' ordinal='19' />
+              <column datatype='integer' name='지상_까지' ordinal='20' />
+              <column datatype='integer' name='지하_부터' ordinal='21' />
+              <column datatype='integer' name='지하_까지' ordinal='22' />
+              <column datatype='integer' name='총층수' ordinal='23' />
+              <column datatype='integer' name='교육수료일자' ordinal='24' />
+              <column datatype='string' name='모범음식점여부' ordinal='25' />
+              <column datatype='string' name='급수시설' ordinal='26' />
+              <column datatype='string' name='업소위치' ordinal='27' />
+              <column datatype='integer' name='종업원남' ordinal='28' />
+              <column datatype='integer' name='종업원여' ordinal='29' />
+              <column datatype='string' name='급식소종류' ordinal='30' />
+              <column datatype='integer' name='평균급식인원수' ordinal='31' />
+              <column datatype='integer' name='최대급식인원수' ordinal='32' />
+              <column datatype='integer' name='1일급식인원수' ordinal='33' />
+              <column datatype='integer' name='일인당평균급식비' ordinal='34' />
+              <column datatype='string' name='운영형태' ordinal='35' />
+              <column datatype='real' name='영업장조리장면적(㎡)' ordinal='36' />
+              <column datatype='real' name='영업장객실면적(㎡)' ordinal='37' />
+              <column datatype='real' name='영업장무도장면적(㎡)' ordinal='38' />
+              <column datatype='real' name='영업장기타면적(㎡)' ordinal='39' />
+              <column datatype='real' name='업소내화장실면적(㎡)' ordinal='40' />
+              <column datatype='real' name='타업소공동화장실면적(㎡)' ordinal='41' />
+              <column datatype='real' name='영업장탈의실면적(㎡)' ordinal='42' />
+              <column datatype='real' name='영업장객석면적(㎡)' ordinal='43' />
+              <column datatype='real' name='작업장면적(㎡)' ordinal='44' />
+              <column datatype='real' name='검사실면적(㎡)' ordinal='45' />
+              <column datatype='integer' name='진열(판매)대면적(㎡)' ordinal='46' />
+              <column datatype='integer' name='창고(보관소)면적(㎡)' ordinal='47' />
+              <column datatype='string' name='허가(신고)번호' ordinal='48' />
+              <column datatype='string' name='참고사항' ordinal='49' />
+              <column datatype='integer' name='조건부허가시작일' ordinal='50' />
+              <column datatype='integer' name='조건부허가종료일' ordinal='51' />
+              <column datatype='string' name='조건부허가신고사유' ordinal='52' />
+              <column datatype='string' name='신고조건' ordinal='53' />
+              <column datatype='string' name='내외국인구분' ordinal='54' />
+              <column datatype='string' name='국적' ordinal='55' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.18b0z7d05m5zi31fqdf9g1nnr0iz' name='서울시 성동구 전체 식품위생업소 현황' table='[&apos;서울시 성동구 전체 식품위생업소 현황$&apos;]' type='table'>
+            <columns gridOrigin='A1:BD10001:no:A1:BD10001:0' header='yes' outcome='2'>
+              <column datatype='integer' name='시군구코드' ordinal='0' />
+              <column datatype='integer' name='업종코드' ordinal='1' />
+              <column datatype='integer' name='년도' ordinal='2' />
+              <column datatype='integer' name='업소일련번호' ordinal='3' />
+              <column datatype='string' name='업종명' ordinal='4' />
+              <column datatype='integer' name='허가신고일' ordinal='5' />
+              <column datatype='string' name='업소명' ordinal='6' />
+              <column datatype='string' name='소재지도로명' ordinal='7' />
+              <column datatype='string' name='소재지지번' ordinal='8' />
+              <column datatype='real' name='영업장면적(㎡)' ordinal='9' />
+              <column datatype='string' name='소재지전화번호' ordinal='10' />
+              <column datatype='integer' name='영업자시작일' ordinal='11' />
+              <column datatype='string' name='법인명' ordinal='12' />
+              <column datatype='integer' name='소재지시작일' ordinal='13' />
+              <column datatype='string' name='행정동명' ordinal='14' />
+              <column datatype='integer' name='폐업일자' ordinal='15' />
+              <column datatype='string' name='폐업구분' ordinal='16' />
+              <column datatype='string' name='폐업사유' ordinal='17' />
+              <column datatype='string' name='업태명' ordinal='18' />
+              <column datatype='integer' name='지상_부터' ordinal='19' />
+              <column datatype='integer' name='지상_까지' ordinal='20' />
+              <column datatype='integer' name='지하_부터' ordinal='21' />
+              <column datatype='integer' name='지하_까지' ordinal='22' />
+              <column datatype='integer' name='총층수' ordinal='23' />
+              <column datatype='integer' name='교육수료일자' ordinal='24' />
+              <column datatype='string' name='모범음식점여부' ordinal='25' />
+              <column datatype='string' name='급수시설' ordinal='26' />
+              <column datatype='string' name='업소위치' ordinal='27' />
+              <column datatype='integer' name='종업원남' ordinal='28' />
+              <column datatype='integer' name='종업원여' ordinal='29' />
+              <column datatype='string' name='급식소종류' ordinal='30' />
+              <column datatype='integer' name='평균급식인원수' ordinal='31' />
+              <column datatype='integer' name='최대급식인원수' ordinal='32' />
+              <column datatype='integer' name='1일급식인원수' ordinal='33' />
+              <column datatype='integer' name='일인당평균급식비' ordinal='34' />
+              <column datatype='string' name='운영형태' ordinal='35' />
+              <column datatype='real' name='영업장조리장면적(㎡)' ordinal='36' />
+              <column datatype='real' name='영업장객실면적(㎡)' ordinal='37' />
+              <column datatype='real' name='영업장무도장면적(㎡)' ordinal='38' />
+              <column datatype='real' name='영업장기타면적(㎡)' ordinal='39' />
+              <column datatype='real' name='업소내화장실면적(㎡)' ordinal='40' />
+              <column datatype='real' name='타업소공동화장실면적(㎡)' ordinal='41' />
+              <column datatype='real' name='영업장탈의실면적(㎡)' ordinal='42' />
+              <column datatype='real' name='영업장객석면적(㎡)' ordinal='43' />
+              <column datatype='real' name='작업장면적(㎡)' ordinal='44' />
+              <column datatype='real' name='검사실면적(㎡)' ordinal='45' />
+              <column datatype='real' name='진열(판매)대면적(㎡)' ordinal='46' />
+              <column datatype='real' name='창고(보관소)면적(㎡)' ordinal='47' />
+              <column datatype='string' name='허가(신고)번호' ordinal='48' />
+              <column datatype='string' name='참고사항' ordinal='49' />
+              <column datatype='integer' name='조건부허가시작일' ordinal='50' />
+              <column datatype='integer' name='조건부허가종료일' ordinal='51' />
+              <column datatype='string' name='조건부허가신고사유' ordinal='52' />
+              <column datatype='string' name='신고조건' ordinal='53' />
+              <column datatype='string' name='내외국인구분' ordinal='54' />
+              <column datatype='string' name='국적' ordinal='55' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.18b0z7d05m5zi31fqdf9g1nnr0iz' name='서울시 성북구 전체 식품위생업소 현황' table='[&apos;서울시 성북구 전체 식품위생업소 현황$&apos;]' type='table'>
+            <columns gridOrigin='A1:BD10001:no:A1:BD10001:0' header='yes' outcome='2'>
+              <column datatype='integer' name='시군구코드' ordinal='0' />
+              <column datatype='integer' name='업종코드' ordinal='1' />
+              <column datatype='integer' name='년도' ordinal='2' />
+              <column datatype='integer' name='업소일련번호' ordinal='3' />
+              <column datatype='string' name='업종명' ordinal='4' />
+              <column datatype='integer' name='허가신고일' ordinal='5' />
+              <column datatype='string' name='업소명' ordinal='6' />
+              <column datatype='string' name='소재지도로명' ordinal='7' />
+              <column datatype='string' name='소재지지번' ordinal='8' />
+              <column datatype='real' name='영업장면적(㎡)' ordinal='9' />
+              <column datatype='string' name='소재지전화번호' ordinal='10' />
+              <column datatype='integer' name='영업자시작일' ordinal='11' />
+              <column datatype='string' name='법인명' ordinal='12' />
+              <column datatype='integer' name='소재지시작일' ordinal='13' />
+              <column datatype='string' name='행정동명' ordinal='14' />
+              <column datatype='integer' name='폐업일자' ordinal='15' />
+              <column datatype='string' name='폐업구분' ordinal='16' />
+              <column datatype='string' name='폐업사유' ordinal='17' />
+              <column datatype='string' name='업태명' ordinal='18' />
+              <column datatype='integer' name='지상_부터' ordinal='19' />
+              <column datatype='integer' name='지상_까지' ordinal='20' />
+              <column datatype='integer' name='지하_부터' ordinal='21' />
+              <column datatype='integer' name='지하_까지' ordinal='22' />
+              <column datatype='integer' name='총층수' ordinal='23' />
+              <column datatype='integer' name='교육수료일자' ordinal='24' />
+              <column datatype='string' name='모범음식점여부' ordinal='25' />
+              <column datatype='string' name='급수시설' ordinal='26' />
+              <column datatype='string' name='업소위치' ordinal='27' />
+              <column datatype='integer' name='종업원남' ordinal='28' />
+              <column datatype='integer' name='종업원여' ordinal='29' />
+              <column datatype='string' name='급식소종류' ordinal='30' />
+              <column datatype='integer' name='평균급식인원수' ordinal='31' />
+              <column datatype='integer' name='최대급식인원수' ordinal='32' />
+              <column datatype='integer' name='1일급식인원수' ordinal='33' />
+              <column datatype='integer' name='일인당평균급식비' ordinal='34' />
+              <column datatype='string' name='운영형태' ordinal='35' />
+              <column datatype='real' name='영업장조리장면적(㎡)' ordinal='36' />
+              <column datatype='real' name='영업장객실면적(㎡)' ordinal='37' />
+              <column datatype='real' name='영업장무도장면적(㎡)' ordinal='38' />
+              <column datatype='real' name='영업장기타면적(㎡)' ordinal='39' />
+              <column datatype='real' name='업소내화장실면적(㎡)' ordinal='40' />
+              <column datatype='real' name='타업소공동화장실면적(㎡)' ordinal='41' />
+              <column datatype='real' name='영업장탈의실면적(㎡)' ordinal='42' />
+              <column datatype='real' name='영업장객석면적(㎡)' ordinal='43' />
+              <column datatype='real' name='작업장면적(㎡)' ordinal='44' />
+              <column datatype='integer' name='검사실면적(㎡)' ordinal='45' />
+              <column datatype='real' name='진열(판매)대면적(㎡)' ordinal='46' />
+              <column datatype='real' name='창고(보관소)면적(㎡)' ordinal='47' />
+              <column datatype='string' name='허가(신고)번호' ordinal='48' />
+              <column datatype='string' name='참고사항' ordinal='49' />
+              <column datatype='integer' name='조건부허가시작일' ordinal='50' />
+              <column datatype='integer' name='조건부허가종료일' ordinal='51' />
+              <column datatype='string' name='조건부허가신고사유' ordinal='52' />
+              <column datatype='string' name='신고조건' ordinal='53' />
+              <column datatype='string' name='내외국인구분' ordinal='54' />
+              <column datatype='string' name='국적' ordinal='55' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.18b0z7d05m5zi31fqdf9g1nnr0iz' name='서울시 송파구 전체 식품위생업소 현황' table='[&apos;서울시 송파구 전체 식품위생업소 현황$&apos;]' type='table'>
+            <columns gridOrigin='A1:BD10001:no:A1:BD10001:0' header='yes' outcome='2'>
+              <column datatype='integer' name='시군구코드' ordinal='0' />
+              <column datatype='integer' name='업종코드' ordinal='1' />
+              <column datatype='integer' name='년도' ordinal='2' />
+              <column datatype='integer' name='업소일련번호' ordinal='3' />
+              <column datatype='string' name='업종명' ordinal='4' />
+              <column datatype='integer' name='허가신고일' ordinal='5' />
+              <column datatype='string' name='업소명' ordinal='6' />
+              <column datatype='string' name='소재지도로명' ordinal='7' />
+              <column datatype='string' name='소재지지번' ordinal='8' />
+              <column datatype='real' name='영업장면적(㎡)' ordinal='9' />
+              <column datatype='string' name='소재지전화번호' ordinal='10' />
+              <column datatype='integer' name='영업자시작일' ordinal='11' />
+              <column datatype='string' name='법인명' ordinal='12' />
+              <column datatype='integer' name='소재지시작일' ordinal='13' />
+              <column datatype='string' name='행정동명' ordinal='14' />
+              <column datatype='integer' name='폐업일자' ordinal='15' />
+              <column datatype='string' name='폐업구분' ordinal='16' />
+              <column datatype='string' name='폐업사유' ordinal='17' />
+              <column datatype='string' name='업태명' ordinal='18' />
+              <column datatype='integer' name='지상_부터' ordinal='19' />
+              <column datatype='integer' name='지상_까지' ordinal='20' />
+              <column datatype='integer' name='지하_부터' ordinal='21' />
+              <column datatype='integer' name='지하_까지' ordinal='22' />
+              <column datatype='integer' name='총층수' ordinal='23' />
+              <column datatype='integer' name='교육수료일자' ordinal='24' />
+              <column datatype='string' name='모범음식점여부' ordinal='25' />
+              <column datatype='string' name='급수시설' ordinal='26' />
+              <column datatype='string' name='업소위치' ordinal='27' />
+              <column datatype='integer' name='종업원남' ordinal='28' />
+              <column datatype='integer' name='종업원여' ordinal='29' />
+              <column datatype='string' name='급식소종류' ordinal='30' />
+              <column datatype='integer' name='평균급식인원수' ordinal='31' />
+              <column datatype='integer' name='최대급식인원수' ordinal='32' />
+              <column datatype='integer' name='1일급식인원수' ordinal='33' />
+              <column datatype='integer' name='일인당평균급식비' ordinal='34' />
+              <column datatype='string' name='운영형태' ordinal='35' />
+              <column datatype='real' name='영업장조리장면적(㎡)' ordinal='36' />
+              <column datatype='real' name='영업장객실면적(㎡)' ordinal='37' />
+              <column datatype='real' name='영업장무도장면적(㎡)' ordinal='38' />
+              <column datatype='real' name='영업장기타면적(㎡)' ordinal='39' />
+              <column datatype='real' name='업소내화장실면적(㎡)' ordinal='40' />
+              <column datatype='real' name='타업소공동화장실면적(㎡)' ordinal='41' />
+              <column datatype='real' name='영업장탈의실면적(㎡)' ordinal='42' />
+              <column datatype='real' name='영업장객석면적(㎡)' ordinal='43' />
+              <column datatype='real' name='작업장면적(㎡)' ordinal='44' />
+              <column datatype='real' name='검사실면적(㎡)' ordinal='45' />
+              <column datatype='integer' name='진열(판매)대면적(㎡)' ordinal='46' />
+              <column datatype='real' name='창고(보관소)면적(㎡)' ordinal='47' />
+              <column datatype='string' name='허가(신고)번호' ordinal='48' />
+              <column datatype='string' name='참고사항' ordinal='49' />
+              <column datatype='integer' name='조건부허가시작일' ordinal='50' />
+              <column datatype='integer' name='조건부허가종료일' ordinal='51' />
+              <column datatype='string' name='조건부허가신고사유' ordinal='52' />
+              <column datatype='string' name='신고조건' ordinal='53' />
+              <column datatype='string' name='내외국인구분' ordinal='54' />
+              <column datatype='string' name='국적' ordinal='55' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.18b0z7d05m5zi31fqdf9g1nnr0iz' name='서울시 양천구 전체 식품위생업소 현황' table='[&apos;서울시 양천구 전체 식품위생업소 현황$&apos;]' type='table'>
+            <columns gridOrigin='A1:BD10001:no:A1:BD10001:0' header='yes' outcome='2'>
+              <column datatype='integer' name='시군구코드' ordinal='0' />
+              <column datatype='integer' name='업종코드' ordinal='1' />
+              <column datatype='integer' name='년도' ordinal='2' />
+              <column datatype='integer' name='업소일련번호' ordinal='3' />
+              <column datatype='string' name='업종명' ordinal='4' />
+              <column datatype='integer' name='허가신고일' ordinal='5' />
+              <column datatype='string' name='업소명' ordinal='6' />
+              <column datatype='string' name='소재지도로명' ordinal='7' />
+              <column datatype='string' name='소재지지번' ordinal='8' />
+              <column datatype='real' name='영업장면적(㎡)' ordinal='9' />
+              <column datatype='string' name='소재지전화번호' ordinal='10' />
+              <column datatype='integer' name='영업자시작일' ordinal='11' />
+              <column datatype='string' name='법인명' ordinal='12' />
+              <column datatype='integer' name='소재지시작일' ordinal='13' />
+              <column datatype='string' name='행정동명' ordinal='14' />
+              <column datatype='integer' name='폐업일자' ordinal='15' />
+              <column datatype='string' name='폐업구분' ordinal='16' />
+              <column datatype='string' name='폐업사유' ordinal='17' />
+              <column datatype='string' name='업태명' ordinal='18' />
+              <column datatype='integer' name='지상_부터' ordinal='19' />
+              <column datatype='integer' name='지상_까지' ordinal='20' />
+              <column datatype='integer' name='지하_부터' ordinal='21' />
+              <column datatype='integer' name='지하_까지' ordinal='22' />
+              <column datatype='integer' name='총층수' ordinal='23' />
+              <column datatype='integer' name='교육수료일자' ordinal='24' />
+              <column datatype='string' name='모범음식점여부' ordinal='25' />
+              <column datatype='string' name='급수시설' ordinal='26' />
+              <column datatype='string' name='업소위치' ordinal='27' />
+              <column datatype='integer' name='종업원남' ordinal='28' />
+              <column datatype='integer' name='종업원여' ordinal='29' />
+              <column datatype='string' name='급식소종류' ordinal='30' />
+              <column datatype='integer' name='평균급식인원수' ordinal='31' />
+              <column datatype='integer' name='최대급식인원수' ordinal='32' />
+              <column datatype='integer' name='1일급식인원수' ordinal='33' />
+              <column datatype='integer' name='일인당평균급식비' ordinal='34' />
+              <column datatype='string' name='운영형태' ordinal='35' />
+              <column datatype='real' name='영업장조리장면적(㎡)' ordinal='36' />
+              <column datatype='real' name='영업장객실면적(㎡)' ordinal='37' />
+              <column datatype='real' name='영업장무도장면적(㎡)' ordinal='38' />
+              <column datatype='real' name='영업장기타면적(㎡)' ordinal='39' />
+              <column datatype='real' name='업소내화장실면적(㎡)' ordinal='40' />
+              <column datatype='real' name='타업소공동화장실면적(㎡)' ordinal='41' />
+              <column datatype='real' name='영업장탈의실면적(㎡)' ordinal='42' />
+              <column datatype='real' name='영업장객석면적(㎡)' ordinal='43' />
+              <column datatype='real' name='작업장면적(㎡)' ordinal='44' />
+              <column datatype='integer' name='검사실면적(㎡)' ordinal='45' />
+              <column datatype='integer' name='진열(판매)대면적(㎡)' ordinal='46' />
+              <column datatype='real' name='창고(보관소)면적(㎡)' ordinal='47' />
+              <column datatype='string' name='허가(신고)번호' ordinal='48' />
+              <column datatype='string' name='참고사항' ordinal='49' />
+              <column datatype='integer' name='조건부허가시작일' ordinal='50' />
+              <column datatype='integer' name='조건부허가종료일' ordinal='51' />
+              <column datatype='string' name='조건부허가신고사유' ordinal='52' />
+              <column datatype='string' name='신고조건' ordinal='53' />
+              <column datatype='string' name='내외국인구분' ordinal='54' />
+              <column datatype='string' name='국적' ordinal='55' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.18b0z7d05m5zi31fqdf9g1nnr0iz' name='서울시 영등포구 전체 식품위생업소 현황' table='[&apos;서울시 영등포구 전체 식품위생업소 현황$&apos;]' type='table'>
+            <columns gridOrigin='A1:BD10001:no:A1:BD10001:0' header='yes' outcome='2'>
+              <column datatype='integer' name='시군구코드' ordinal='0' />
+              <column datatype='integer' name='업종코드' ordinal='1' />
+              <column datatype='integer' name='년도' ordinal='2' />
+              <column datatype='integer' name='업소일련번호' ordinal='3' />
+              <column datatype='string' name='업종명' ordinal='4' />
+              <column datatype='integer' name='허가신고일' ordinal='5' />
+              <column datatype='string' name='업소명' ordinal='6' />
+              <column datatype='string' name='소재지도로명' ordinal='7' />
+              <column datatype='string' name='소재지지번' ordinal='8' />
+              <column datatype='real' name='영업장면적(㎡)' ordinal='9' />
+              <column datatype='string' name='소재지전화번호' ordinal='10' />
+              <column datatype='integer' name='영업자시작일' ordinal='11' />
+              <column datatype='string' name='법인명' ordinal='12' />
+              <column datatype='integer' name='소재지시작일' ordinal='13' />
+              <column datatype='string' name='행정동명' ordinal='14' />
+              <column datatype='integer' name='폐업일자' ordinal='15' />
+              <column datatype='string' name='폐업구분' ordinal='16' />
+              <column datatype='string' name='폐업사유' ordinal='17' />
+              <column datatype='string' name='업태명' ordinal='18' />
+              <column datatype='integer' name='지상_부터' ordinal='19' />
+              <column datatype='integer' name='지상_까지' ordinal='20' />
+              <column datatype='integer' name='지하_부터' ordinal='21' />
+              <column datatype='integer' name='지하_까지' ordinal='22' />
+              <column datatype='integer' name='총층수' ordinal='23' />
+              <column datatype='integer' name='교육수료일자' ordinal='24' />
+              <column datatype='string' name='모범음식점여부' ordinal='25' />
+              <column datatype='string' name='급수시설' ordinal='26' />
+              <column datatype='string' name='업소위치' ordinal='27' />
+              <column datatype='integer' name='종업원남' ordinal='28' />
+              <column datatype='integer' name='종업원여' ordinal='29' />
+              <column datatype='string' name='급식소종류' ordinal='30' />
+              <column datatype='integer' name='평균급식인원수' ordinal='31' />
+              <column datatype='integer' name='최대급식인원수' ordinal='32' />
+              <column datatype='integer' name='1일급식인원수' ordinal='33' />
+              <column datatype='integer' name='일인당평균급식비' ordinal='34' />
+              <column datatype='string' name='운영형태' ordinal='35' />
+              <column datatype='real' name='영업장조리장면적(㎡)' ordinal='36' />
+              <column datatype='real' name='영업장객실면적(㎡)' ordinal='37' />
+              <column datatype='real' name='영업장무도장면적(㎡)' ordinal='38' />
+              <column datatype='real' name='영업장기타면적(㎡)' ordinal='39' />
+              <column datatype='real' name='업소내화장실면적(㎡)' ordinal='40' />
+              <column datatype='real' name='타업소공동화장실면적(㎡)' ordinal='41' />
+              <column datatype='real' name='영업장탈의실면적(㎡)' ordinal='42' />
+              <column datatype='real' name='영업장객석면적(㎡)' ordinal='43' />
+              <column datatype='real' name='작업장면적(㎡)' ordinal='44' />
+              <column datatype='integer' name='검사실면적(㎡)' ordinal='45' />
+              <column datatype='integer' name='진열(판매)대면적(㎡)' ordinal='46' />
+              <column datatype='integer' name='창고(보관소)면적(㎡)' ordinal='47' />
+              <column datatype='string' name='허가(신고)번호' ordinal='48' />
+              <column datatype='string' name='참고사항' ordinal='49' />
+              <column datatype='integer' name='조건부허가시작일' ordinal='50' />
+              <column datatype='integer' name='조건부허가종료일' ordinal='51' />
+              <column datatype='string' name='조건부허가신고사유' ordinal='52' />
+              <column datatype='string' name='신고조건' ordinal='53' />
+              <column datatype='string' name='내외국인구분' ordinal='54' />
+              <column datatype='string' name='국적' ordinal='55' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.18b0z7d05m5zi31fqdf9g1nnr0iz' name='서울시 용산구 전체 식품위생업소 현황' table='[&apos;서울시 용산구 전체 식품위생업소 현황$&apos;]' type='table'>
+            <columns gridOrigin='A1:BD10001:no:A1:BD10001:0' header='yes' outcome='2'>
+              <column datatype='integer' name='시군구코드' ordinal='0' />
+              <column datatype='integer' name='업종코드' ordinal='1' />
+              <column datatype='integer' name='년도' ordinal='2' />
+              <column datatype='integer' name='업소일련번호' ordinal='3' />
+              <column datatype='string' name='업종명' ordinal='4' />
+              <column datatype='integer' name='허가신고일' ordinal='5' />
+              <column datatype='string' name='업소명' ordinal='6' />
+              <column datatype='string' name='소재지도로명' ordinal='7' />
+              <column datatype='string' name='소재지지번' ordinal='8' />
+              <column datatype='real' name='영업장면적(㎡)' ordinal='9' />
+              <column datatype='string' name='소재지전화번호' ordinal='10' />
+              <column datatype='integer' name='영업자시작일' ordinal='11' />
+              <column datatype='string' name='법인명' ordinal='12' />
+              <column datatype='integer' name='소재지시작일' ordinal='13' />
+              <column datatype='string' name='행정동명' ordinal='14' />
+              <column datatype='integer' name='폐업일자' ordinal='15' />
+              <column datatype='string' name='폐업구분' ordinal='16' />
+              <column datatype='string' name='폐업사유' ordinal='17' />
+              <column datatype='string' name='업태명' ordinal='18' />
+              <column datatype='integer' name='지상_부터' ordinal='19' />
+              <column datatype='integer' name='지상_까지' ordinal='20' />
+              <column datatype='integer' name='지하_부터' ordinal='21' />
+              <column datatype='integer' name='지하_까지' ordinal='22' />
+              <column datatype='integer' name='총층수' ordinal='23' />
+              <column datatype='integer' name='교육수료일자' ordinal='24' />
+              <column datatype='string' name='모범음식점여부' ordinal='25' />
+              <column datatype='string' name='급수시설' ordinal='26' />
+              <column datatype='string' name='업소위치' ordinal='27' />
+              <column datatype='integer' name='종업원남' ordinal='28' />
+              <column datatype='integer' name='종업원여' ordinal='29' />
+              <column datatype='string' name='급식소종류' ordinal='30' />
+              <column datatype='integer' name='평균급식인원수' ordinal='31' />
+              <column datatype='integer' name='최대급식인원수' ordinal='32' />
+              <column datatype='integer' name='1일급식인원수' ordinal='33' />
+              <column datatype='integer' name='일인당평균급식비' ordinal='34' />
+              <column datatype='string' name='운영형태' ordinal='35' />
+              <column datatype='real' name='영업장조리장면적(㎡)' ordinal='36' />
+              <column datatype='real' name='영업장객실면적(㎡)' ordinal='37' />
+              <column datatype='real' name='영업장무도장면적(㎡)' ordinal='38' />
+              <column datatype='real' name='영업장기타면적(㎡)' ordinal='39' />
+              <column datatype='real' name='업소내화장실면적(㎡)' ordinal='40' />
+              <column datatype='real' name='타업소공동화장실면적(㎡)' ordinal='41' />
+              <column datatype='real' name='영업장탈의실면적(㎡)' ordinal='42' />
+              <column datatype='real' name='영업장객석면적(㎡)' ordinal='43' />
+              <column datatype='real' name='작업장면적(㎡)' ordinal='44' />
+              <column datatype='real' name='검사실면적(㎡)' ordinal='45' />
+              <column datatype='real' name='진열(판매)대면적(㎡)' ordinal='46' />
+              <column datatype='integer' name='창고(보관소)면적(㎡)' ordinal='47' />
+              <column datatype='string' name='허가(신고)번호' ordinal='48' />
+              <column datatype='string' name='참고사항' ordinal='49' />
+              <column datatype='integer' name='조건부허가시작일' ordinal='50' />
+              <column datatype='integer' name='조건부허가종료일' ordinal='51' />
+              <column datatype='string' name='조건부허가신고사유' ordinal='52' />
+              <column datatype='string' name='신고조건' ordinal='53' />
+              <column datatype='string' name='내외국인구분' ordinal='54' />
+              <column datatype='string' name='국적' ordinal='55' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.18b0z7d05m5zi31fqdf9g1nnr0iz' name='서울시 은평구 전체 식품위생업소 현황' table='[&apos;서울시 은평구 전체 식품위생업소 현황$&apos;]' type='table'>
+            <columns gridOrigin='A1:BD10001:no:A1:BD10001:0' header='yes' outcome='2'>
+              <column datatype='integer' name='시군구코드' ordinal='0' />
+              <column datatype='integer' name='업종코드' ordinal='1' />
+              <column datatype='integer' name='년도' ordinal='2' />
+              <column datatype='integer' name='업소일련번호' ordinal='3' />
+              <column datatype='string' name='업종명' ordinal='4' />
+              <column datatype='integer' name='허가신고일' ordinal='5' />
+              <column datatype='string' name='업소명' ordinal='6' />
+              <column datatype='string' name='소재지도로명' ordinal='7' />
+              <column datatype='string' name='소재지지번' ordinal='8' />
+              <column datatype='real' name='영업장면적(㎡)' ordinal='9' />
+              <column datatype='string' name='소재지전화번호' ordinal='10' />
+              <column datatype='integer' name='영업자시작일' ordinal='11' />
+              <column datatype='string' name='법인명' ordinal='12' />
+              <column datatype='integer' name='소재지시작일' ordinal='13' />
+              <column datatype='string' name='행정동명' ordinal='14' />
+              <column datatype='integer' name='폐업일자' ordinal='15' />
+              <column datatype='string' name='폐업구분' ordinal='16' />
+              <column datatype='string' name='폐업사유' ordinal='17' />
+              <column datatype='string' name='업태명' ordinal='18' />
+              <column datatype='integer' name='지상_부터' ordinal='19' />
+              <column datatype='integer' name='지상_까지' ordinal='20' />
+              <column datatype='integer' name='지하_부터' ordinal='21' />
+              <column datatype='integer' name='지하_까지' ordinal='22' />
+              <column datatype='integer' name='총층수' ordinal='23' />
+              <column datatype='integer' name='교육수료일자' ordinal='24' />
+              <column datatype='string' name='모범음식점여부' ordinal='25' />
+              <column datatype='string' name='급수시설' ordinal='26' />
+              <column datatype='string' name='업소위치' ordinal='27' />
+              <column datatype='integer' name='종업원남' ordinal='28' />
+              <column datatype='integer' name='종업원여' ordinal='29' />
+              <column datatype='string' name='급식소종류' ordinal='30' />
+              <column datatype='integer' name='평균급식인원수' ordinal='31' />
+              <column datatype='integer' name='최대급식인원수' ordinal='32' />
+              <column datatype='integer' name='1일급식인원수' ordinal='33' />
+              <column datatype='integer' name='일인당평균급식비' ordinal='34' />
+              <column datatype='string' name='운영형태' ordinal='35' />
+              <column datatype='real' name='영업장조리장면적(㎡)' ordinal='36' />
+              <column datatype='real' name='영업장객실면적(㎡)' ordinal='37' />
+              <column datatype='real' name='영업장무도장면적(㎡)' ordinal='38' />
+              <column datatype='real' name='영업장기타면적(㎡)' ordinal='39' />
+              <column datatype='real' name='업소내화장실면적(㎡)' ordinal='40' />
+              <column datatype='real' name='타업소공동화장실면적(㎡)' ordinal='41' />
+              <column datatype='real' name='영업장탈의실면적(㎡)' ordinal='42' />
+              <column datatype='real' name='영업장객석면적(㎡)' ordinal='43' />
+              <column datatype='real' name='작업장면적(㎡)' ordinal='44' />
+              <column datatype='integer' name='검사실면적(㎡)' ordinal='45' />
+              <column datatype='real' name='진열(판매)대면적(㎡)' ordinal='46' />
+              <column datatype='integer' name='창고(보관소)면적(㎡)' ordinal='47' />
+              <column datatype='string' name='허가(신고)번호' ordinal='48' />
+              <column datatype='string' name='참고사항' ordinal='49' />
+              <column datatype='integer' name='조건부허가시작일' ordinal='50' />
+              <column datatype='integer' name='조건부허가종료일' ordinal='51' />
+              <column datatype='string' name='조건부허가신고사유' ordinal='52' />
+              <column datatype='string' name='신고조건' ordinal='53' />
+              <column datatype='string' name='내외국인구분' ordinal='54' />
+              <column datatype='string' name='국적' ordinal='55' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.18b0z7d05m5zi31fqdf9g1nnr0iz' name='서울시 종로구 전체 식품위생업소 현황' table='[&apos;서울시 종로구 전체 식품위생업소 현황$&apos;]' type='table'>
+            <columns gridOrigin='A1:BD10001:no:A1:BD10001:0' header='yes' outcome='2'>
+              <column datatype='integer' name='시군구코드' ordinal='0' />
+              <column datatype='integer' name='업종코드' ordinal='1' />
+              <column datatype='integer' name='년도' ordinal='2' />
+              <column datatype='integer' name='업소일련번호' ordinal='3' />
+              <column datatype='string' name='업종명' ordinal='4' />
+              <column datatype='integer' name='허가신고일' ordinal='5' />
+              <column datatype='string' name='업소명' ordinal='6' />
+              <column datatype='string' name='소재지도로명' ordinal='7' />
+              <column datatype='string' name='소재지지번' ordinal='8' />
+              <column datatype='real' name='영업장면적(㎡)' ordinal='9' />
+              <column datatype='string' name='소재지전화번호' ordinal='10' />
+              <column datatype='integer' name='영업자시작일' ordinal='11' />
+              <column datatype='string' name='법인명' ordinal='12' />
+              <column datatype='integer' name='소재지시작일' ordinal='13' />
+              <column datatype='string' name='행정동명' ordinal='14' />
+              <column datatype='integer' name='폐업일자' ordinal='15' />
+              <column datatype='string' name='폐업구분' ordinal='16' />
+              <column datatype='string' name='폐업사유' ordinal='17' />
+              <column datatype='string' name='업태명' ordinal='18' />
+              <column datatype='integer' name='지상_부터' ordinal='19' />
+              <column datatype='integer' name='지상_까지' ordinal='20' />
+              <column datatype='integer' name='지하_부터' ordinal='21' />
+              <column datatype='integer' name='지하_까지' ordinal='22' />
+              <column datatype='integer' name='총층수' ordinal='23' />
+              <column datatype='integer' name='교육수료일자' ordinal='24' />
+              <column datatype='string' name='모범음식점여부' ordinal='25' />
+              <column datatype='string' name='급수시설' ordinal='26' />
+              <column datatype='string' name='업소위치' ordinal='27' />
+              <column datatype='integer' name='종업원남' ordinal='28' />
+              <column datatype='integer' name='종업원여' ordinal='29' />
+              <column datatype='string' name='급식소종류' ordinal='30' />
+              <column datatype='integer' name='평균급식인원수' ordinal='31' />
+              <column datatype='integer' name='최대급식인원수' ordinal='32' />
+              <column datatype='integer' name='1일급식인원수' ordinal='33' />
+              <column datatype='integer' name='일인당평균급식비' ordinal='34' />
+              <column datatype='string' name='운영형태' ordinal='35' />
+              <column datatype='real' name='영업장조리장면적(㎡)' ordinal='36' />
+              <column datatype='real' name='영업장객실면적(㎡)' ordinal='37' />
+              <column datatype='real' name='영업장무도장면적(㎡)' ordinal='38' />
+              <column datatype='real' name='영업장기타면적(㎡)' ordinal='39' />
+              <column datatype='real' name='업소내화장실면적(㎡)' ordinal='40' />
+              <column datatype='real' name='타업소공동화장실면적(㎡)' ordinal='41' />
+              <column datatype='real' name='영업장탈의실면적(㎡)' ordinal='42' />
+              <column datatype='real' name='영업장객석면적(㎡)' ordinal='43' />
+              <column datatype='real' name='작업장면적(㎡)' ordinal='44' />
+              <column datatype='integer' name='검사실면적(㎡)' ordinal='45' />
+              <column datatype='real' name='진열(판매)대면적(㎡)' ordinal='46' />
+              <column datatype='integer' name='창고(보관소)면적(㎡)' ordinal='47' />
+              <column datatype='string' name='허가(신고)번호' ordinal='48' />
+              <column datatype='string' name='참고사항' ordinal='49' />
+              <column datatype='integer' name='조건부허가시작일' ordinal='50' />
+              <column datatype='integer' name='조건부허가종료일' ordinal='51' />
+              <column datatype='string' name='조건부허가신고사유' ordinal='52' />
+              <column datatype='string' name='신고조건' ordinal='53' />
+              <column datatype='string' name='내외국인구분' ordinal='54' />
+              <column datatype='string' name='국적' ordinal='55' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.18b0z7d05m5zi31fqdf9g1nnr0iz' name='서울시 중구 전체 식품위생업소 현황' table='[&apos;서울시 중구 전체 식품위생업소 현황$&apos;]' type='table'>
+            <columns gridOrigin='A1:BD10001:no:A1:BD10001:0' header='yes' outcome='6'>
+              <column datatype='integer' name='시군구코드' ordinal='0' />
+              <column datatype='integer' name='업종코드' ordinal='1' />
+              <column datatype='integer' name='년도' ordinal='2' />
+              <column datatype='integer' name='업소일련번호' ordinal='3' />
+              <column datatype='string' name='업종명' ordinal='4' />
+              <column datatype='integer' name='허가신고일' ordinal='5' />
+              <column datatype='string' name='업소명' ordinal='6' />
+              <column datatype='string' name='소재지도로명' ordinal='7' />
+              <column datatype='string' name='소재지지번' ordinal='8' />
+              <column datatype='real' name='영업장면적(㎡)' ordinal='9' />
+              <column datatype='string' name='소재지전화번호' ordinal='10' />
+              <column datatype='integer' name='영업자시작일' ordinal='11' />
+              <column datatype='string' name='법인명' ordinal='12' />
+              <column datatype='integer' name='소재지시작일' ordinal='13' />
+              <column datatype='string' name='행정동명' ordinal='14' />
+              <column datatype='integer' name='폐업일자' ordinal='15' />
+              <column datatype='string' name='폐업구분' ordinal='16' />
+              <column datatype='string' name='폐업사유' ordinal='17' />
+              <column datatype='string' name='업태명' ordinal='18' />
+              <column datatype='integer' name='지상_부터' ordinal='19' />
+              <column datatype='integer' name='지상_까지' ordinal='20' />
+              <column datatype='integer' name='지하_부터' ordinal='21' />
+              <column datatype='integer' name='지하_까지' ordinal='22' />
+              <column datatype='integer' name='총층수' ordinal='23' />
+              <column datatype='integer' name='교육수료일자' ordinal='24' />
+              <column datatype='string' name='모범음식점여부' ordinal='25' />
+              <column datatype='string' name='급수시설' ordinal='26' />
+              <column datatype='string' name='업소위치' ordinal='27' />
+              <column datatype='integer' name='종업원남' ordinal='28' />
+              <column datatype='integer' name='종업원여' ordinal='29' />
+              <column datatype='string' name='급식소종류' ordinal='30' />
+              <column datatype='integer' name='평균급식인원수' ordinal='31' />
+              <column datatype='integer' name='최대급식인원수' ordinal='32' />
+              <column datatype='integer' name='1일급식인원수' ordinal='33' />
+              <column datatype='integer' name='일인당평균급식비' ordinal='34' />
+              <column datatype='string' name='운영형태' ordinal='35' />
+              <column datatype='real' name='영업장조리장면적(㎡)' ordinal='36' />
+              <column datatype='real' name='영업장객실면적(㎡)' ordinal='37' />
+              <column datatype='real' name='영업장무도장면적(㎡)' ordinal='38' />
+              <column datatype='real' name='영업장기타면적(㎡)' ordinal='39' />
+              <column datatype='real' name='업소내화장실면적(㎡)' ordinal='40' />
+              <column datatype='real' name='타업소공동화장실면적(㎡)' ordinal='41' />
+              <column datatype='real' name='영업장탈의실면적(㎡)' ordinal='42' />
+              <column datatype='real' name='영업장객석면적(㎡)' ordinal='43' />
+              <column datatype='real' name='작업장면적(㎡)' ordinal='44' />
+              <column datatype='integer' name='검사실면적(㎡)' ordinal='45' />
+              <column datatype='real' name='진열(판매)대면적(㎡)' ordinal='46' />
+              <column datatype='integer' name='창고(보관소)면적(㎡)' ordinal='47' />
+              <column datatype='string' name='허가(신고)번호' ordinal='48' />
+              <column datatype='string' name='참고사항' ordinal='49' />
+              <column datatype='integer' name='조건부허가시작일' ordinal='50' />
+              <column datatype='integer' name='조건부허가종료일' ordinal='51' />
+              <column datatype='string' name='조건부허가신고사유' ordinal='52' />
+              <column datatype='string' name='신고조건' ordinal='53' />
+              <column datatype='string' name='내외국인구분' ordinal='54' />
+              <column datatype='string' name='국적' ordinal='55' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.18b0z7d05m5zi31fqdf9g1nnr0iz' name='서울시 중랑구 전체 식품위생업소 현황' table='[&apos;서울시 중랑구 전체 식품위생업소 현황$&apos;]' type='table'>
+            <columns gridOrigin='A1:BD10001:no:A1:BD10001:0' header='yes' outcome='2'>
+              <column datatype='integer' name='시군구코드' ordinal='0' />
+              <column datatype='integer' name='업종코드' ordinal='1' />
+              <column datatype='integer' name='년도' ordinal='2' />
+              <column datatype='integer' name='업소일련번호' ordinal='3' />
+              <column datatype='string' name='업종명' ordinal='4' />
+              <column datatype='integer' name='허가신고일' ordinal='5' />
+              <column datatype='string' name='업소명' ordinal='6' />
+              <column datatype='string' name='소재지도로명' ordinal='7' />
+              <column datatype='string' name='소재지지번' ordinal='8' />
+              <column datatype='real' name='영업장면적(㎡)' ordinal='9' />
+              <column datatype='string' name='소재지전화번호' ordinal='10' />
+              <column datatype='integer' name='영업자시작일' ordinal='11' />
+              <column datatype='string' name='법인명' ordinal='12' />
+              <column datatype='integer' name='소재지시작일' ordinal='13' />
+              <column datatype='string' name='행정동명' ordinal='14' />
+              <column datatype='integer' name='폐업일자' ordinal='15' />
+              <column datatype='string' name='폐업구분' ordinal='16' />
+              <column datatype='string' name='폐업사유' ordinal='17' />
+              <column datatype='string' name='업태명' ordinal='18' />
+              <column datatype='integer' name='지상_부터' ordinal='19' />
+              <column datatype='integer' name='지상_까지' ordinal='20' />
+              <column datatype='integer' name='지하_부터' ordinal='21' />
+              <column datatype='integer' name='지하_까지' ordinal='22' />
+              <column datatype='integer' name='총층수' ordinal='23' />
+              <column datatype='integer' name='교육수료일자' ordinal='24' />
+              <column datatype='string' name='모범음식점여부' ordinal='25' />
+              <column datatype='string' name='급수시설' ordinal='26' />
+              <column datatype='string' name='업소위치' ordinal='27' />
+              <column datatype='integer' name='종업원남' ordinal='28' />
+              <column datatype='integer' name='종업원여' ordinal='29' />
+              <column datatype='string' name='급식소종류' ordinal='30' />
+              <column datatype='integer' name='평균급식인원수' ordinal='31' />
+              <column datatype='integer' name='최대급식인원수' ordinal='32' />
+              <column datatype='integer' name='1일급식인원수' ordinal='33' />
+              <column datatype='integer' name='일인당평균급식비' ordinal='34' />
+              <column datatype='string' name='운영형태' ordinal='35' />
+              <column datatype='real' name='영업장조리장면적(㎡)' ordinal='36' />
+              <column datatype='real' name='영업장객실면적(㎡)' ordinal='37' />
+              <column datatype='real' name='영업장무도장면적(㎡)' ordinal='38' />
+              <column datatype='real' name='영업장기타면적(㎡)' ordinal='39' />
+              <column datatype='real' name='업소내화장실면적(㎡)' ordinal='40' />
+              <column datatype='real' name='타업소공동화장실면적(㎡)' ordinal='41' />
+              <column datatype='real' name='영업장탈의실면적(㎡)' ordinal='42' />
+              <column datatype='real' name='영업장객석면적(㎡)' ordinal='43' />
+              <column datatype='real' name='작업장면적(㎡)' ordinal='44' />
+              <column datatype='integer' name='검사실면적(㎡)' ordinal='45' />
+              <column datatype='integer' name='진열(판매)대면적(㎡)' ordinal='46' />
+              <column datatype='real' name='창고(보관소)면적(㎡)' ordinal='47' />
+              <column datatype='string' name='허가(신고)번호' ordinal='48' />
+              <column datatype='string' name='참고사항' ordinal='49' />
+              <column datatype='integer' name='조건부허가시작일' ordinal='50' />
+              <column datatype='integer' name='조건부허가종료일' ordinal='51' />
+              <column datatype='string' name='조건부허가신고사유' ordinal='52' />
+              <column datatype='string' name='신고조건' ordinal='53' />
+              <column datatype='string' name='내외국인구분' ordinal='54' />
+              <column datatype='string' name='국적' ordinal='55' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>시군구코드</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[시군구코드]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>시군구코드</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>업종코드</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[업종코드]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>업종코드</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>년도</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[년도]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>년도</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>업소일련번호</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[업소일련번호]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>업소일련번호</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>업종명</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[업종명]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>업종명</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>허가신고일</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[허가신고일]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>허가신고일</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>업소명</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[업소명]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>업소명</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>소재지도로명</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[소재지도로명]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>소재지도로명</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>소재지지번</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[소재지지번]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>소재지지번</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>영업장면적(㎡)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[영업장면적(㎡)]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>영업장면적(㎡)</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>소재지전화번호</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[소재지전화번호]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>소재지전화번호</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>영업자시작일</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[영업자시작일]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>영업자시작일</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>법인명</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[법인명]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>법인명</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>소재지시작일</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[소재지시작일]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>소재지시작일</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>행정동명</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[행정동명]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>행정동명</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>폐업일자</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[폐업일자]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>폐업일자</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>폐업구분</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[폐업구분]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>폐업구분</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>폐업사유</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[폐업사유]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>폐업사유</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>업태명</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[업태명]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>업태명</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>지상_부터</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[지상_부터]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>지상_부터</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>지상_까지</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[지상_까지]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>지상_까지</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>지하_부터</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[지하_부터]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>지하_부터</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>지하_까지</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[지하_까지]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>지하_까지</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>총층수</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[총층수]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>총층수</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>교육수료일자</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[교육수료일자]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>교육수료일자</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>모범음식점여부</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[모범음식점여부]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>모범음식점여부</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>급수시설</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[급수시설]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>급수시설</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>업소위치</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[업소위치]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>업소위치</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>종업원남</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[종업원남]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>종업원남</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>종업원여</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[종업원여]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>종업원여</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>급식소종류</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[급식소종류]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>급식소종류</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>평균급식인원수</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[평균급식인원수]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>평균급식인원수</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>최대급식인원수</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[최대급식인원수]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>최대급식인원수</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1일급식인원수</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[1일급식인원수]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>1일급식인원수</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>일인당평균급식비</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[일인당평균급식비]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>일인당평균급식비</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>운영형태</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[운영형태]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>운영형태</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>영업장조리장면적(㎡)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[영업장조리장면적(㎡)]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>영업장조리장면적(㎡)</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>영업장객실면적(㎡)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[영업장객실면적(㎡)]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>영업장객실면적(㎡)</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>영업장무도장면적(㎡)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[영업장무도장면적(㎡)]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>영업장무도장면적(㎡)</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>영업장기타면적(㎡)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[영업장기타면적(㎡)]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>영업장기타면적(㎡)</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>업소내화장실면적(㎡)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[업소내화장실면적(㎡)]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>업소내화장실면적(㎡)</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>타업소공동화장실면적(㎡)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[타업소공동화장실면적(㎡)]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>타업소공동화장실면적(㎡)</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>영업장탈의실면적(㎡)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[영업장탈의실면적(㎡)]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>영업장탈의실면적(㎡)</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>영업장객석면적(㎡)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[영업장객석면적(㎡)]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>영업장객석면적(㎡)</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>작업장면적(㎡)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[작업장면적(㎡)]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>작업장면적(㎡)</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>검사실면적(㎡)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[검사실면적(㎡)]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>검사실면적(㎡)</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>진열(판매)대면적(㎡)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[진열(판매)대면적(㎡)]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>진열(판매)대면적(㎡)</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>창고(보관소)면적(㎡)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[창고(보관소)면적(㎡)]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>창고(보관소)면적(㎡)</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>허가(신고)번호</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[허가(신고)번호]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>허가(신고)번호</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>참고사항</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[참고사항]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>참고사항</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>조건부허가시작일</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[조건부허가시작일]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>조건부허가시작일</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>조건부허가종료일</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[조건부허가종료일]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>조건부허가종료일</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>조건부허가신고사유</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[조건부허가신고사유]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>조건부허가신고사유</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>신고조건</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[신고조건]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>신고조건</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>내외국인구분</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[내외국인구분]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>내외국인구분</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>국적</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[국적]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>국적</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>시트</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[시트]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>시트</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>테이블 이름</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[테이블 이름]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>테이블 이름</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' hidden='true' name='[1일급식인원수]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='real' hidden='true' name='[검사실면적(㎡)]' role='measure' type='quantitative' />
+      <column datatype='string' hidden='true' name='[교육수료일자]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[국적]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[급수시설]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[급식소종류]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[내외국인구분]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[모범음식점여부]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[법인명]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[소재지전화번호]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[소재지지번]' role='dimension' type='nominal' />
+      <column datatype='integer' hidden='true' name='[시군구코드]' role='measure' type='quantitative' />
+      <column caption='지역' datatype='string' name='[시트]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[신고조건]' role='dimension' type='nominal' />
+      <column datatype='real' hidden='true' name='[업소내화장실면적(㎡)]' role='measure' type='quantitative' />
+      <column datatype='string' hidden='true' name='[업소위치]' role='dimension' type='nominal' />
+      <column datatype='integer' hidden='true' name='[업소일련번호]' role='measure' type='quantitative' />
+      <column datatype='integer' hidden='true' name='[업종코드]' role='measure' type='quantitative' />
+      <column datatype='real' hidden='true' name='[영업장객석면적(㎡)]' role='measure' type='quantitative' />
+      <column datatype='real' hidden='true' name='[영업장객실면적(㎡)]' role='measure' type='quantitative' />
+      <column datatype='real' hidden='true' name='[영업장기타면적(㎡)]' role='measure' type='quantitative' />
+      <column datatype='real' hidden='true' name='[영업장면적(㎡)]' role='measure' type='quantitative' />
+      <column datatype='real' hidden='true' name='[영업장무도장면적(㎡)]' role='measure' type='quantitative' />
+      <column datatype='real' hidden='true' name='[영업장조리장면적(㎡)]' role='measure' type='quantitative' />
+      <column datatype='real' hidden='true' name='[영업장탈의실면적(㎡)]' role='measure' type='quantitative' />
+      <column datatype='string' hidden='true' name='[운영형태]' role='dimension' type='nominal' />
+      <column datatype='integer' hidden='true' name='[일인당평균급식비]' role='measure' type='quantitative' />
+      <column datatype='real' hidden='true' name='[작업장면적(㎡)]' role='measure' type='quantitative' />
+      <column datatype='integer' hidden='true' name='[조건부허가시작일]' role='measure' type='quantitative' />
+      <column datatype='string' hidden='true' name='[조건부허가신고사유]' role='dimension' type='nominal' />
+      <column datatype='integer' hidden='true' name='[조건부허가종료일]' role='measure' type='quantitative' />
+      <column datatype='string' hidden='true' name='[종업원남]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[종업원여]' role='dimension' type='nominal' />
+      <column datatype='integer' hidden='true' name='[지상_까지]' role='measure' type='quantitative' />
+      <column datatype='integer' hidden='true' name='[지상_부터]' role='measure' type='quantitative' />
+      <column datatype='integer' hidden='true' name='[지하_까지]' role='measure' type='quantitative' />
+      <column datatype='integer' hidden='true' name='[지하_부터]' role='measure' type='quantitative' />
+      <column datatype='real' hidden='true' name='[진열(판매)대면적(㎡)]' role='measure' type='quantitative' />
+      <column datatype='string' hidden='true' name='[참고사항]' role='dimension' type='nominal' />
+      <column datatype='real' hidden='true' name='[창고(보관소)면적(㎡)]' role='measure' type='quantitative' />
+      <column datatype='integer' hidden='true' name='[총층수]' role='measure' type='quantitative' />
+      <column datatype='integer' hidden='true' name='[최대급식인원수]' role='measure' type='quantitative' />
+      <column datatype='real' hidden='true' name='[타업소공동화장실면적(㎡)]' role='measure' type='quantitative' />
+      <column datatype='string' hidden='true' name='[테이블 이름]' role='dimension' type='nominal' />
+      <column datatype='integer' hidden='true' name='[평균급식인원수]' role='measure' type='quantitative' />
+      <column datatype='string' hidden='true' name='[허가(신고)번호]' role='dimension' type='nominal' />
+      <column datatype='integer' hidden='true' name='[허가신고일]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.526863' measure-ordering='alphabetic' measure-percentage='0.473137' show-structure='true' user-set-layout='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='시트 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='서울시 전체 식품위생업소' name='federated.0zgzqz11ryvp3911orh9i1thhwgq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0zgzqz11ryvp3911orh9i1thhwgq'>
+            <column-instance column='[폐업일자]' derivation='Day-Trunc' name='[tdy:폐업일자:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[폐업일자]' derivation='Day-Trunc' name='[tdy:폐업일자:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[폐업일자]' derivation='Year-Trunc' name='[tyr:폐업일자:qk]' pivot='key' type='quantitative' />
+            <column datatype='date' name='[폐업일자]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0zgzqz11ryvp3911orh9i1thhwgq].[tdy:폐업일자:ok]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[tdy:폐업일자:ok]' />
+              <groupfilter function='member' level='[tdy:폐업일자:ok]' member='#2020-12-15 00:00:00#' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.0zgzqz11ryvp3911orh9i1thhwgq].[tyr:폐업일자:qk]' included-values='in-range'>
+            <min>#2020-01-01 00:00:00#</min>
+            <max>#2020-04-30 00:00:00#</max>
+          </filter>
+          <slices>
+            <column>[federated.0zgzqz11ryvp3911orh9i1thhwgq].[tyr:폐업일자:qk]</column>
+            <column>[federated.0zgzqz11ryvp3911orh9i1thhwgq].[tdy:폐업일자:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0zgzqz11ryvp3911orh9i1thhwgq].[tdy:폐업일자:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{ADF6653E-03E6-450B-99C7-6082995DA33C}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='시트 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0zgzqz11ryvp3911orh9i1thhwgq].[none:시트:nk]</field>
+            <field>[federated.0zgzqz11ryvp3911orh9i1thhwgq].[none:업종명:nk]</field>
+            <field>[federated.0zgzqz11ryvp3911orh9i1thhwgq].[none:폐업구분:nk]</field>
+            <field>[federated.0zgzqz11ryvp3911orh9i1thhwgq].[tyr:년도:qk]</field>
+            <field>[federated.0zgzqz11ryvp3911orh9i1thhwgq].[tyr:소재지시작일:qk]</field>
+            <field>[federated.0zgzqz11ryvp3911orh9i1thhwgq].[tyr:영업자시작일:qk]</field>
+            <field>[federated.0zgzqz11ryvp3911orh9i1thhwgq].[tyr:폐업일자:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{06C3E4BB-848F-4DFE-AA82-E9D1A568AF4B}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='시트 1' width='150'>
+      iVBORw0KGgoAAAANSUhEUgAAAJYAAADACAYAAADm1poIAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAF5ElEQVR4nO3df2jUdRzH8ZddW3NKKm2yzCJBo7SJ4C9CCkNanhJJVhRBXUlJLiPtB+Ef
+      jg0bhRBlZW0irTRQMNmgmEhCmTHKtDVRhAT7oe1y/urHTtk6rj+ccG63aTdf3/Pung/wj93d
+      vn6FJ9/vfd8fvl+HJBKJhIDL7KpM7wByE2HBgrBgQViwICxYEBYsCAsWhJUhsVgs07tgRViw
+      ICxYEBYsCAsWhAULwoIFYcGCsGBxdaZ3IN/k+mD0PI5YASsuLlZxcXGmd8OOsGBBWLAgLFgQ
+      FiwICxaEBQvCggVhwYKwYMGSTsBY0oEFSzrAIBAWLAgLFoQFC8KCBWHBgrBgQViwYPIeMCbv
+      sGDyDgwCYcGCsGBBWLAgLFgQFiwICxaEBQsm7wFj8g4LJu/AIBAWLAgLFoQFC8KCBWHBgrBg
+      QViwICxYsKQTsEtd0rl/xSbznlxeTbWPXPAzR6yA5cuSzpBEIpHI9E7ko1gsltOBccSCBWHB
+      grBgQViwICxYEBYsCAsWTN4Dli83UxBWwM4PRS8WGEs6QAos6WQISzpAGggLFoQFC8KCBWHB
+      grBgwYA0YEzeYcHkHRgEJu8ZwuQdSANhwYKwYEFYsCAsWBAWLAgLFkzeA8ZjjGDBY4xgxeQd
+      SANhwYKwYEFYsMiNcUN0u2prPtW/91VrZbis58VOHWpu0MYdB9X+d5ekkIaOnqR7n4goPH6Y
+      WhsaFIpEVJ5qc801qmo8mvTKDD1bt0hTJEnd+m1HvT5obNPxrkKVTJ6nJyNhjR8mSVE1N7Rp
+      WqRCpc5/bxbIgbA61bLle02eN1V7k1+O7tTWX29XZXWlSof1fLLjK238cKeir4SleFzxfrbY
+      8cc1WriqThUp6ogf2Kx1P8/QS29WalRBt07t/livf/StqpfMVJE04HbzSdaH1bnnE31zc0TL
+      xjZrb3vSG2V36YGbGvRe1ZY+R6wySdF+t/inThwv0eh+Djkdv8Q0IzxdowokqUCjps/X7LYf
+      dFpSWepfyUvZ/R0rflBNX5RoYXiMQhe80aHttcu1urGtJypJiuvMsTY1rn5ZDfsG2uhJnSwa
+      028kpeOGa0/jLh3rlqRundr9uVp0vUYOsMVYLNbnT67L4iNWXIebtqno4aUaF+r9XqkqVtSp
+      ouen3z+r14/TnlE4qZbW7/rb7j/660CjqhY36txRbrxmP7pYCyaeO5+Gbn1ITx2t19vLNyR9
+      x5py7jQoSaGQeu9OqkFort9Mkb1hRber6excLe1bVS8n9FPXbZpZJql1vRa/31NU6A49tyjV
+      58sVWVuniCSpW51HWrWpfp2+fvEF3TlCkgp045xKvTYn1e+WKRzhhChl8ZLOvoYlerclxdfk
+      GxaoemVYZZL2b1iqNbu6+n5GUmjkPVr2xoOacAl/V7S5VtvGrlCkXJKiaq6p0gUXjUkKJz2u
+      Vc/P0oiLbDPXl3Sy9ohVHlmrukjSC63rVdM+P2ncIBUOLVZIXf/vKm3fFq05MkmP3X2LriuS
+      zra3aOuXIzW1+vwHhmr4tSHpKNd+A8nasC7JAJf+8dMHdCgqTeh95ppYoblHNuitV9/RsTNx
+      FZZM1rynI5pZlHIzfXTtP6jDmtUz88pfWXsqzHa5firM7nEDrliEBQvCggVhwSK3rwqvQNxM
+      AQtupoAV4wYgDYQFC8KCBWHBgrBgQViwICxYMHkPGJN3WDB5hxWTdyANhAULwoIFYcGCsGBB
+      WLAgLFgweQ9YPjzCSCKswPF/QgODwJJOhrCkA6SBsGBBWLAgLFgQFiwICxaEBQsm7wHjZgpY
+      cDMFrJi8A2kgLFgQFiwICxaEBQvCggVhwYLJe8CYvMOCyTusmLwDaSAsWBAWLAgLFoQFC8KC
+      BWHBgsl7wHiMESx4jBEwCCzpZAhLOkAaCAsWhAULwoIFYcGCsGBBWLBg8h4wbqaABTdTwIrJ
+      O5AGwoIFYcGCsGBBWLAgLFgQFiyYvAeMmylgwc0UwCCwpJMhLOkAaSAsWBAWLAgLFoQFi/8A
+      mh3SvQ/dD9cAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
