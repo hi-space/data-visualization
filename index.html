@@ -9,6 +9,156 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
+    <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#563d7c">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        /* stylelint-disable selector-list-comma-newline-after */
+
+        .blog-header {
+            line-height: 1;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .blog-header-logo {
+            font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+            font-size: 2.25rem;
+        }
+
+        .blog-header-logo:hover {
+            text-decoration: none;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+        }
+
+        .display-4 {
+            font-size: 2.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .display-4 {
+                font-size: 3rem;
+            }
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .nav-scroller .nav-link {
+            padding-top: .75rem;
+            padding-bottom: .75rem;
+            font-size: .875rem;
+        }
+
+        .card-img-right {
+            height: 100%;
+            border-radius: 0 3px 3px 0;
+        }
+
+        .flex-auto {
+            -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+        }
+
+        .h-250 {
+            height: 250px;
+        }
+
+        @media (min-width: 768px) {
+            .h-md-250 {
+                height: 250px;
+            }
+        }
+
+        /* Pagination */
+        .blog-pagination {
+            margin-bottom: 4rem;
+        }
+
+        .blog-pagination>.btn {
+            border-radius: 2rem;
+        }
+
+        /*
+ * Blog posts
+ */
+        .blog-post {
+            margin-bottom: 4rem;
+        }
+
+        .blog-post-title {
+            margin-bottom: .25rem;
+            font-size: 2.5rem;
+        }
+
+        .blog-post-meta {
+            margin-bottom: 1.25rem;
+            color: #999;
+        }
+
+        /*
+ * Footer
+ */
+        .blog-footer {
+            padding: 2.5rem 0;
+            color: #999;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-top: .05rem solid #e5e5e5;
+        }
+
+        .blog-footer p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+
     <!-- 브라우저 탭 상단에 보일 페이지 이름을 넣으세요 -->
     <title> 이유정 | 데이터시각화 </title>
 </head>
@@ -28,79 +178,291 @@
     <!-- End of Site Navigation -->
 
     <!-- 기사는 여기서 부터 시작입니다 -->
-
-    <!-- Main Container -->
     <div class="container">
-
-        <!-- Begin 기사 제목 줄-->
-        <div class="row">
-            <div class="col">
-                <p>
-                    <h2>
-                        서울 음식점·술집, 매출부진에 줄줄이 폐업…강남구 최다
-                    </h2>
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <p>
-                    이유정
-                </p>
-            </div>
-        </div>
-        <!-- End of 기사 제목 줄-->
-
-        <hr class="primary">
-
-        <!-- 여기서부터 기사 본문을 작성해주세요 -->
-        <div class="row">
-            <div class="col">
-                <!-- 1번째 줄 1번째 컬럼-->
-                <a href="http://www.datanews.co.kr/news/article.html?no=106302">원본 기사 링크</a>
-                <br>
-
-                <img src="http://cdn.datanews.co.kr/data/photos/cdn/20200313/art_1584942497.png" />
-            </div>
-            <div class="col">
-                <p>
-
-                    <u>서울의 음식점, 술집 등 식품위생업소가 줄줄이 폐업을 겪고 있다. 매출이 급락한 데 영향을 받았다. 이 달 들어 서울 내에서 총 1600곳이 폐업했다.</u>
-                    23일 데이터뉴스가 서울열린데이터광장의 서울시 식품위생업소 현황을 분석한 결과, 이 달 1일~20일까지 서울시의 식품위생업소 1600개가 폐업한 것으로 조사됐다. 전년
-                    동기(1468개) 대비 9.0%(132개) 증가했다.
-                    <br><br>
-                    식품위생업은 음식점, 카페, 술집, 편의점 등이 속해있다. 진입 장벽이 낮아 자영업자들이 많이 몰리는 대표적 업종이다. <strong>폐업 식당이 큰 폭으로 증가한 것은 코로나19로 인한 매출
-                    부진이 본격화된 데 영향을 받은 것으로 분석됐다.
-                    <BIG>총 25개 자치구 가운데 강남구에서의 폐업업소가 가장 많았다.</BIG></strong> <u>20일간 폐업된 업소 1600개 가운데 195개가 강남구 소재로 나타났다. 전체의
-                    12.2%를 차지한다. 송파구와 서초구 소재의 식품위생업소가 123곳(7.7%), 101곳(6,3%)씩으로 집계됐다.</u> 이 세 곳 자치구 소재의 식품위생업소 폐업이 각각 100건을
-                    넘긴 것으로 조사됐다.
-                    <br><br>
-                    강남구 소재의 폐업업소가 총 폐업 수 가운데 차지하는 비율은 송파구와 서초구 대비 4.5%포인트, 5.9%포인트씩의 격차가 나타났다.
-                    <br><br>
-                    주거지가 밀집해 있는 강동구(95개, 5.9%), 양천구(76개, 4.8%) 등에서 폐업이 속출했다.
-                    <br><br>
-                    용산구와 중랑구 등은 타 자치구 대비 폐업업소 수가 적었다. 각각 26개(1.6%), 25개(1.6%)씩에 그쳤다. 폐업업소가 각각 100개를 넘긴 강남구(12.2%)와
-                    송파구(7.7%), 서초구(6.3%) 대비 10.6%포인트, 6.1%포인트, 4.7%포인트씩의 격차가 나타났다.
-                    <br><br>
-                    주요 업종별로 구분하면, 한식집이 274개로 가장 많았다. 카페·커피숍이 108개나 문을 닫았다. 이어 치킨집과 호프집이 83개, 경양식집이 73개, 분식집이 62개, 기타
-                    휴게음식점이 55개씩 폐업했다. GS25, CU, 세븐일레븐 등 편의점도 20곳 폐업했다.
-                </p>
+        <header class="blog-header py-3">
+            <div class="row flex-nowrap justify-content-between align-items-center">
 
             </div>
+        </header>
 
+
+        <!-- Title -->
+        <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+            <div class="col-md-6 px-0">
+                <h1 class="display-4 font-italic">코로나19에 매출 급락...서울 음식점·술집 폐업</h1>
+                <p class="lead my-3">서울의 음식점, 술집 등 식품위생업소가 줄줄이 폐업을 겪고 있다. 매출이 급락한 데 영향을 받았다. 이 달 들어 서울 내에서 총 1600곳이
+                    폐업했다.</p>
+
+            </div>
         </div>
 
-        <hr>
+        <!-- Card -->
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">연합뉴스</strong>
+                        <h3 class="mb-0">매출부진 못견디고…서울 음식점·술집 폐업 작년보다 9% 늘었다</h3>
+                        <div class="mb-1 text-muted">Mar 23</div>
+                        <p class="mb-auto">3월 들어 서울에서 문을 닫은 음식점, 치킨집, 카페 등이 한 해 전보다 9% 늘어났다.</p>
+                        <a href="https://www.yna.co.kr/view/AKR20200322039400002" class="stretched-link">Continue
+                            reading</a>
+                    </div>
+                    <!-- <div class="col-auto d-none d-lg-block">
+                        <img width="200" height="250" src="https://img3.yna.co.kr/photo/yna/YH/2020/03/09/PYH2020030910500001300_P4.jpg">
+                    
+                    </div> -->
+                </div>
+            </div>
 
-        <div class="row">
-            <h2>코로나가 식품위생업에 미치는 영향</h2>
-            <h2>폐업업소 수가 강남구가 가장 많다고 하는데, 단순 페업업소 수를 비교하는 것이 맞는가? </h2>
-            <h3>식품위생업이 강남구에 많기 때문에 폐업업소가 많을 것일 수 있다. 단순 수 비교가 아닌 비율 비교가 필요하지 않을까?</h3>
-            <h3>추가로 코로나의 영향으로 인해 폐업이 늘어난 것인지, 이전에 폐업하는 비율과 유사한지 데이터를 시각화하여 확인해보고자 한다</h3>
+            <div class="col-md-6">
+                <div
+                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">DATA뉴스</strong>
+                        <h3 class="mb-0">서울 음식점·술집, 매출부진에 줄줄이 폐업…강남구 최다</h3>
+                        <div class="mb-1 text-muted">Mar 24</div>
+                        <p class="card-text mb-auto">서울의 음식점, 술집 등 식품위생업소가 줄줄이 폐업을 겪고 있다.</p>
+                        <a href="http://m.datanews.co.kr/m/m_article.html?no=106302" class="stretched-link">Continue
+                            reading</a>
+                    </div>
+                    <!-- <div class="col-auto d-none d-lg-block">
+                        
+                        <img width="200" height="250" src="http://www.seouleconews.com/news/photo/202003/53991_40184_1914.jpg">
+                        
+                    </div> -->
+                </div>
+            </div>
         </div>
-
     </div>
-    <!-- End of Main Container -->
+
+    <main role="main" class="container">
+        <div class="row">
+            <div class="col-md-8 blog-main">
+
+                <div class="blog-post">
+                    <h2 class="blog-post-title">코로나19가 식품위생업소에 미치는 영향</h2>
+                    <p class="blog-post-meta">April 17, 2020 by <a href="#">이유정</a></p>
+
+                    <p>코로나19로 인해 매출이 급락하고 그로 인해 서울시의 식품위생업소 폐업 수가 작년에 비해 9% 늘었다. 그 중 강남구, 송파구, 서초구 순으로 폐업업소가 많았다.</p>
+                    <hr>
+
+                    <img width='100%' src="http://www.seouleconews.com/news/photo/202003/53991_40184_1914.jpg">
+
+                    <p><br>강남구의 폐업 업소가 가장 많다고 하는데 과연 그것이 사실인지, 폐업업소가 증가한 것이 온전히 코로나19의 영향 때문인 것인지 데이터 시각화를 통해 확인해 보려고
+                        한다.<br> </p>
+                    <br>
+                    <h2>지역별 폐업 현황</h2>
+
+                    <p> <br>기사에 나온 지역별 폐업 현황의 데이터가 맞는지 확인하기 위해 서울열린데이터 광장의 식품위생업소 현황 데이터를 이용했다.
+                        데이터셋 자체에 중복 데이터가 다수 존재하거나 폐업일자가 오기입 되어 있는 경우가 있어, 그런 유효하지 않은 데이터들은 제거하여 사용했다.</p>
+
+                    <div class='tableauPlaceholder' id='viz1586968944250' style='position: relative'><noscript><a
+                                href='#'><img alt=' '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;7_&#47;7_15869689333460&#47;4&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='7_15869689333460&#47;4' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;7_&#47;7_15869689333460&#47;4&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='filter' value='publish=yes' /></object></div>
+                    <script
+                        type='text/javascript'>                    var divElement = document.getElementById('viz1586968944250'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+                    <p><br>폐업 업소 수를 년도별로 그래프에 표시해봤다. 18년도까지는 폐업 업소가 굉장히 적은 것으로 나타나 있는데 19년에 비해 지나치게 적은 것을 보니, 데이터 자체가
+                        신뢰할 수 없을 수도 있다고 판단했다.
+                        그렇기 때문에 19년도 이전의 데이터는 사용하지 않기로 한다. </p>
+                    <div class='tableauPlaceholder' id='viz1586969286947' style='position: relative'><noscript><a
+                                href='#'><img alt=' '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;23&#47;23_15869692754150&#47;1&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='23_15869692754150&#47;1' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;23&#47;23_15869692754150&#47;1&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='filter' value='publish=yes' /></object></div>
+                    <script
+                        type='text/javascript'>                    var divElement = document.getElementById('viz1586969286947'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '800px'; vizElement.style.height = '827px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '800px'; vizElement.style.height = '827px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+                    <p> <br> 3월 1일부터 20일까지 지역별로 폐업한 업소 수를 바 형태로 나타냈다. 기사에는 강남구, 송파구, 서초구 순으로 폐업 업소가 많다고 나와있었지만
+                        강남구(133), 송파구(91), 마포구(70) 순으로 폐업 업소가 많은 것을 알 수 있다.
+                    </p>
+
+
+
+                    <div class='tableauPlaceholder' id='viz1586969428888' style='position: relative'><noscript><a
+                                href='#'><img alt=' '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;4H&#47;4H97B43CK&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='path' value='shared&#47;4H97B43CK' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;4H&#47;4H97B43CK&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='filter' value='publish=yes' /></object></div>
+                    <script
+                        type='text/javascript'>                    var divElement = document.getElementById('viz1586969428888'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+                    <p><br>19년도부터 지역별 폐업업소 수를 지도에 표기해봤다. 지도에 표기되어 있는 지역의 위치는 구청을 기준으로 한다.
+                        코로나19의 영향에 의해 3월에 폐업 업소의 수가 가장 많이 증가했지만 19년도부터 폐업한 업소가 확연히 늘어난 것을 보아 비단 코로나19 만의 영향은 아닌 것으로
+                        사료된다.</p>
+
+                    <br>
+                    <hr>
+                    <h2><br>식품위생업소 폐업 추세 예측<br><br></h2>
+
+                    <div class='tableauPlaceholder' id='viz1586970651513' style='position: relative'><noscript><a
+                                href='#'><img alt=' '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;36&#47;36_15869697479120&#47;sheet4&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='36_15869697479120&#47;sheet4' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;36&#47;36_15869697479120&#47;sheet4&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='filter' value='publish=yes' /></object></div>
+                    <script
+                        type='text/javascript'>                    var divElement = document.getElementById('viz1586970651513'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+                    <p>
+                        <br> 과거의 식품위생업소 폐업 기록을 통해 향후 식품위생업소의 폐업 추세를 예측해볼 수 있다. 폐업 업소의 수가 꾸준히 증가하고 있었고 앞으로도 그 수는 증가할 것으로
+                        예측된다.
+                    </p>
+
+                    <br>
+                    <hr>
+                    <h2><br>폐업한 주요 업종<br><br></h2>
+
+                    <div class='tableauPlaceholder' id='viz1586968730804' style='position: relative'><noscript><a
+                                href='#'><img alt=' '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;6_&#47;6_15869686210480&#47;6&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='6_15869686210480&#47;6' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;6_&#47;6_15869686210480&#47;6&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='filter' value='publish=yes' /></object></div>
+                    <script
+                        type='text/javascript'>                    var divElement = document.getElementById('viz1586968730804'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+                    <p>
+                        <br>
+                        3월 1일부터 20일까지 폐업한 식품위생업소의 주요 업종은 다음과 같다. 기타로 표기된 곳을 제외하고 한식, 커피숍, 휴게 음식점, 경양식, 호프/통닭 업종이 다수이다.
+                    </p>
+                    
+                    <p>
+                        ※ 자료 : 서울열린데이터광장 서울시 식품위생업소 현황
+
+                    </p><p> hello12@yonsei.ac.kr </p>
+
+
+                </div><!-- /.blog-post -->
+
+
+            </div><!-- /.blog-main -->
+
+            <aside class="col-md-4 blog-sidebar">
+                <div class="p-4 mb-3 bg-light rounded">
+                    <h4 class="font-italic">About</h4>
+                    <p class="mb-0">팩트를 다룬 뉴스 기사를 찾아 데이터 시각화를 통해 기사의 주장을 보강 혹은 반박해보기</p>
+                </div>
+
+                <div class="p-4">
+                    <h4 class="font-italic">Data</h4>
+                    <ol class="list-unstyled mb-0">
+                        <li><a href="#">서울시 강남구 전체 식품위생업소 현황</a></li>
+                        <li><a href="#">서울시 강동구 전체 식품위생업소 현황</a></li>
+                        <li><a href="#">서울시 강북구 전체 식품위생업소 현황</a></li>
+                        <li><a href="#">서울시 강서구 전체 식품위생업소 현황</a></li>
+                        <li><a href="#">서울시 관악구 전체 식품위생업소 현황</a></li>
+                        <li><a href="#">서울시 광진구 전체 식품위생업소 현황</a></li>
+                        <li><a href="#">서울시 구로구 전체 식품위생업소 현황</a></li>
+                        <li><a href="#">서울시 금천구 전체 식품위생업소 현황</a></li>
+                        <li><a href="#">서울시 노원구 전체 식품위생업소 현황</a></li>
+                        <li><a href="#">서울시 도봉구 전체 식품위생업소 현황</a></li>
+                        <li><a href="#">서울시 동대문구 전체 식품위생업소 현황</a></li>
+                        <li><a href="#">서울시 동작구 전체 식품위생업소 현황</a></li>
+                        <li><a href="#">서울시 마포구 전체 식품위생업소 현황</a></li>
+                        <li><a href="#">서울시 서대문구 전체 식품위생업소 현황</a></li>
+                        <li><a href="#">서울시 서초구 전체 식품위생업소 현황</a></li>
+                        <li><a href="#">서울시 성동구 전체 식품위생업소 현황</a></li>
+                        <li><a href="#">서울시 송파구 전체 식품위생업소 현황</a></li>
+                        <li><a href="#">서울시 양천구 전체 식품위생업소 현황</a></li>
+                        <li><a href="#">서울시 영등포구 전체 식품위생업소 현황</a></li>
+                        <li><a href="#">서울시 용산구 전체 식품위생업소 현황</a></li>
+                        <li><a href="#">서울시 은평구 전체 식품위생업소 현황</a></li>
+                        <li><a href="#">서울시 종로구 전체 식품위생업소 현황</a></li>
+                        <li><a href="#">서울시 중구 전체 식품위생업소 현황</a></li>
+                        <li><a href="#">서울시 중랑구 전체 식품위생업소 현황</a></li>
+                    </ol>
+                </div>
+
+                <div class="p-4">
+                    <h4 class="font-italic">Link</h4>
+                    <ol class="list-unstyled">
+                        <li><a href="https://data.seoul.go.kr/dataList/datasetList.do">서울열린데이터광장</a></li>
+                    </ol>
+                </div>
+            </aside><!-- /.blog-sidebar -->
+
+        </div><!-- /.row -->
+
+    </main><!-- /.container -->
+
+    
+<footer class="blog-footer">
+    <p>YOOJUNGLEE</p>
+    <p>
+      <a href="#">Back to top</a>
+    </p>
+  </footer>
 
     <!-- 이 아래부터는 무시하세요! -->
     <!-- Optional JavaScript -->
