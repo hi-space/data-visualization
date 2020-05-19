@@ -1,15 +1,14 @@
 var margin = { top: 20, right: 20, bottom: 30, left: 50 }
 var width = 960 - margin.left - margin.right
 var height = 500 - margin.left - margin.right
-
-
-
 class AgeUsage {
     constructor(age, usages) {
         this.age = age;
         this.usages = usages;
     }
 }
+
+agg_age_cnt("https://raw.githubusercontent.com/hi-space/data-visualization/master/hw2/data/bicycle_2019.csv")
 
 var dropdownChange = function() {
     v = d3.select(this).property("value")
@@ -20,7 +19,7 @@ var dropdownChange = function() {
     if (v == "2017")
         url = "https://raw.githubusercontent.com/hi-space/data-visualization/master/hw2/data/bicycle_2017.csv"
     else if (v == "2018")
-        url = "https://raw.githubusercontent.com/hi-space/data-visualization/master/hw2/data/bicycle_2018.csv"
+        url = "https://raw.githubusercontent.com/hi-space/data-visualization/master/hw2/data/bicycle_2018_1.csv"
     else if (v == "2019")
         url = "https://raw.githubusercontent.com/hi-space/data-visualization/master/hw2/data/bicycle_2019.csv"
 
@@ -32,7 +31,7 @@ var dropdown = d3.select("#age-usages-chart")
                 .on("change", dropdownChange)
 
 dropdown.selectAll("option")
-        .data(["2017", "2018", "2019"])
+        .data(["2019", "2018", "2017"])
         .enter().append("option")
         .attr("value", function(d) { return d;} )
         .text(function(d) {
@@ -50,6 +49,7 @@ function agg_age_cnt(filepath) {
                 .y(function (d) { return y(d.usages); })
                 .curve(d3.curveMonotoneX)
     
+    d3.select("svg").remove();                
     var svg = d3.select("#age-usages-chart")
                 .append("svg")
                 .attr("width", width + margin.left + margin.right)
@@ -70,14 +70,18 @@ function agg_age_cnt(filepath) {
         });
 
         var datasets = []
-        datasets.push(new AgeUsage("0", "0"));
+        datasets.push(new AgeUsage(0, 0));
         for (var age_usage in age_usages) {
             item = new AgeUsage();
-            if (age_usage != "") {
+            if (age_usage != "" && age_usage != 8) {
                 datasets.push(new AgeUsage(age_usage * 10, age_usages[age_usage]));
             }
         }
 
+        datasets.sort(function(a, b) {
+            return a.age < b.age ? -1 : a.age > b.age ? 1 : 0;
+        })
+        
         console.log(datasets)
   
         x.domain(d3.extent(datasets, function(d) { return d.age }))
@@ -106,6 +110,7 @@ function agg_age_cnt(filepath) {
             .attr("cx", function(d) { return x(d.age) })
             .attr("cy", function(d) { return y(d.usages) })
             .attr("r", 5)
+
 
         svg.selectAll(".text")
             .data(datasets)
