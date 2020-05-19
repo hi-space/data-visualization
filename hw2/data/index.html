@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+    <style type="text/css">
+        .line {
+            fill: none;
+            stroke: #ffab00;
+            stroke-width: 3;
+        }
+
+        .overlay {
+            fill: none;
+            pointer-events: all;
+        }
+
+        .dot {
+            fill: #ffab00;
+            stroke: #fff;
+        }
+
+        .focus circle {
+            fill: none;
+            stroke: steelblue;
+        }
+        .bar {
+            fill: steelblue;
+        }
+
+        .bar:hover {
+        fill: brown;
+        }
+
+        .axis--x path {
+        display: none;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <h1>공공 자전거 통계</h1>
+
+    <h2>연령대에 따른 공공자전거 이용량</h2>
+
+    <div id="age-usages-chart"></div>
+    
+    <script src="d3-graph.js"></script>
+
+
+</body>
+
+</html>
