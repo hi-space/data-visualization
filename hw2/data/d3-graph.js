@@ -14,12 +14,17 @@ class AgeUsage {
 var dropdownChange = function() {
     v = d3.select(this).property("value")
 
-    if (v == "2018")
-        agg_age_cnt("https://raw.githubusercontent.com/hi-space/data-visualization/master/hw2/data/bicycle_2018_2.csv")
+    console.log(v)
+
+    url = ""
+    if (v == "2017")
+        url = "https://raw.githubusercontent.com/hi-space/data-visualization/master/hw2/data/bicycle_2017.csv"
+    else if (v == "2018")
+        url = "https://raw.githubusercontent.com/hi-space/data-visualization/master/hw2/data/bicycle_2018.csv"
     else if (v == "2019")
-        agg_age_cnt("https://raw.githubusercontent.com/hi-space/data-visualization/master/hw2/data/bicycle_2018_2.csv")
-    else if (v == "2017")
-        agg_age_cnt("https://raw.githubusercontent.com/hi-space/data-visualization/master/hw2/data/bicycle_2017.csv")
+        url = "https://raw.githubusercontent.com/hi-space/data-visualization/master/hw2/data/bicycle_2019.csv"
+
+    agg_age_cnt(url)
 }
 
 var dropdown = d3.select("#age-usages-chart")
@@ -57,6 +62,7 @@ function agg_age_cnt(filepath) {
             data_list.push(data[idx])
         }
 
+        console.log(data_list)
         var age_usages = {}
         data_list.forEach(function (data) {
             n = data.age.replace(/[^0-9]/g, '');
@@ -68,7 +74,7 @@ function agg_age_cnt(filepath) {
         for (var age_usage in age_usages) {
             item = new AgeUsage();
             if (age_usage != "") {
-                datasets.push(new AgeUsage(age_usage, age_usages[age_usage]));
+                datasets.push(new AgeUsage(age_usage * 10, age_usages[age_usage]));
             }
         }
 
