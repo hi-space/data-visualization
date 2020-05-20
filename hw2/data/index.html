@@ -1,7 +1,14 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="ko">
 
 <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     <script src="https://d3js.org/d3.v5.min.js"></script>
 
     <style type="text/css">
@@ -25,33 +32,55 @@
             fill: none;
             stroke: steelblue;
         }
+
         .bar {
             fill: steelblue;
         }
 
         .bar:hover {
-        fill: brown;
+            fill: brown;
         }
 
         .axis--x path {
-        display: none;
+            display: none;
         }
-
-
     </style>
+    <title>공공 자전거 통계</title>
 </head>
 
 <body>
+    <!-- Main Container -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p>
+                <h1>공공 자전거 통계</h1>
 
-    <h1>공공 자전거 통계</h1>
+                <h2>연령대에 따른 공공자전거 이용량</h2>
+                <a href="https://data.seoul.go.kr/dataList/OA-15248/F/1/datasetView.do"> 서울특별시 공공자전거 이용정보(월별) </a>
 
-    <h2>연령대에 따른 공공자전거 이용량</h2>
+                <div id="age-usages-chart"></div>
 
-    <div id="age-usages-chart"></div>
-    
-    <script src="d3-graph.js"></script>
+                <script src="d3-graph.js"></script>
+
+                </p>
+            </div>
+        </div>
 
 
+    </div>
+    <!-- End of Main Container -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
