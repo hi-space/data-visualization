@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style>
+        img {
+            padding: 30px;
+        }
+
+        .row {
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+
+        h2,
+        h3,
+        h4,
+        h5 {
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        span {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        body {
+            line-height: 200%;
+        }
+    </style>
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <!-- 브라우저 탭 상단에 보일 페이지 이름을 넣으세요 -->
+    <title>유튜브 댓글 속 소비자 반응 분석을 통한 국내, 영미 인기 댄스곡 아티스트 다각적 비교</title>
+</head>
+
+<body>
+    <!-- Site Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="project.html">
+                        < 뒤로가기 </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End of Site Navigation -->
+
+    <!-- 기사는 여기서 부터 시작입니다 -->
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Begin 프로젝트 이름 줄-->
+        <div class="row">
+            <div class="col">
+                <p>
+                <h2>
+                    유튜브 댓글 속 소비자 반응 분석을 통한 <br> 국내, 영미 인기 댄스곡 아티스트 다각적 비교
+                </h2>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    5조 이용주, 이유정
+                </p>
+            </div>
+        </div>
+        <!-- End of 프로젝트 이름 줄-->
+
+        <hr class="primary">
+
+        <!-- 여기서부터 본문을 작성해주세요 -->
+        <div class="row">
+            <div class="col">
+                <!-- 1번째 줄 1번째 컬럼-->
+                <h2><strong>1. 소개</strong></h2>
+                <br>
+                <span>
+                    한국과 영미권에서 주류로 소비되는 음악 콘텐츠는 컨셉에 있어서 지속적으로 차이가 발생해 왔다. 한국의 경우 한국기업평판연구소에서 지속적으로 제공하는 가수 브랜드 평판 순위를
+                    참고하고, 영미권의 경우 빌보드 차트를 참고하여 가장 소비가 많이 발생하는 아티스트 경향을 추론할 수 있다. 물론 ‘정량화할 수 없는 추상적인 컨셉’의 개념이기에 명시적으로 구분할
+                    수는 없지만, 경험적 분석 관점에 있어서 어느정도 이질적 특성을 발견할 수 있다. 국내 아티스트의 경우 과거 동방신기, 소녀시대, 빅뱅, 엑소, BTS, 오마이걸의 흐름으로 가는
+                    것에 알 수 있듯이 소년미, 소녀미를 소비자들이 이상적으로 기대하는 경향이 있다. 반면 영미권의 경우 에미넴, 비욘세, 켄드릭 라마, 도자 캣 등의 흐름으로 보아 보다 강렬하고
+                    건강미를 뽐내는 이상향을 추구하는 경향이 있다. 주류로 소비되는 아티스트의 컨셉에 경향성이 있다는 것은 주 소비층 문화의 특성의 영향일 가능성이 크다. 생태 자체가 대중문화
+                    아티스트는 필연적으로 대중의 기호에 따라 만들어지기 때문이다. 따라서 각 도메인의 아티스트들에게 바라는 대중의 일반적인 기대치에 차이가 있음을 가정할 수 있다.
+                </span>
+                <br>
+                <img src="img/5_1.png" style='width: 70%;'>
+            </div>
+
+
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h2><strong>2. 연구목적</strong></h2>
+                <br>
+                <span>
+                    만약 문화권에 따른주류 대중음악 소비자의 기호 경향성을 사전에 확인할 수 있다면, 한 문화권의 아티스트가 다른 문화권의 시장으로 진입하려 시도할 때 참고해야 할 컨셉 레퍼런스를 알
+                    수 있을 것이다. 해당 시장에 대한 실질적인 이해를
+                    사전에 탑재하여 전략적인 기획을 구성한다면, 보다 적응력과 성공률이 높은 경쟁이 가능해질 것으로 판단된다.
+                    그러한 필요성을 기반에 둔 본 연구는 대중음악 장르 중에서도 주류라고 할 수 있는 댄스곡 아티스트를 대상으로 각 문화권 별 소비자의 반응을 비교하고자 목적을 두었다. 확인하고자
+                    하는 반응은 크게 3가지로 구분할 수
+                    있다.
+                </span>
+                <br>
+                <br>
+                <ol>
+                    <strong>
+                        <li>국내 뮤비의 한글 및 영어 댓글과 해외 뮤비의 영어댓글에는 아티스트를 평가하는 단어의 범주 차이</li>
+                    </strong>
+                    가수에 대한 평가에 있어서 반복적으로 발생하는 형용사를 비교한다면, 빈도 수에 따라 각 문화권의 소비자가 원하는 이상향을 추론할 수 있을 것이다.
+                    <br><br>
+                    <strong>
+                        <li>국내-영미 인기 댄스 가수들의 평가 기반 상관관계</li>
+                    </strong>
+                    각 가수의 평가에 사용된 단어(컨셉)들의 유사성을 확인하여, 유사한 아티스트들끼리 묶을 수 있을 것이다. 문화권을 구분하지 않고 아티스트끼리 소비자의 반응에 따라 군집을
+                    형성한다면, 특정 아티스트가 상대 문화권으로
+                    진입하는데 있어서 본인과 유사하거나 컨셉을 참고할 만한 레퍼런스의 기준을 삼을 수 있을 것이다.
+                    <br><br>
+                    <strong>
+                        <li>성별, 문화권 별 부정적 피드백 빈도 차이</li>
+                    </strong>
+
+                    분석대상인 '댄스가수의 특성’ 상 (특히 여성 아티스트의 경우) 다른 장르에 비해 노출이 많고 시각적으로 과감한 안무가 다른 장르보다 많을 수밖에 없다. 한국은 영미권보다
+                    전통적으로 보수적이며 비판적인 시각을 가지고
+                    있으며, 외모지상주의가 심하고 평가가 잦은 국가로 보통 인지되고 있다. 그런 문화적 차이 속에서 노출되는 육체적 퍼포먼스 부분에 있어서 소비자의 평가에 있어서 부정성의 비율이
+                    유의미하게 높은지 확인해 볼 필요가
+                    있다.
+                </ol>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h2><strong>3. 분석 설계</strong></h2>
+
+                <h3> Step1. Web Scrapping & Text Parsing : Youtube api 사용 </h3>
+
+                <img src="img/5_2.png">
+                <img src="img/5_3.png">
+                <img src="img/5_4.png">
+
+                <h5><strong>데이터 소스 </strong> </h5>
+                <ul>
+                    <li>현재 활동 중인 댄스가수 중, 유튜브 2020년 5월 인기차트 상위권 순서대로</li>
+                    <li>국내 아이돌 10그룹(남자 5그룹, 여자 5그룹)</li>
+                    <li>해외 아이돌 10그룹(남자 5그룹, 여자 5그룹)</li>
+                    <li>최신(2015년 이후)의 뮤비&인터뷰 최신순-가장 조회수 많은 순으로 3개씩.</li>
+                    <li>감성분석은 편향을 방지하기 위해서 뮤비 대신 인터뷰 영상으로 교체.</li>
+                    <li>현재 활동 중인 댄스가수 중, 유튜브 2020년 5월 인기차트 상위권 순서대로</li>
+                </ul>
+
+                <h5><strong> 소셜 네트워크 분석용(뮤비) </strong> </h5>
+                <ul>
+                    <li>각 가수 뮤비 별 국내 뮤비 한글 댓글 중 상위 빈도 70개</li>
+                    <li>각 가수 뮤비 별 국내 뮤비 영어 댓글 중 상위 빈도 70개</li>
+                    <li>각 가수 뮤비 별 해외 뮤비 영어 댓글 중 상위 빈도 70개</li>
+                </ul>
+
+                <h5><strong> 감성분석용(인터뷰) </strong> </h5>
+                <ul>
+                    <li>동일한 목록의 아티스트 별 인터뷰 영상에 따른 댓글 400개 씩 샘플링</li>
+                </ul>
+
+                <br>
+                <h3> Step2. Text filtering & Tokenization </h3>
+
+                <ul>
+                    <li>크롤링한 데이터셋 토근화 작업</li>
+                    <li>최종적으로는 형용사만 남게 변환 </li>
+                    <li>한글 댓글은 영어로 변환</li>
+                </ul>
+                <ul>
+                    <li>댓글의 댓글은 제외</li>
+                    <li>한글, 영어 언어만 취급 </li>
+                    <li>처음 크롤링 과정에서 데이터 양의 불균형을 막기위해 최대 2만개의 댓글만 수집</li>
+                </ul>
+
+                <br>
+                <h3> Step3. Analysis & Visualization </h3>
+
+                <ol>
+                    <li>tableau 툴 활용하여 빈도를 면적으로 시각화하여 분석</li>
+                    <li>Gephi 툴 활용하여 소셜 네트워크 분석 실행 </li>
+                    <li>Python에서 감성분석 실행</li>
+                </ol>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h2> <strong>4. 분석 결과</strong></h2>
+                <br>
+                <h4><strong>(1) 국내 뮤비의 한글 및 영어 댓글과 해외 뮤비의 영어댓글에는 아티스트를 평가하는 단어의 범주에서 유의미한 차이가 발생할 것이다.</strong></h4>
+                <p>Ex) 귀엽다(Cute)는 국내뮤비 한글댓글이 영어댓글들보다 유의미하게 많지 않을까?</p>
+
+                <br>
+                <h5><strong> 국내 한글 댓글 </strong></h5>
+                <div class='tableauPlaceholder' id='viz1593059908480' style='position: relative'><noscript><a
+                            href='#'><img alt=' '
+                                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;1_&#47;1_15930596244960&#47;sheet0&#47;1_rss.png'
+                                style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='1_15930596244960&#47;sheet0' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image'
+                            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;1_&#47;1_15930596244960&#47;sheet0&#47;1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='ko' /></object></div>
+                <script
+                    type='text/javascript'>                    var divElement = document.getElementById('viz1593059908480'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+                <br><br>
+                <h5><strong> 국내 영어 댓글 </strong></h5>
+                <div class='tableauPlaceholder' id='viz1593059876013' style='position: relative'><noscript><a
+                            href='#'><img alt=' '
+                                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;25&#47;25721&#47;sheet0&#47;1_rss.png'
+                                style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='25721&#47;sheet0' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image'
+                            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;25&#47;25721&#47;sheet0&#47;1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='ko' /></object></div>
+                <script
+                    type='text/javascript'>                    var divElement = document.getElementById('viz1593059876013'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+                <br><br>
+                <h5><strong> 해외 영어 댓글 </strong></h5>
+                <div class='tableauPlaceholder' id='viz1593059924582' style='position: relative'><noscript><a
+                            href='#'><img alt=' '
+                                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;1_&#47;1_15930598480990&#47;sheet0&#47;1_rss.png'
+                                style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='1_15930598480990&#47;sheet0' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image'
+                            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;1_&#47;1_15930598480990&#47;sheet0&#47;1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='ko' /></object></div>
+                <script
+                    type='text/javascript'>                    var divElement = document.getElementById('viz1593059924582'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+                <br>
+
+                <ul>
+                    <strong>
+                        <li>국내한글 최대 빈도수 단어</li>
+                    </strong>
+                    [좋다, 같다, 예쁘다, 미치다, 멋지다, 좋아하다, 많다, 설레다, 잘생기다, 귀엽다, 멋있다…]
+                    <strong>
+                        <li>국내영어 최대빈도수 단어</li>
+                    </strong>
+                    [good, much, beautiful, new, happy, great, first, next…]
+                    <strong>
+                        <li>해외영어 최대 빈도수 단어</li>
+                    </strong>
+                    [good, much, little, new, beautiful, happy, only, many, old, next, same…]
+
+                    <li>국내뮤비의 한글, 영어 댓글과 해외뮤비의 영어 댓글을 비교해보았을 때 기본적으로 차이는 명확하게 보이지 않음. 대체적으로 유사한 의미의 패턴을 보이고 있음.</li>
+                    <li>댓글은 예상과 달리 주로 해당 아티스트에 대한 평가[멋있다, 섹시하다, 귀엽다 등]보다는 자신의 감정 상태[좋다, 행복하다, 설레다 등]를 나타내는 표현이 훨씬 더 많았음.
+                    </li>
+                    <li>대상 아티스트 평가에 해당하는 단어를 분석해보면 [잘생겼다, 예쁘다 등] 외적 요소 평가가 많음.</li>
+                    <li>세 범주의 댓글분석 결과 공통적으로, [좋음, 새로운, 아름다운, 행복, 멋있음] 의 단어가 많았음.</li>
+                    <li>영어 댓글이 한글 댓글보다 좀 더 다양한 단어로 의견을 표현하는 경향이 있음. 하지만 beautiful, cute, handsome과 같은 외적 요소를 칭찬하는 단어는 한글
+                        댓글이 영어댓글보다 높은 순위에 배치되고 있으나, 이는 언어적 측면에서 기인한 것으로 사료됨. 예를들어 멋있다는 한글단어를 영어에서는 cool, great, awesome
+                        등 일상언어로 더 다양하게 표현할 수 있음. 즉, 비슷한 의미의 평가를 여러 어휘로 평가할 수 있는 자유도가 높다보니 순위에 있어서 차이가 발생하게 됨.</li>
+                    <li>정보 보안 상 정확히 증명할 수 있는 방법은 없으나 영어 댓글이라고 해서 꼭 영미권 사용자라고 판단하기는 힘듦. 특정 나라를 연상하게 하는 단어를 통해 다양한 국적의
+                        사람들이 참여한다는 것을 체감할 수 있었음.</li>
+                    <li>국내,해외 각 아티스트 별 빈도 수 비교도 실행하였으나, 큰 틀(상위빈도 순위범주 등)에서 두드러진 차이는 존재하지 않음.</li>
+                </ul>
+
+                <br>
+
+                <h5> <strong>결론</strong></h5>
+                <span>
+                    <strong>각 범주 별 댓글로는 아티스트를 평가하는데 유의미한 차이를 발견할 수 없었다. </strong>
+
+                    그 이유는 첫째, 소비자가 아티스트를 평가할 때 사용한 상위 빈도 수 단어를 비교해보면 도메인 간에도 유사한 단어들이 반복되기 때문이다. 둘째, 소비자는 아티스트 뮤비를 감상 후
+                    댓글로 표현할 때, ‘평가’보다는 ‘본인의 감정’을 나타내는 경향을 가진다. 즉, ‘본인’을 지칭하는 형용사를 ‘아티스트’를 평가하는 형용사로 오인하면 안된다. 요약컨데, 뮤비
+                    댓글은 아티스트를 감상한 소비자가 원하는 특징을 추론하는데 적합하지 않았다.
+                    이는 댓글을 통한 데이터 분석 관점에서 시사점을 준다. 최근 리뷰 댓글을 활용한 제품, 서비스 사용자 경험 조사 시도가 빈번히 이루어지고 있으나 그 유의미성을 인정받으려면 보다
+                    정밀한 전처리 과정이 수행되어야 한다는 점이다. 왜냐하면 소비자의 리뷰 댓글은 사용자 별로 독특한 특징을 뽑아내기 쉽지 않고 어느정도 일정한 경향성을 보이며, 단어의 지시
+                    대상에서도 본인과 제품이 혼재되어 있기 때문이다.
+                </span>
+
+                <br>
+                <br>
+
+                <h4><strong>(2) 국내-영미 인기 댄스 가수들 간 소비자 평가 기반 상관관계</strong></h4>
+
+                <img src="img/5_5.png">
+                <img src="img/5_6.png">
+                <img src="img/5_7.png">
+                <img src="img/5_8.png">
+
+                <ul>
+                    <li>사회적 연결망 분석툴인 gephi를 활용하였음. </li>
+                    <li>총 467개의 노드와 2100개의 엣지로 구성됨.</li>
+                    <li>근접 중심성(Closeness Centrality): 중요한 노드일수록 노드가 다른 노드에 도달하는 경로가 짧을 것이라는 가정. 최단 경로의 길이 평균을 내고(그 역수의
+                        값을 취한 후) 적용.</li>
+                    <li>근접거리 노드끼리 Community를 묶은 결과</li>
+                    <ol>
+                        <li>[One direction, Doja Cat, NCT] </li>
+                        인접노드: visual, distinguished, chilly, successful
+                        <li>[Justine Biber, 청하] </li>
+                        인접노드: small, underrated, independent, precise
+                        <li>[강다니엘, 잇지, fifth harmony] </li>
+                        인접노드: beautiful, fancy, complete
+                        <li>[오마이걸, 지코, 아이들] </li>
+                        인접노드: possible, thick, cold, straight
+                        <li>[Why don’t we, Ariana grande, 방탄소년단]</li>
+                        인접노드: omg, simple, lovin, danger, murky
+                    </ol>
+                    <li>대략 5개 정도의 유사 군집으로 묶을 수 있었음.</li>
+                </ul>
+
+                <h5><strong> 결론</strong></h5>
+                원 목적이었던, 국내 가수와 해외 가수 간 매칭의 근거를 시각화 할 수 있었음. 예를 들어 NCT가 영미 시장에 도전할 때는 doja cat, one direction의 콘텐츠를 참고하는
+                것이 유의미한 레퍼런스로 판단 가능. 또한 콘텐츠 분석 시 단서로서 소비자가 표현한 중심 단어(인접 노드)를 기준으로 컨셉을 선정하는데 방향성을 제시할 수 있다는 점에서 유의미함.
+
+                <br>
+                <h5><strong>한계점</strong></h5>
+                <ul>
+                    <li>노드 외에 군집이 왜 형성되었는지에 대한 정량적 근거를 제시할 수는 없음. 탐색적 연구로 활용할 수는 있으나 많은 기대를 가지기에는 한계가 있음. 예를들어 저스틴 비버와
+                        청하가 묶인 이유는 추론이 가능하지만(ex. 솔로) 지코와 오마이걸이 묶인 이유에 대해서는 인접노드를 참고한다고 할지어도 명확하게 알 수 없음.</li>
+                    <li>데이터 전처리 과정에서 한글 댓글을 영어로 치환하는데 있어서 오류가 발생할 수 있음. 또한 영어 댓글 크롤링 과정에서 품사가 깔끔하게 추출되지 않는 단점도 존재함. 즉,
+                        퀄리티가 아주 높은 데이터셋이라고 보기 힘들다는 점에서 한계가 있음. 데이터의 불완전성을 보완하려면 더욱 많은 시간과 노력, 기준을 전처리 과정에 투자해야 함.</li>
+                </ul>
+                <br>
+
+                <br>
+                <h4><strong>(3) 성별, 문화별 댓글 감성분석 비교</strong> </h4>
+
+
+                <hr>
+
+                <h4> * Sampling </h4>
+
+                <h5><strong>아티스트 별 댓글의 긍부정</strong></h5>
+                <div id="7a7008ee-51d8-43d7-979a-cbce1c86fdb1" class="plotly-graph-div"
+                    style="height:500px; width: auto;"></div>
+                <script type="text/javascript">
+
+                    window.PLOTLYENV = window.PLOTLYENV || {};
+
+                    if (document.getElementById("7a7008ee-51d8-43d7-979a-cbce1c86fdb1")) {
+                        Plotly.newPlot(
+                            '7a7008ee-51d8-43d7-979a-cbce1c86fdb1',
+                            [{ "marker": { "color": "rgba(255, 153, 51, 0.6)", "line": { "color": "rgba(255, 153, 51, 1.0)", "width": 1 } }, "name": "Positive", "orientation": "v", "text": "", "type": "bar", "x": ["ariana_grande.csv", "bts.csv", "chungha.csv", "doja_cat.csv", "dualipa.csv", "fifth_harmony.csv", "g_idle.csv", "in_real_life.csv", "itzy.csv", "justin_bieber.csv", "kangdaniel.csv", "little_mix.csv", "mamamoo.csv", "nct.csv", "oh_my_girl.csv", "onedirection.csv", "prettymuch.csv", "why_dont_we.csv", "winner.csv", "zico.csv"], "y": [211, 268, 246, 170, 172, 179, 208, 226, 217, 217, 256, 202, 221, 177, 224, 148, 162, 159, 234, 265] }, { "marker": { "color": "rgba(55, 128, 191, 0.6)", "line": { "color": "rgba(55, 128, 191, 1.0)", "width": 1 } }, "name": "Negative", "orientation": "v", "text": "", "type": "bar", "x": ["ariana_grande.csv", "bts.csv", "chungha.csv", "doja_cat.csv", "dualipa.csv", "fifth_harmony.csv", "g_idle.csv", "in_real_life.csv", "itzy.csv", "justin_bieber.csv", "kangdaniel.csv", "little_mix.csv", "mamamoo.csv", "nct.csv", "oh_my_girl.csv", "onedirection.csv", "prettymuch.csv", "why_dont_we.csv", "winner.csv", "zico.csv"], "y": [75, 25, 18, 75, 67, 86, 40, 35, 29, 59, 38, 57, 29, 41, 47, 80, 59, 60, 34, 36] }, { "marker": { "color": "rgba(50, 171, 96, 0.6)", "line": { "color": "rgba(50, 171, 96, 1.0)", "width": 1 } }, "name": "Normal", "orientation": "v", "text": "", "type": "bar", "x": ["ariana_grande.csv", "bts.csv", "chungha.csv", "doja_cat.csv", "dualipa.csv", "fifth_harmony.csv", "g_idle.csv", "in_real_life.csv", "itzy.csv", "justin_bieber.csv", "kangdaniel.csv", "little_mix.csv", "mamamoo.csv", "nct.csv", "oh_my_girl.csv", "onedirection.csv", "prettymuch.csv", "why_dont_we.csv", "winner.csv", "zico.csv"], "y": [114, 107, 136, 155, 161, 135, 152, 139, 154, 124, 106, 141, 150, 182, 129, 172, 179, 181, 132, 99] }],
+                            { "legend": { "bgcolor": "#F5F6F9", "font": { "color": "#4D5663" } }, "paper_bgcolor": "#F5F6F9", "plot_bgcolor": "#F5F6F9", "template": { "data": { "bar": [{ "error_x": { "color": "#2a3f5f" }, "error_y": { "color": "#2a3f5f" }, "marker": { "line": { "color": "#E5ECF6", "width": 0.5 } }, "type": "bar" }], "barpolar": [{ "marker": { "line": { "color": "#E5ECF6", "width": 0.5 } }, "type": "barpolar" }], "carpet": [{ "aaxis": { "endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f" }, "baxis": { "endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f" }, "type": "carpet" }], "choropleth": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "choropleth" }], "contour": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour" }], "contourcarpet": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "contourcarpet" }], "heatmap": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap" }], "heatmapgl": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl" }], "histogram": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "histogram" }], "histogram2d": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d" }], "histogram2dcontour": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour" }], "mesh3d": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "mesh3d" }], "parcoords": [{ "line": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "parcoords" }], "pie": [{ "automargin": true, "type": "pie" }], "scatter": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatter" }], "scatter3d": [{ "line": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatter3d" }], "scattercarpet": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattercarpet" }], "scattergeo": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattergeo" }], "scattergl": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattergl" }], "scattermapbox": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattermapbox" }], "scatterpolar": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterpolar" }], "scatterpolargl": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterpolargl" }], "scatterternary": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterternary" }], "surface": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface" }], "table": [{ "cells": { "fill": { "color": "#EBF0F8" }, "line": { "color": "white" } }, "header": { "fill": { "color": "#C8D4E3" }, "line": { "color": "white" } }, "type": "table" }] }, "layout": { "annotationdefaults": { "arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1 }, "coloraxis": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "colorscale": { "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]] }, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": { "color": "#2a3f5f" }, "geo": { "bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white" }, "hoverlabel": { "align": "left" }, "hovermode": "closest", "mapbox": { "style": "light" }, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": { "angularaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "bgcolor": "#E5ECF6", "radialaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" } }, "scene": { "xaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" }, "yaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" }, "zaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" } }, "shapedefaults": { "line": { "color": "#2a3f5f" } }, "ternary": { "aaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "baxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "bgcolor": "#E5ECF6", "caxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" } }, "title": { "x": 0.05 }, "xaxis": { "automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": { "standoff": 15 }, "zerolinecolor": "white", "zerolinewidth": 2 }, "yaxis": { "automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": { "standoff": 15 }, "zerolinecolor": "white", "zerolinewidth": 2 } } }, "title": { "font": { "color": "#4D5663" } }, "xaxis": { "gridcolor": "#E1E5ED", "showgrid": true, "tickfont": { "color": "#4D5663" }, "title": { "font": { "color": "#4D5663" }, "text": "" }, "zerolinecolor": "#E1E5ED" }, "yaxis": { "gridcolor": "#E1E5ED", "showgrid": true, "tickfont": { "color": "#4D5663" }, "title": { "font": { "color": "#4D5663" }, "text": "" }, "zerolinecolor": "#E1E5ED" } },
+                            { "responsive": true }
+                        )
+                    };
+                </script>
+                <br>
+                <ul>
+                    <li>아티스트 별로 인터뷰 댓글 수가 400 ~ 10,000개 정도로 차이가 나기 때문에 공평한 비교를 위해 아티스트 별로 400개의 댓글을 랜덤으로 샘플링하여 사용</li>
+                    <li>영어 외에도 한글, 스페인어 등 다양한 언어의 댓글이 섞여있기 때문에 모두 영어로 번역하여 댓글의 긍부정 성격 판단</li>
+                    <li>사전적 단어의 의미마다 긍부정을 나타내는 score 가 -5 ~ 5 까지 표현됨. 이를 통해 댓글마다의 score를 판단 가능</li>
+                </ul>
+                <br>
+                <h5><strong>국내 vs 해외</strong></h5>
+                <div id="1e29f77d-ac78-49aa-8de1-3acc0d5e0aa5" class="plotly-graph-div"
+                    style="height:500px; width:auto;"></div>
+                <script type="text/javascript">
+
+                    window.PLOTLYENV = window.PLOTLYENV || {};
+
+                    if (document.getElementById("1e29f77d-ac78-49aa-8de1-3acc0d5e0aa5")) {
+                        Plotly.newPlot(
+                            '1e29f77d-ac78-49aa-8de1-3acc0d5e0aa5',
+                            [{ "marker": { "color": "rgba(255, 153, 51, 0.6)", "line": { "color": "rgba(255, 153, 51, 1.0)", "width": 1 } }, "name": "Positive", "orientation": "v", "text": "", "type": "bar", "x": ["\uad6d\ub0b4", "\ud574\uc678"], "y": [2339, 1843] }, { "marker": { "color": "rgba(55, 128, 191, 0.6)", "line": { "color": "rgba(55, 128, 191, 1.0)", "width": 1 } }, "name": "Negative", "orientation": "v", "text": "", "type": "bar", "x": ["\uad6d\ub0b4", "\ud574\uc678"], "y": [320, 643] }, { "marker": { "color": "rgba(50, 171, 96, 0.6)", "line": { "color": "rgba(50, 171, 96, 1.0)", "width": 1 } }, "name": "Normal", "orientation": "v", "text": "", "type": "bar", "x": ["\uad6d\ub0b4", "\ud574\uc678"], "y": [1341, 1514] }],
+                            { "legend": { "bgcolor": "#F5F6F9", "font": { "color": "#4D5663" } }, "paper_bgcolor": "#F5F6F9", "plot_bgcolor": "#F5F6F9", "template": { "data": { "bar": [{ "error_x": { "color": "#2a3f5f" }, "error_y": { "color": "#2a3f5f" }, "marker": { "line": { "color": "#E5ECF6", "width": 0.5 } }, "type": "bar" }], "barpolar": [{ "marker": { "line": { "color": "#E5ECF6", "width": 0.5 } }, "type": "barpolar" }], "carpet": [{ "aaxis": { "endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f" }, "baxis": { "endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f" }, "type": "carpet" }], "choropleth": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "choropleth" }], "contour": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour" }], "contourcarpet": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "contourcarpet" }], "heatmap": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap" }], "heatmapgl": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl" }], "histogram": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "histogram" }], "histogram2d": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d" }], "histogram2dcontour": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour" }], "mesh3d": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "mesh3d" }], "parcoords": [{ "line": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "parcoords" }], "pie": [{ "automargin": true, "type": "pie" }], "scatter": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatter" }], "scatter3d": [{ "line": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatter3d" }], "scattercarpet": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattercarpet" }], "scattergeo": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattergeo" }], "scattergl": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattergl" }], "scattermapbox": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattermapbox" }], "scatterpolar": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterpolar" }], "scatterpolargl": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterpolargl" }], "scatterternary": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterternary" }], "surface": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface" }], "table": [{ "cells": { "fill": { "color": "#EBF0F8" }, "line": { "color": "white" } }, "header": { "fill": { "color": "#C8D4E3" }, "line": { "color": "white" } }, "type": "table" }] }, "layout": { "annotationdefaults": { "arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1 }, "coloraxis": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "colorscale": { "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]] }, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": { "color": "#2a3f5f" }, "geo": { "bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white" }, "hoverlabel": { "align": "left" }, "hovermode": "closest", "mapbox": { "style": "light" }, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": { "angularaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "bgcolor": "#E5ECF6", "radialaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" } }, "scene": { "xaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" }, "yaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" }, "zaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" } }, "shapedefaults": { "line": { "color": "#2a3f5f" } }, "ternary": { "aaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "baxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "bgcolor": "#E5ECF6", "caxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" } }, "title": { "x": 0.05 }, "xaxis": { "automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": { "standoff": 15 }, "zerolinecolor": "white", "zerolinewidth": 2 }, "yaxis": { "automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": { "standoff": 15 }, "zerolinecolor": "white", "zerolinewidth": 2 } } }, "title": { "font": { "color": "#4D5663" } }, "xaxis": { "gridcolor": "#E1E5ED", "showgrid": true, "tickfont": { "color": "#4D5663" }, "title": { "font": { "color": "#4D5663" }, "text": "" }, "zerolinecolor": "#E1E5ED" }, "yaxis": { "gridcolor": "#E1E5ED", "showgrid": true, "tickfont": { "color": "#4D5663" }, "title": { "font": { "color": "#4D5663" }, "text": "" }, "zerolinecolor": "#E1E5ED" } },
+                            { "responsive": true }
+                        )
+                    };
+
+                </script>
+                <br>
+                <ul>
+                    <li>국내보다 해외 쪽이 부정적인 반응이 크다.</li>
+                    <li>국내에서는 지리적 차이 때문에 침묵의 나선이론의 효과가 해외에 비해 더 크게 나타날 수 있을 것으로 예상</li>
+                </ul>
+
+                <br>
+                <h5><strong>남성 vs 여성</strong></h5>
+                <div id="117b717e-c328-44af-9ee9-c7b8984e02c9" class="plotly-graph-div"
+                    style="height:500px; width:auto;"></div>
+                <script type="text/javascript">
+
+                    window.PLOTLYENV = window.PLOTLYENV || {};
+
+                    if (document.getElementById("117b717e-c328-44af-9ee9-c7b8984e02c9")) {
+                        Plotly.newPlot(
+                            '117b717e-c328-44af-9ee9-c7b8984e02c9',
+                            [{ "marker": { "color": "rgba(255, 153, 51, 0.6)", "line": { "color": "rgba(255, 153, 51, 1.0)", "width": 1 } }, "name": "Positive", "orientation": "v", "text": "", "type": "bar", "x": ["\ub0a8\uc131", "\uc5ec\uc131"], "y": [2139, 2079] }, { "marker": { "color": "rgba(55, 128, 191, 0.6)", "line": { "color": "rgba(55, 128, 191, 1.0)", "width": 1 } }, "name": "Negative", "orientation": "v", "text": "", "type": "bar", "x": ["\ub0a8\uc131", "\uc5ec\uc131"], "y": [502, 494] }, { "marker": { "color": "rgba(50, 171, 96, 0.6)", "line": { "color": "rgba(50, 171, 96, 1.0)", "width": 1 } }, "name": "Normal", "orientation": "v", "text": "", "type": "bar", "x": ["\ub0a8\uc131", "\uc5ec\uc131"], "y": [1359, 1427] }],
+                            { "legend": { "bgcolor": "#F5F6F9", "font": { "color": "#4D5663" } }, "paper_bgcolor": "#F5F6F9", "plot_bgcolor": "#F5F6F9", "template": { "data": { "bar": [{ "error_x": { "color": "#2a3f5f" }, "error_y": { "color": "#2a3f5f" }, "marker": { "line": { "color": "#E5ECF6", "width": 0.5 } }, "type": "bar" }], "barpolar": [{ "marker": { "line": { "color": "#E5ECF6", "width": 0.5 } }, "type": "barpolar" }], "carpet": [{ "aaxis": { "endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f" }, "baxis": { "endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f" }, "type": "carpet" }], "choropleth": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "choropleth" }], "contour": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour" }], "contourcarpet": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "contourcarpet" }], "heatmap": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap" }], "heatmapgl": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl" }], "histogram": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "histogram" }], "histogram2d": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d" }], "histogram2dcontour": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour" }], "mesh3d": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "mesh3d" }], "parcoords": [{ "line": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "parcoords" }], "pie": [{ "automargin": true, "type": "pie" }], "scatter": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatter" }], "scatter3d": [{ "line": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatter3d" }], "scattercarpet": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattercarpet" }], "scattergeo": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattergeo" }], "scattergl": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattergl" }], "scattermapbox": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattermapbox" }], "scatterpolar": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterpolar" }], "scatterpolargl": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterpolargl" }], "scatterternary": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterternary" }], "surface": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface" }], "table": [{ "cells": { "fill": { "color": "#EBF0F8" }, "line": { "color": "white" } }, "header": { "fill": { "color": "#C8D4E3" }, "line": { "color": "white" } }, "type": "table" }] }, "layout": { "annotationdefaults": { "arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1 }, "coloraxis": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "colorscale": { "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]] }, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": { "color": "#2a3f5f" }, "geo": { "bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white" }, "hoverlabel": { "align": "left" }, "hovermode": "closest", "mapbox": { "style": "light" }, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": { "angularaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "bgcolor": "#E5ECF6", "radialaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" } }, "scene": { "xaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" }, "yaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" }, "zaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" } }, "shapedefaults": { "line": { "color": "#2a3f5f" } }, "ternary": { "aaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "baxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "bgcolor": "#E5ECF6", "caxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" } }, "title": { "x": 0.05 }, "xaxis": { "automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": { "standoff": 15 }, "zerolinecolor": "white", "zerolinewidth": 2 }, "yaxis": { "automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": { "standoff": 15 }, "zerolinecolor": "white", "zerolinewidth": 2 } } }, "title": { "font": { "color": "#4D5663" } }, "xaxis": { "gridcolor": "#E1E5ED", "showgrid": true, "tickfont": { "color": "#4D5663" }, "title": { "font": { "color": "#4D5663" }, "text": "" }, "zerolinecolor": "#E1E5ED" }, "yaxis": { "gridcolor": "#E1E5ED", "showgrid": true, "tickfont": { "color": "#4D5663" }, "title": { "font": { "color": "#4D5663" }, "text": "" }, "zerolinecolor": "#E1E5ED" } },
+                            { "responsive": true }
+                        )
+                    };
+
+                </script>
+                <br>
+                <ul>
+                    <li>댓글의 긍부정 반응은 성별 변수에 따른 차이가 거의 없다.</li>
+                </ul>
+                <br>
+                <h5><strong>국내 남성 vs 국내 여성 vs 해외 남성 vs 해외 여성</strong></h5>
+
+                <div id="54d67871-877a-470e-bd01-1a7215b92108" class="plotly-graph-div"
+                    style="height:500px; width:auto;"></div>
+                <script type="text/javascript">
+
+                    window.PLOTLYENV = window.PLOTLYENV || {};
+
+                    if (document.getElementById("54d67871-877a-470e-bd01-1a7215b92108")) {
+                        Plotly.newPlot(
+                            '54d67871-877a-470e-bd01-1a7215b92108',
+                            [{ "marker": { "color": "rgba(255, 153, 51, 0.6)", "line": { "color": "rgba(255, 153, 51, 1.0)", "width": 1 } }, "name": "Positive", "orientation": "v", "text": "", "type": "bar", "x": ["\uad6d\ub0b4 \ub0a8\uc131", "\uad6d\ub0b4 \uc5ec\uc131", "\ud574\uc678 \ub0a8\uc131", "\ud574\uc678 \uc5ec\uc131"], "y": [1210, 1105, 889, 958] }, { "marker": { "color": "rgba(55, 128, 191, 0.6)", "line": { "color": "rgba(55, 128, 191, 1.0)", "width": 1 } }, "name": "Negative", "orientation": "v", "text": "", "type": "bar", "x": ["\uad6d\ub0b4 \ub0a8\uc131", "\uad6d\ub0b4 \uc5ec\uc131", "\ud574\uc678 \ub0a8\uc131", "\ud574\uc678 \uc5ec\uc131"], "y": [179, 158, 327, 348] }, { "marker": { "color": "rgba(50, 171, 96, 0.6)", "line": { "color": "rgba(50, 171, 96, 1.0)", "width": 1 } }, "name": "Normal", "orientation": "v", "text": "", "type": "bar", "x": ["\uad6d\ub0b4 \ub0a8\uc131", "\uad6d\ub0b4 \uc5ec\uc131", "\ud574\uc678 \ub0a8\uc131", "\ud574\uc678 \uc5ec\uc131"], "y": [611, 737, 784, 694] }],
+                            { "legend": { "bgcolor": "#F5F6F9", "font": { "color": "#4D5663" } }, "paper_bgcolor": "#F5F6F9", "plot_bgcolor": "#F5F6F9", "template": { "data": { "bar": [{ "error_x": { "color": "#2a3f5f" }, "error_y": { "color": "#2a3f5f" }, "marker": { "line": { "color": "#E5ECF6", "width": 0.5 } }, "type": "bar" }], "barpolar": [{ "marker": { "line": { "color": "#E5ECF6", "width": 0.5 } }, "type": "barpolar" }], "carpet": [{ "aaxis": { "endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f" }, "baxis": { "endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f" }, "type": "carpet" }], "choropleth": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "choropleth" }], "contour": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour" }], "contourcarpet": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "contourcarpet" }], "heatmap": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap" }], "heatmapgl": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl" }], "histogram": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "histogram" }], "histogram2d": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d" }], "histogram2dcontour": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour" }], "mesh3d": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "mesh3d" }], "parcoords": [{ "line": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "parcoords" }], "pie": [{ "automargin": true, "type": "pie" }], "scatter": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatter" }], "scatter3d": [{ "line": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatter3d" }], "scattercarpet": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattercarpet" }], "scattergeo": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattergeo" }], "scattergl": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattergl" }], "scattermapbox": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattermapbox" }], "scatterpolar": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterpolar" }], "scatterpolargl": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterpolargl" }], "scatterternary": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterternary" }], "surface": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface" }], "table": [{ "cells": { "fill": { "color": "#EBF0F8" }, "line": { "color": "white" } }, "header": { "fill": { "color": "#C8D4E3" }, "line": { "color": "white" } }, "type": "table" }] }, "layout": { "annotationdefaults": { "arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1 }, "coloraxis": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "colorscale": { "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]] }, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": { "color": "#2a3f5f" }, "geo": { "bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white" }, "hoverlabel": { "align": "left" }, "hovermode": "closest", "mapbox": { "style": "light" }, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": { "angularaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "bgcolor": "#E5ECF6", "radialaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" } }, "scene": { "xaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" }, "yaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" }, "zaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" } }, "shapedefaults": { "line": { "color": "#2a3f5f" } }, "ternary": { "aaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "baxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "bgcolor": "#E5ECF6", "caxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" } }, "title": { "x": 0.05 }, "xaxis": { "automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": { "standoff": 15 }, "zerolinecolor": "white", "zerolinewidth": 2 }, "yaxis": { "automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": { "standoff": 15 }, "zerolinecolor": "white", "zerolinewidth": 2 } } }, "title": { "font": { "color": "#4D5663" } }, "xaxis": { "gridcolor": "#E1E5ED", "showgrid": true, "tickfont": { "color": "#4D5663" }, "title": { "font": { "color": "#4D5663" }, "text": "" }, "zerolinecolor": "#E1E5ED" }, "yaxis": { "gridcolor": "#E1E5ED", "showgrid": true, "tickfont": { "color": "#4D5663" }, "title": { "font": { "color": "#4D5663" }, "text": "" }, "zerolinecolor": "#E1E5ED" } },
+                            { "responsive": true }
+                        )
+                    };
+
+                </script>
+                <br>
+
+                <h5><strong>한계점</strong></h5>
+                <ul>
+                    <li>댓글들이 일반적이지 않고 비정형화된 단어들로 많이 표현되기 때문에 사전적 의미를 통한 댓글의 긍부정 판단에 어려움이 있다.</li>
+                    <li>격한 긍정의 표현을 할 때 부정적이라고 알려진 단어들을 사용하기도 하는데 (ex, 미치겠다, 죽고싶다 등) 이와 같은 경우 잘못된 긍부정 판단이 될 수 있다.</li>
+                </ul>
+
+                <h5><strong>결론</strong></h5>
+                <ul>
+                    <li>댓글의 긍부정 반응은 성별 변수 보다 국내/해외 변수의 영향을 더 크게 받는다. </li>
+                    <li>유튜브 플랫폼의 특성상, 아무리 객관적인 인터뷰 영상임에도 불구하고 해당 아티스트에 긍정적인 사용자들이 댓글들을 많이 단다.</li>
+                </ul>
+
+
+                <br>
+
+                <hr>
+
+                <h4> * Normalization </h4>
+
+                <h5><strong>아티스트 별 댓글의 긍부정</strong></h5>
+
+
+                <div id="94f4c450-e093-4388-8089-be57eab9964a" class="plotly-graph-div"
+                    style="height:500px; width: auto;"></div>
+                <script type="text/javascript">
+
+                    window.PLOTLYENV = window.PLOTLYENV || {};
+
+                    if (document.getElementById("94f4c450-e093-4388-8089-be57eab9964a")) {
+                        Plotly.newPlot(
+                            '94f4c450-e093-4388-8089-be57eab9964a',
+                            [{ "marker": { "color": "rgba(255, 153, 51, 0.6)", "line": { "color": "rgba(255, 153, 51, 1.0)", "width": 1 } }, "name": "Positive", "orientation": "v", "text": "", "type": "bar", "x": ["ariana_grande.csv", "bts.csv", "chungha.csv", "doja_cat.csv", "dualipa.csv", "fifth_harmony.csv", "g_idle.csv", "in_real_life.csv", "itzy.csv", "justin_bieber.csv", "kangdaniel.csv", "little_mix.csv", "mamamoo.csv", "nct.csv", "oh_my_girl.csv", "onedirection.csv", "prettymuch.csv", "why_dont_we.csv", "winner.csv", "zico.csv"], "y": [51.56130268199234, 63.483575248281134, 62.06896551724138, 40.98065136401875, 43.72571428571428, 45.610278372591004, 54.89671002295333, 56.04770017035775, 56.54632448890822, 52.697742705083506, 65.7070707070707, 52.01465201465202, 55.19922254616132, 46.149897330595486, 58.70511425462459, 38.90455094643576, 37.804317868626555, 41.562583045442466, 60.526315789473685, 66.55290102389078] }, { "marker": { "color": "rgba(55, 128, 191, 0.6)", "line": { "color": "rgba(55, 128, 191, 1.0)", "width": 1 } }, "name": "Negative", "orientation": "v", "text": "", "type": "bar", "x": ["ariana_grande.csv", "bts.csv", "chungha.csv", "doja_cat.csv", "dualipa.csv", "fifth_harmony.csv", "g_idle.csv", "in_real_life.csv", "itzy.csv", "justin_bieber.csv", "kangdaniel.csv", "little_mix.csv", "mamamoo.csv", "nct.csv", "oh_my_girl.csv", "onedirection.csv", "prettymuch.csv", "why_dont_we.csv", "winner.csv", "zico.csv"], "y": [18.773946360153257, 7.4866310160427805, 5.057471264367816, 17.79834154548732, 14.811428571428573, 21.680942184154176, 9.028309104820199, 11.073253833049405, 7.177033492822966, 14.736648926408517, 6.767676767676768, 12.558869701726843, 10.00971817298348, 10.831622176591376, 9.439608269858542, 20.2577527184857, 16.858061552595316, 14.934892373106564, 8.074162679425838, 7.849829351535837] }, { "marker": { "color": "rgba(50, 171, 96, 0.6)", "line": { "color": "rgba(50, 171, 96, 1.0)", "width": 1 } }, "name": "Normal", "orientation": "v", "text": "", "type": "bar", "x": ["ariana_grande.csv", "bts.csv", "chungha.csv", "doja_cat.csv", "dualipa.csv", "fifth_harmony.csv", "g_idle.csv", "in_real_life.csv", "itzy.csv", "justin_bieber.csv", "kangdaniel.csv", "little_mix.csv", "mamamoo.csv", "nct.csv", "oh_my_girl.csv", "onedirection.csv", "prettymuch.csv", "why_dont_we.csv", "winner.csv", "zico.csv"], "y": [29.66475095785441, 29.02979373567609, 32.87356321839081, 41.221007090493934, 41.46285714285714, 32.70877944325482, 36.074980872226476, 32.87904599659284, 36.27664201826881, 32.56560836850798, 27.525252525252526, 35.426478283621144, 34.791059280855194, 43.01848049281315, 31.855277475516868, 40.83769633507853, 45.337620578778136, 43.50252458145097, 31.399521531100476, 25.597269624573375] }],
+                            { "legend": { "bgcolor": "#F5F6F9", "font": { "color": "#4D5663" } }, "paper_bgcolor": "#F5F6F9", "plot_bgcolor": "#F5F6F9", "template": { "data": { "bar": [{ "error_x": { "color": "#2a3f5f" }, "error_y": { "color": "#2a3f5f" }, "marker": { "line": { "color": "#E5ECF6", "width": 0.5 } }, "type": "bar" }], "barpolar": [{ "marker": { "line": { "color": "#E5ECF6", "width": 0.5 } }, "type": "barpolar" }], "carpet": [{ "aaxis": { "endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f" }, "baxis": { "endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f" }, "type": "carpet" }], "choropleth": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "choropleth" }], "contour": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour" }], "contourcarpet": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "contourcarpet" }], "heatmap": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap" }], "heatmapgl": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl" }], "histogram": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "histogram" }], "histogram2d": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d" }], "histogram2dcontour": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour" }], "mesh3d": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "mesh3d" }], "parcoords": [{ "line": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "parcoords" }], "pie": [{ "automargin": true, "type": "pie" }], "scatter": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatter" }], "scatter3d": [{ "line": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatter3d" }], "scattercarpet": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattercarpet" }], "scattergeo": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattergeo" }], "scattergl": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattergl" }], "scattermapbox": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattermapbox" }], "scatterpolar": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterpolar" }], "scatterpolargl": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterpolargl" }], "scatterternary": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterternary" }], "surface": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface" }], "table": [{ "cells": { "fill": { "color": "#EBF0F8" }, "line": { "color": "white" } }, "header": { "fill": { "color": "#C8D4E3" }, "line": { "color": "white" } }, "type": "table" }] }, "layout": { "annotationdefaults": { "arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1 }, "coloraxis": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "colorscale": { "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]] }, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": { "color": "#2a3f5f" }, "geo": { "bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white" }, "hoverlabel": { "align": "left" }, "hovermode": "closest", "mapbox": { "style": "light" }, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": { "angularaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "bgcolor": "#E5ECF6", "radialaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" } }, "scene": { "xaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" }, "yaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" }, "zaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" } }, "shapedefaults": { "line": { "color": "#2a3f5f" } }, "ternary": { "aaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "baxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "bgcolor": "#E5ECF6", "caxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" } }, "title": { "x": 0.05 }, "xaxis": { "automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": { "standoff": 15 }, "zerolinecolor": "white", "zerolinewidth": 2 }, "yaxis": { "automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": { "standoff": 15 }, "zerolinecolor": "white", "zerolinewidth": 2 } } }, "title": { "font": { "color": "#4D5663" } }, "xaxis": { "gridcolor": "#E1E5ED", "showgrid": true, "tickfont": { "color": "#4D5663" }, "title": { "font": { "color": "#4D5663" }, "text": "" }, "zerolinecolor": "#E1E5ED" }, "yaxis": { "gridcolor": "#E1E5ED", "showgrid": true, "tickfont": { "color": "#4D5663" }, "title": { "font": { "color": "#4D5663" }, "text": "" }, "zerolinecolor": "#E1E5ED" } },
+                            { "responsive": true }
+                        )
+                    };
+
+                </script>
+
+                <h5><strong>남성 vs 여성</strong></h5>
+
+                <div id="a14a67c3-4934-42cd-9751-d62e2645a840" class="plotly-graph-div"
+                    style="height:500px; width: auto;"></div>
+                <script type="text/javascript">
+
+                    window.PLOTLYENV = window.PLOTLYENV || {};
+
+                    if (document.getElementById("a14a67c3-4934-42cd-9751-d62e2645a840")) {
+                        Plotly.newPlot(
+                            'a14a67c3-4934-42cd-9751-d62e2645a840',
+                            [{ "marker": { "color": "rgba(255, 153, 51, 0.6)", "line": { "color": "rgba(255, 153, 51, 1.0)", "width": 1 } }, "name": "Positive", "orientation": "v", "text": "", "type": "bar", "x": ["\ub0a8\uc131", "\uc5ec\uc131"], "y": [50.74017908723282, 48.061228895893606] }, { "marker": { "color": "rgba(55, 128, 191, 0.6)", "line": { "color": "rgba(55, 128, 191, 1.0)", "width": 1 } }, "name": "Negative", "orientation": "v", "text": "", "type": "bar", "x": ["\ub0a8\uc131", "\uc5ec\uc131"], "y": [13.539861351819757, 15.525281747916578] }, { "marker": { "color": "rgba(50, 171, 96, 0.6)", "line": { "color": "rgba(50, 171, 96, 1.0)", "width": 1 } }, "name": "Normal", "orientation": "v", "text": "", "type": "bar", "x": ["\ub0a8\uc131", "\uc5ec\uc131"], "y": [35.71995956094743, 36.41348935618982] }],
+                            { "legend": { "bgcolor": "#F5F6F9", "font": { "color": "#4D5663" } }, "paper_bgcolor": "#F5F6F9", "plot_bgcolor": "#F5F6F9", "template": { "data": { "bar": [{ "error_x": { "color": "#2a3f5f" }, "error_y": { "color": "#2a3f5f" }, "marker": { "line": { "color": "#E5ECF6", "width": 0.5 } }, "type": "bar" }], "barpolar": [{ "marker": { "line": { "color": "#E5ECF6", "width": 0.5 } }, "type": "barpolar" }], "carpet": [{ "aaxis": { "endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f" }, "baxis": { "endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f" }, "type": "carpet" }], "choropleth": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "choropleth" }], "contour": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour" }], "contourcarpet": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "contourcarpet" }], "heatmap": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap" }], "heatmapgl": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl" }], "histogram": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "histogram" }], "histogram2d": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d" }], "histogram2dcontour": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour" }], "mesh3d": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "mesh3d" }], "parcoords": [{ "line": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "parcoords" }], "pie": [{ "automargin": true, "type": "pie" }], "scatter": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatter" }], "scatter3d": [{ "line": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatter3d" }], "scattercarpet": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattercarpet" }], "scattergeo": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattergeo" }], "scattergl": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattergl" }], "scattermapbox": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattermapbox" }], "scatterpolar": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterpolar" }], "scatterpolargl": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterpolargl" }], "scatterternary": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterternary" }], "surface": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface" }], "table": [{ "cells": { "fill": { "color": "#EBF0F8" }, "line": { "color": "white" } }, "header": { "fill": { "color": "#C8D4E3" }, "line": { "color": "white" } }, "type": "table" }] }, "layout": { "annotationdefaults": { "arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1 }, "coloraxis": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "colorscale": { "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]] }, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": { "color": "#2a3f5f" }, "geo": { "bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white" }, "hoverlabel": { "align": "left" }, "hovermode": "closest", "mapbox": { "style": "light" }, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": { "angularaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "bgcolor": "#E5ECF6", "radialaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" } }, "scene": { "xaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" }, "yaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" }, "zaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" } }, "shapedefaults": { "line": { "color": "#2a3f5f" } }, "ternary": { "aaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "baxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "bgcolor": "#E5ECF6", "caxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" } }, "title": { "x": 0.05 }, "xaxis": { "automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": { "standoff": 15 }, "zerolinecolor": "white", "zerolinewidth": 2 }, "yaxis": { "automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": { "standoff": 15 }, "zerolinecolor": "white", "zerolinewidth": 2 } } }, "title": { "font": { "color": "#4D5663" } }, "xaxis": { "gridcolor": "#E1E5ED", "showgrid": true, "tickfont": { "color": "#4D5663" }, "title": { "font": { "color": "#4D5663" }, "text": "" }, "zerolinecolor": "#E1E5ED" }, "yaxis": { "gridcolor": "#E1E5ED", "showgrid": true, "tickfont": { "color": "#4D5663" }, "title": { "font": { "color": "#4D5663" }, "text": "" }, "zerolinecolor": "#E1E5ED" } },
+                            { "responsive": true }
+                        )
+                    };
+
+                </script>
+
+                <h5><strong>국내 vs 해외</strong></h5>
+                <div id="9ecbdb41-d7e1-4ede-ac2e-b16d1d8dfefe" class="plotly-graph-div"
+                    style="height:500px; width: auto;"></div>
+                <script type="text/javascript">
+
+                    window.PLOTLYENV = window.PLOTLYENV || {};
+
+                    if (document.getElementById("9ecbdb41-d7e1-4ede-ac2e-b16d1d8dfefe")) {
+                        Plotly.newPlot(
+                            '9ecbdb41-d7e1-4ede-ac2e-b16d1d8dfefe',
+                            [{ "marker": { "color": "rgba(255, 153, 51, 0.6)", "line": { "color": "rgba(255, 153, 51, 1.0)", "width": 1 } }, "name": "Positive", "orientation": "v", "text": "", "type": "bar", "x": ["\uad6d\ub0b4", "\ud574\uc678"], "y": [57.906730259671434, 46.03764688814739] }, { "marker": { "color": "rgba(55, 128, 191, 0.6)", "line": { "color": "rgba(55, 128, 191, 1.0)", "width": 1 } }, "name": "Negative", "orientation": "v", "text": "", "type": "bar", "x": ["\uad6d\ub0b4", "\ud574\uc678"], "y": [8.600953895071543, 16.897577252284925] }, { "marker": { "color": "rgba(50, 171, 96, 0.6)", "line": { "color": "rgba(50, 171, 96, 1.0)", "width": 1 } }, "name": "Normal", "orientation": "v", "text": "", "type": "bar", "x": ["\uad6d\ub0b4", "\ud574\uc678"], "y": [33.49231584525702, 37.064775859567675] }],
+                            { "legend": { "bgcolor": "#F5F6F9", "font": { "color": "#4D5663" } }, "paper_bgcolor": "#F5F6F9", "plot_bgcolor": "#F5F6F9", "template": { "data": { "bar": [{ "error_x": { "color": "#2a3f5f" }, "error_y": { "color": "#2a3f5f" }, "marker": { "line": { "color": "#E5ECF6", "width": 0.5 } }, "type": "bar" }], "barpolar": [{ "marker": { "line": { "color": "#E5ECF6", "width": 0.5 } }, "type": "barpolar" }], "carpet": [{ "aaxis": { "endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f" }, "baxis": { "endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f" }, "type": "carpet" }], "choropleth": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "choropleth" }], "contour": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour" }], "contourcarpet": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "contourcarpet" }], "heatmap": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap" }], "heatmapgl": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl" }], "histogram": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "histogram" }], "histogram2d": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d" }], "histogram2dcontour": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour" }], "mesh3d": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "mesh3d" }], "parcoords": [{ "line": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "parcoords" }], "pie": [{ "automargin": true, "type": "pie" }], "scatter": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatter" }], "scatter3d": [{ "line": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatter3d" }], "scattercarpet": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattercarpet" }], "scattergeo": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattergeo" }], "scattergl": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattergl" }], "scattermapbox": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattermapbox" }], "scatterpolar": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterpolar" }], "scatterpolargl": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterpolargl" }], "scatterternary": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterternary" }], "surface": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface" }], "table": [{ "cells": { "fill": { "color": "#EBF0F8" }, "line": { "color": "white" } }, "header": { "fill": { "color": "#C8D4E3" }, "line": { "color": "white" } }, "type": "table" }] }, "layout": { "annotationdefaults": { "arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1 }, "coloraxis": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "colorscale": { "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]] }, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": { "color": "#2a3f5f" }, "geo": { "bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white" }, "hoverlabel": { "align": "left" }, "hovermode": "closest", "mapbox": { "style": "light" }, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": { "angularaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "bgcolor": "#E5ECF6", "radialaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" } }, "scene": { "xaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" }, "yaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" }, "zaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" } }, "shapedefaults": { "line": { "color": "#2a3f5f" } }, "ternary": { "aaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "baxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "bgcolor": "#E5ECF6", "caxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" } }, "title": { "x": 0.05 }, "xaxis": { "automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": { "standoff": 15 }, "zerolinecolor": "white", "zerolinewidth": 2 }, "yaxis": { "automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": { "standoff": 15 }, "zerolinecolor": "white", "zerolinewidth": 2 } } }, "title": { "font": { "color": "#4D5663" } }, "xaxis": { "gridcolor": "#E1E5ED", "showgrid": true, "tickfont": { "color": "#4D5663" }, "title": { "font": { "color": "#4D5663" }, "text": "" }, "zerolinecolor": "#E1E5ED" }, "yaxis": { "gridcolor": "#E1E5ED", "showgrid": true, "tickfont": { "color": "#4D5663" }, "title": { "font": { "color": "#4D5663" }, "text": "" }, "zerolinecolor": "#E1E5ED" } },
+                            { "responsive": true }
+                        )
+                    };
+
+                </script>
+
+
+                <h5><strong>국내 남성 vs 국내 여성 vs 해외 남성 vs 해외 여성</strong></h5>
+
+                <div id="a1c18d85-ba71-4504-9123-44ba7c279ba6" class="plotly-graph-div"
+                    style="height:500px; width: auto;"></div>
+                <script type="text/javascript">
+
+                    window.PLOTLYENV = window.PLOTLYENV || {};
+
+                    if (document.getElementById("a1c18d85-ba71-4504-9123-44ba7c279ba6")) {
+                        Plotly.newPlot(
+                            'a1c18d85-ba71-4504-9123-44ba7c279ba6',
+                            [{ "marker": { "color": "rgba(255, 153, 51, 0.6)", "line": { "color": "rgba(255, 153, 51, 1.0)", "width": 1 } }, "name": "Positive", "orientation": "v", "text": "", "type": "bar", "x": ["\uad6d\ub0b4 \ub0a8\uc131", "\uad6d\ub0b4 \uc5ec\uc131", "\ud574\uc678 \ub0a8\uc131", "\ud574\uc678 \uc5ec\uc131"], "y": [59.42475603492553, 56.83992059195091, 47.34277677315652, 45.300261096605745] }, { "marker": { "color": "rgba(55, 128, 191, 0.6)", "line": { "color": "rgba(55, 128, 191, 1.0)", "width": 1 } }, "name": "Negative", "orientation": "v", "text": "", "type": "bar", "x": ["\uad6d\ub0b4 \ub0a8\uc131", "\uad6d\ub0b4 \uc5ec\uc131", "\ud574\uc678 \ub0a8\uc131", "\ud574\uc678 \uc5ec\uc131"], "y": [8.307652799178221, 8.80707453528244, 15.586698814546915, 17.638210920649335] }, { "marker": { "color": "rgba(50, 171, 96, 0.6)", "line": { "color": "rgba(50, 171, 96, 1.0)", "width": 1 } }, "name": "Normal", "orientation": "v", "text": "", "type": "bar", "x": ["\uad6d\ub0b4 \ub0a8\uc131", "\uad6d\ub0b4 \uc5ec\uc131", "\ud574\uc678 \ub0a8\uc131", "\ud574\uc678 \uc5ec\uc131"], "y": [32.267591165896256, 34.35300487276665, 37.070524412296564, 37.06152798274492] }],
+                            { "legend": { "bgcolor": "#F5F6F9", "font": { "color": "#4D5663" } }, "paper_bgcolor": "#F5F6F9", "plot_bgcolor": "#F5F6F9", "template": { "data": { "bar": [{ "error_x": { "color": "#2a3f5f" }, "error_y": { "color": "#2a3f5f" }, "marker": { "line": { "color": "#E5ECF6", "width": 0.5 } }, "type": "bar" }], "barpolar": [{ "marker": { "line": { "color": "#E5ECF6", "width": 0.5 } }, "type": "barpolar" }], "carpet": [{ "aaxis": { "endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f" }, "baxis": { "endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f" }, "type": "carpet" }], "choropleth": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "choropleth" }], "contour": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour" }], "contourcarpet": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "contourcarpet" }], "heatmap": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap" }], "heatmapgl": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl" }], "histogram": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "histogram" }], "histogram2d": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d" }], "histogram2dcontour": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour" }], "mesh3d": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "mesh3d" }], "parcoords": [{ "line": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "parcoords" }], "pie": [{ "automargin": true, "type": "pie" }], "scatter": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatter" }], "scatter3d": [{ "line": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatter3d" }], "scattercarpet": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattercarpet" }], "scattergeo": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattergeo" }], "scattergl": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattergl" }], "scattermapbox": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattermapbox" }], "scatterpolar": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterpolar" }], "scatterpolargl": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterpolargl" }], "scatterternary": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterternary" }], "surface": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface" }], "table": [{ "cells": { "fill": { "color": "#EBF0F8" }, "line": { "color": "white" } }, "header": { "fill": { "color": "#C8D4E3" }, "line": { "color": "white" } }, "type": "table" }] }, "layout": { "annotationdefaults": { "arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1 }, "coloraxis": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "colorscale": { "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]] }, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": { "color": "#2a3f5f" }, "geo": { "bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white" }, "hoverlabel": { "align": "left" }, "hovermode": "closest", "mapbox": { "style": "light" }, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": { "angularaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "bgcolor": "#E5ECF6", "radialaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" } }, "scene": { "xaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" }, "yaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" }, "zaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" } }, "shapedefaults": { "line": { "color": "#2a3f5f" } }, "ternary": { "aaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "baxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "bgcolor": "#E5ECF6", "caxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" } }, "title": { "x": 0.05 }, "xaxis": { "automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": { "standoff": 15 }, "zerolinecolor": "white", "zerolinewidth": 2 }, "yaxis": { "automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": { "standoff": 15 }, "zerolinecolor": "white", "zerolinewidth": 2 } } }, "title": { "font": { "color": "#4D5663" } }, "xaxis": { "gridcolor": "#E1E5ED", "showgrid": true, "tickfont": { "color": "#4D5663" }, "title": { "font": { "color": "#4D5663" }, "text": "" }, "zerolinecolor": "#E1E5ED" }, "yaxis": { "gridcolor": "#E1E5ED", "showgrid": true, "tickfont": { "color": "#4D5663" }, "title": { "font": { "color": "#4D5663" }, "text": "" }, "zerolinecolor": "#E1E5ED" } },
+                            { "responsive": true }
+                        )
+                    };
+
+                </script>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+    </div>
+
+    </div>
+    <!-- End of Main Container -->
+
+    <!-- 이 아래부터는 무시하세요! -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
