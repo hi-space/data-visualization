@@ -17,9 +17,11 @@
     <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+        rel="stylesheet" type="text/css" />
     <!-- Third party plugin CSS-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+        rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
 
@@ -46,13 +48,16 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto my-2 my-lg-0">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Data</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#representation">Representation</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#correlation">Correlation</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sentiment">Sentiment</a></li>
                 </ul>
             </div>
         </div>
@@ -61,12 +66,13 @@
     <header class="masthead">
         <div class="container h-100">
             <div class="row h-100 align-items-center justify-content-center text-center">
-                <div class="col-lg-10 align-self-end">
-                    <h1 class="text-uppercase text-white font-weight-bold">Your Favorite Source of Free Bootstrap Themes</h1>
+                <div class="col-lg-12 align-self-end">
+                    <h1 class="text-uppercase text-white font-weight-bold">유튜브 댓글 속 소비자 반응 분석을 통한 <br> 국내, 영미 인기 댄스곡
+                        아티스트 비교</h1>
                     <hr class="divider my-4" />
                 </div>
                 <div class="col-lg-8 align-self-baseline">
-                    <p class="text-white-75 font-weight-light mb-5">Start Bootstrap can help you build better websites using the Bootstrap framework! Just download a theme and start customizing, no strings attached!</p>
+                    <p class="text-white-75 font-weight-light mb-5">이용주, 이유정</p>
                     <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
                 </div>
             </div>
@@ -77,9 +83,18 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h2 class="text-white mt-0">We've got what you need!</h2>
+                    <h2 class="text-white mt-0">About</h2>
                     <hr class="divider light my-4" />
-                    <p class="text-white-50 mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!</p>
+                    <p class="text-white-50 mb-4">
+                        YOUTUBE 댓글을 통해 댄스곡 아티스트의 성별, 문화권 별로 소비자들의 기호 경향성 차이를 파악하고,
+                        아티스트 별로 어떤 상관관계가 있는지 분석함으로써 <br> 한 아티스트가 다른 문화권의 시장으로 진입 시도할 때 전략적 인사이트를 얻을 수 있다.
+                    </p>
+                    <ol class="text-white-50 mb-4">
+                        <li>국내-영미 인기 댄스 가수들을 표현하는 단어의 범주 비교</li>
+                        <li>국내-영미 인기 댄스 가수들 간의 상관관계</li>
+                        <li>가수의 성별, 문화권 별 긍부정 피드백 빈도 차이</li>
+                    </ol>
+                    <br>
                     <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
                 </div>
             </div>
@@ -88,35 +103,38 @@
     <!-- Services-->
     <section class="page-section" id="services">
         <div class="container">
-            <h2 class="text-center mt-0">At Your Service</h2>
+            <h2 class="text-center mt-0">Data Source</h2>
             <hr class="divider my-4" />
             <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="mt-5">
-                        <i class="fas fa-4x fa-gem text-primary mb-4"></i>
-                        <h3 class="h4 mb-2">Sturdy Themes</h3>
-                        <p class="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="mt-5">
-                        <i class="fas fa-4x fa-laptop-code text-primary mb-4"></i>
-                        <h3 class="h4 mb-2">Up to Date</h3>
-                        <p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
-                    </div>
-                </div>
+
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
                         <i class="fas fa-4x fa-globe text-primary mb-4"></i>
-                        <h3 class="h4 mb-2">Ready to Publish</h3>
-                        <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p>
+
+                        <h3 class="h4 mb-2">Target</h3>
+                        <p class="text-muted mb-0">YOUTUBE 인기차트 중 <br> 현재 활동 중인 댄스 가수</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
-                        <i class="fas fa-4x fa-heart text-primary mb-4"></i>
-                        <h3 class="h4 mb-2">Made with Love</h3>
-                        <p class="text-muted mb-0">Is it really open source if it's not made with love?</p>
+                        <i class="fas fa-4x fa-users text-primary mb-4"></i>
+                        <h3 class="h4 mb-2">Group</h3>
+                        <p class="text-muted mb-0">국내, 해외 별 <br> 남자 5그룹, 여자 5그룹</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <i class="fas fa-4x fa-film text-primary mb-4"></i>
+
+                        <h3 class="h4 mb-2">Source 1</h3>
+                        <p class="text-muted mb-0">최신순-조회수 많은 순으로 <br> 각 가수 별 뮤비 영상 3개</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <i class="fas fa-4x fa-comments text-primary mb-4"></i>
+                        <h3 class="h4 mb-2">Source 2</h3>
+                        <p class="text-muted mb-0">최신순-조회수 많은 순으로 <br> 각 가수 별 인터뷰 영상 3개</p>
                     </div>
                 </div>
             </div>
@@ -126,89 +144,581 @@
     <div id="portfolio">
         <div class="container-fluid p-0">
             <div class="row no-gutters">
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg">
-                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="" />
+
+
+                <div class="col-lg-3 col-sm-5">
+                    <a class="portfolio-box" href="img/nct.jpg">
+                        <img class="img-fluid" src="img/nct.jpg" alt="" />
                         <div class="portfolio-box-caption">
-                            <div class="project-category text-white-50">Category</div>
-                            <div class="project-name">Project Name</div>
+                            <div class="project-category text-white-50">국내 남성</div>
+                            <div class="project-name">NCT</div>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg">
-                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="" />
+
+                <div class="col-lg-3 col-sm-5">
+                    <a class="portfolio-box" href="img/ohmygirl.jpg">
+                        <img class="img-fluid" src="img/ohmygirl.jpg" alt="" />
                         <div class="portfolio-box-caption">
-                            <div class="project-category text-white-50">Category</div>
-                            <div class="project-name">Project Name</div>
+                            <div class="project-category text-white-50">국내 여성</div>
+                            <div class="project-name">오마이걸</div>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg">
-                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="" />
+                <div class="col-lg-3 col-sm-5">
+                    <a class="portfolio-box" href="img/inreallife.jpg">
+                        <img class="img-fluid" src="img/inreallife.jpg" alt="" />
                         <div class="portfolio-box-caption">
-                            <div class="project-category text-white-50">Category</div>
-                            <div class="project-name">Project Name</div>
+                            <div class="project-category text-white-50">해외 남성</div>
+                            <div class="project-name">In Real Life</div>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.jpg">
-                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg" alt="" />
+                <div class="col-lg-3 col-sm-5">
+                    <a class="portfolio-box" href="img/littlemix.jpg">
+                        <img class="img-fluid" src="img/littlemix.jpg" alt="" />
                         <div class="portfolio-box-caption">
-                            <div class="project-category text-white-50">Category</div>
-                            <div class="project-name">Project Name</div>
+                            <div class="project-category text-white-50">해외 여성</div>
+                            <div class="project-name">Little Mix</div>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg">
-                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg" alt="" />
+                <div class="col-lg-3 col-sm-5">
+                    <a class="portfolio-box" href="img/zico.jpg">
+                        <img class="img-fluid" src="img/zico.jpg" alt="" />
                         <div class="portfolio-box-caption">
-                            <div class="project-category text-white-50">Category</div>
-                            <div class="project-name">Project Name</div>
+                            <div class="project-category text-white-50">국내 남성</div>
+                            <div class="project-name">ZICO</div>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.jpg">
-                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg" alt="" />
-                        <div class="portfolio-box-caption p-3">
-                            <div class="project-category text-white-50">Category</div>
-                            <div class="project-name">Project Name</div>
+
+                <div class="col-lg-3 col-sm-5">
+                    <a class="portfolio-box" href="img/chungha.jpg">
+                        <img class="img-fluid" src="img/chungha.jpg" alt="" />
+                        <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">국내 여성</div>
+                            <div class="project-name">청하</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-sm-5">
+                    <a class="portfolio-box" href="img/prettymuch.jpg">
+                        <img class="img-fluid" src="img/prettymuch.jpg" alt="" />
+                        <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">해외 남성</div>
+                            <div class="project-name">Pretty Much</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-sm-5">
+                    <a class="portfolio-box" href="img/dualipa.jpg">
+                        <img class="img-fluid" src="img/dualipa.jpg" alt="" />
+                        <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">해외 여성</div>
+                            <div class="project-name">Dualipa</div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="col-lg-3 col-sm-5">
+                    <a class="portfolio-box" href="img/bts.jpg">
+                        <img class="img-fluid" src="img/bts.jpg" alt="" />
+                        <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">국내 남성</div>
+                            <div class="project-name">BTS</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-sm-5">
+                    <a class="portfolio-box" href="img/mamamoo.jpg">
+                        <img class="img-fluid" src="img/mamamoo.jpg" alt="" />
+                        <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">국내 여성</div>
+                            <div class="project-name">마마무</div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="col-lg-3 col-sm-5">
+                    <a class="portfolio-box" href="img/onedirection.jpg">
+                        <img class="img-fluid" src="img/onedirection.jpg" alt="" />
+                        <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">해외 남성</div>
+                            <div class="project-name">One Direction</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-sm-5">
+                    <a class="portfolio-box" href="img/fifthharmony.jpg">
+                        <img class="img-fluid" src="img/fifthharmony.jpg" alt="" />
+                        <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">해외 여성</div>
+                            <div class="project-name">Fifth Harmony</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-sm-5">
+                    <a class="portfolio-box" href="img/winner.jpg">
+                        <img class="img-fluid" src="img/winner.jpg" alt="" />
+                        <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">국내 남성</div>
+                            <div class="project-name">WINNER</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-5">
+                    <a class="portfolio-box" href="img/gidle.jpg">
+                        <img class="img-fluid" src="img/gidle.jpg" alt="" />
+                        <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">국내 여성</div>
+                            <div class="project-name">여자아이들</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-sm-5">
+                    <a class="portfolio-box" href="img/justinbieber.jpg">
+                        <img class="img-fluid" src="img/justinbieber.jpg" alt="" />
+                        <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">해외 남성</div>
+                            <div class="project-name">Justin Bieber</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-sm-5">
+                    <a class="portfolio-box" href="img/arianagrande.jpg">
+                        <img class="img-fluid" src="img/arianagrande.jpg" alt="" />
+                        <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">해외 여성</div>
+                            <div class="project-name">Ariana Grande</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-sm-5">
+                    <a class="portfolio-box" href="img/kangdaniel.jpg">
+                        <img class="img-fluid" src="img/kangdaniel.jpg" alt="" />
+                        <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">국내 남성</div>
+                            <div class="project-name">강다니엘</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-sm-5">
+                    <a class="portfolio-box" href="img/itzy.jpg">
+                        <img class="img-fluid" src="img/itzy.jpg" alt="" />
+                        <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">국내 여성</div>
+                            <div class="project-name">ITZY</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-sm-5">
+                    <a class="portfolio-box" href="img/whydontwe.jpg">
+                        <img class="img-fluid" src="img/whydontwe.jpg" alt="" />
+                        <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">해외 남성</div>
+                            <div class="project-name">Why Don't we</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-sm-5">
+                    <a class="portfolio-box" href="img/dojacat.jpg">
+                        <img class="img-fluid" src="img/dojacat.jpg" alt="" />
+                        <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">해외 여성</div>
+                            <div class="project-name">Doja Cat</div>
                         </div>
                     </a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Call to action-->
-    <section class="page-section bg-dark text-white">
+
+    <section class="page-section bg-dark text-white" id="representation">
         <div class="container text-center">
-            <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
-            <a class="btn btn-light btn-xl" href="https://startbootstrap.com/themes/creative/">Download Now!</a>
+            <h2 class="mb-4">국내-영미 인기 댄스 가수들을 표현하는 단어의 범주 비교</h2>
+            <p class="text-white-50 mb-4">
+                가수 뮤비에 달린 댓글들의 형용사 빈도수에 따라 각 문화권의 소비자가 원하는 이상향을 추론할 수 있을 것이다
+            </p>
         </div>
     </section>
-    <!-- Contact-->
-    <section class="page-section" id="contact">
+
+    <section class="page-section">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h2 class="mt-0">Let's Get In Touch!</h2>
+                <div class="col-lg-10 text-center">
+                    <h2 class="mt-0">국내 한글 댓글</h2>
+
                     <hr class="divider my-4" />
-                    <p class="text-muted mb-5">Ready to start your next project with us? Give us a call or send us an email and we will get back to you as soon as possible!</p>
+
+                    <div class='tableauPlaceholder' id='viz1593059908480' style='position: relative'><noscript><a
+                                href='#'><img alt=' '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;1_&#47;1_15930596244960&#47;sheet0&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='1_15930596244960&#47;sheet0' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;1_&#47;1_15930596244960&#47;sheet0&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='ko' /></object></div>
+                    <script
+                        type='text/javascript'>                    var divElement = document.getElementById('viz1593059908480'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+                    <br><br><br><br>
+                    <h2 class="mt-0">국내 영어 댓글</h2>
+
+                    <hr class="divider my-4" />
+                    <div class='tableauPlaceholder' id='viz1593059876013' style='position: relative'><noscript><a
+                                href='#'><img alt=' '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;25&#47;25721&#47;sheet0&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='25721&#47;sheet0' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;25&#47;25721&#47;sheet0&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='ko' /></object></div>
+                    <script
+                        type='text/javascript'>                    var divElement = document.getElementById('viz1593059876013'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+                    <br><br><br><br>
+                    <h2 class="mt-0">해외 영어 댓글</h2>
+
+                    <hr class="divider my-4" />
+                    <div class='tableauPlaceholder' id='viz1593059924582' style='position: relative'><noscript><a
+                                href='#'><img alt=' '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;1_&#47;1_15930598480990&#47;sheet0&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='1_15930598480990&#47;sheet0' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;1_&#47;1_15930598480990&#47;sheet0&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='ko' /></object></div>
+                    <script
+                        type='text/javascript'>                    var divElement = document.getElementById('viz1593059924582'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-                    <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
-                    <div>+1 (555) 123-4567</div>
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-10 text-center">
+                    <br><br><br><br>
+                    <hr class="divider my-4" />
+                    <br><br>
+                    <h3 class="text-muted mb-5">국내-해외 간 대표 단어들의 범주를 비교했을 때 큰 차이는 없다</h3>
+                    <p class="text-muted mb-4">소비자의 댓글이 아티스트 자체에 대한 평가보다는 본인의 감정 상태를 주로 표현하기 때문에,<br>댓글들을 통해 해당 아티스트의
+                        대표성을 찾아내기 어려움이 있다.</p>
                 </div>
-                <div class="col-lg-4 mr-auto text-center">
-                    <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
-                    <!-- Make sure to change the email address in BOTH the anchor text and the link target below!-->
-                    <a class="d-block" href="mailto:contact@yourwebsite.com">contact@yourwebsite.com</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="page-section bg-dark text-white" id="correlation">
+        <div class="container text-center">
+            <h2 class="mb-4">국내-영미 인기 댄스 가수들 간의 상관관계</h2>
+            <p class="text-white-50 mb-4">
+                각 가수의 평가에 사용된 단어들의 유사성을 통해 유사한 아티스트끼리 분류할 수 있을 것이다
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact-->
+    <section class="page-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h2 class="mt-0">사회적 연결망 분석</h2>
+
+                    <hr class="divider my-4" />
+
+                    <img src="img/5_1.png" />
+                    <br><br>
+                    <img src="img/5_2.png" />
+                    <br><br>
+                    <img src="img/5_4.png" />
+                    <br><br>
+
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-10 text-center">
+                    <br><br><br><br>
+                    <hr class="divider my-4" />
+                    <br><br>
+                    <h3 class="text-muted mb-5">국내 가수와 해외 가수 간 매칭의 근거를 시각화</h3>
+
+                    <p class="text-muted mb-4">콘텐츠 분석을 통해 소비자가 표현한 중심 단어(인접 노드)를 기준으로 컨셉 방향성 제시 가능</p>
+
+                    <br>
+
+                    <div class="row text-center">
+                        <div class="col-lg-4 col-sm-5">
+                            <img class="img-fluid" src="img/onedirection.jpg" alt="" />
+                        </div>
+
+                        <div class="col-lg-4 col-sm-5">
+                            <img class="img-fluid" src="img/dojacat.jpg" alt="" />
+                        </div>
+
+                        <div class="col-lg-4 col-sm-5">
+                            <img class="img-fluid" src="img/nct.jpg" alt="" />
+                        </div>
+                        <div class="col-lg-12">
+                            <br>
+                            <h5 class="text-muted mb-4">One direction / Doja Cat / NCT</h5>
+                            <p class="text-muted mb-4">visual, distinguished, chilly, successful</p>
+                            <br>
+                        </div>
+                    </div>
+
+                    <div class="row text-center">
+                        <div class="col-lg-4 col-sm-5">
+                            <img class="img-fluid" src="img/justinbieber.jpg" alt="" />
+                        </div>
+
+                        <div class="col-lg-4 col-sm-5">
+                            <img class="img-fluid" src="img/chungha.jpg" alt="" />
+                        </div>
+
+                        <div class="col-lg-12">
+                            <br>
+                            <h5 class="text-muted mb-4">Justine Bieber / 청하</h5>
+                            <p class="text-muted mb-4">small, underrated, independent, precise</p>
+                            <br>
+                        </div>
+                    </div>
+
+                    <div class="row text-center">
+                        <div class="col-lg-4 col-sm-5">
+                            <img class="img-fluid" src="img/kangdaniel.jpg" alt="" />
+                        </div>
+
+                        <div class="col-lg-4 col-sm-5">
+                            <img class="img-fluid" src="img/itzy.jpg" alt="" />
+                        </div>
+
+                        <div class="col-lg-4 col-sm-5">
+                            <img class="img-fluid" src="img/fifthharmony.jpg" alt="" />
+                        </div>
+
+                        <div class="col-lg-12">
+                            <br>
+                            <h5 class="text-muted mb-4">강다니엘 / ITZY / Fifth Harmony</h5>
+                            <p class="text-muted mb-4">small, underrated, independent, precise</p>
+                            <br>
+                        </div>
+                    </div>
+
+                    <div class="row text-center">
+                        <div class="col-lg-4 col-sm-5">
+                            <img class="img-fluid" src="img/ohmygirl.jpg" alt="" />
+                        </div>
+
+                        <div class="col-lg-4 col-sm-5">
+                            <img class="img-fluid" src="img/zico.jpg" alt="" />
+                        </div>
+
+                        <div class="col-lg-4 col-sm-5">
+                            <img class="img-fluid" src="img/gidle.jpg" alt="" />
+                        </div>
+
+                        <div class="col-lg-12">
+                            <br>
+                            <h5 class="text-muted mb-4">오마이걸 / ZICO / 여자아이들</h5>
+                            <p class="text-muted mb-4">possible, thick, cold, straight</p>
+                            <br>
+                        </div>
+                    </div>
+
+                    <div class="row text-center">
+                        <div class="col-lg-4 col-sm-5">
+                            <img class="img-fluid" src="img/whydontwe.jpg" alt="" />
+                        </div>
+
+                        <div class="col-lg-4 col-sm-5">
+                            <img class="img-fluid" src="img/arianagrande.jpg" alt="" />
+                        </div>
+
+                        <div class="col-lg-4 col-sm-5">
+                            <img class="img-fluid" src="img/bts.jpg" alt="" />
+                        </div>
+
+                        <div class="col-lg-12">
+                            <br>
+                            <h5 class="text-muted mb-4">Why don’t we / Ariana grande / BTS</h5>
+                            <p class="text-muted mb-4">omg, simple, lovin, danger, murky</p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section bg-dark text-white" id="sentiment">
+        <div class="container text-center">
+            <h2 class="mb-4">가수의 성별, 문화권 별 긍부정 피드백 빈도 차이</h2>
+            <p class="text-white-50 mb-4">
+                각 가수들의 인터뷰 영상의 댓글들을 통해 두 군집 데이터를 각각 감성분석하고 이를 통해 부정성 비율 비교
+                <br>
+                <br>
+                국내 vs 해외
+                <br>
+                남성 vs 여성
+                <br>
+                국내 남성 vs 국내 여성 vs 해외 남성 vs 해외 여성
+
+            </p>
+        </div>
+    </section>
+
+    <section class="page-section" >
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h2 class="mt-0">아티스트 별 댓글의 긍부정 비율</h2>
+
+                    <hr class="divider my-4" />
+
+
+                    <div id="94f4c450-e093-4388-8089-be57eab9964a" class="plotly-graph-div"
+                        style="height:500px; width: auto;"></div>
+                    <script type="text/javascript">
+
+                        window.PLOTLYENV = window.PLOTLYENV || {};
+
+                        if (document.getElementById("94f4c450-e093-4388-8089-be57eab9964a")) {
+                            Plotly.newPlot(
+                                '94f4c450-e093-4388-8089-be57eab9964a',
+                                [{ "marker": { "color": "rgba(255, 153, 51, 0.6)", "line": { "color": "rgba(255, 153, 51, 1.0)", "width": 1 } }, "name": "Positive", "orientation": "v", "text": "", "type": "bar", "x": ["ariana_grande.csv", "bts.csv", "chungha.csv", "doja_cat.csv", "dualipa.csv", "fifth_harmony.csv", "g_idle.csv", "in_real_life.csv", "itzy.csv", "justin_bieber.csv", "kangdaniel.csv", "little_mix.csv", "mamamoo.csv", "nct.csv", "oh_my_girl.csv", "onedirection.csv", "prettymuch.csv", "why_dont_we.csv", "winner.csv", "zico.csv"], "y": [51.56130268199234, 63.483575248281134, 62.06896551724138, 40.98065136401875, 43.72571428571428, 45.610278372591004, 54.89671002295333, 56.04770017035775, 56.54632448890822, 52.697742705083506, 65.7070707070707, 52.01465201465202, 55.19922254616132, 46.149897330595486, 58.70511425462459, 38.90455094643576, 37.804317868626555, 41.562583045442466, 60.526315789473685, 66.55290102389078] }, { "marker": { "color": "rgba(55, 128, 191, 0.6)", "line": { "color": "rgba(55, 128, 191, 1.0)", "width": 1 } }, "name": "Negative", "orientation": "v", "text": "", "type": "bar", "x": ["ariana_grande.csv", "bts.csv", "chungha.csv", "doja_cat.csv", "dualipa.csv", "fifth_harmony.csv", "g_idle.csv", "in_real_life.csv", "itzy.csv", "justin_bieber.csv", "kangdaniel.csv", "little_mix.csv", "mamamoo.csv", "nct.csv", "oh_my_girl.csv", "onedirection.csv", "prettymuch.csv", "why_dont_we.csv", "winner.csv", "zico.csv"], "y": [18.773946360153257, 7.4866310160427805, 5.057471264367816, 17.79834154548732, 14.811428571428573, 21.680942184154176, 9.028309104820199, 11.073253833049405, 7.177033492822966, 14.736648926408517, 6.767676767676768, 12.558869701726843, 10.00971817298348, 10.831622176591376, 9.439608269858542, 20.2577527184857, 16.858061552595316, 14.934892373106564, 8.074162679425838, 7.849829351535837] }, { "marker": { "color": "rgba(50, 171, 96, 0.6)", "line": { "color": "rgba(50, 171, 96, 1.0)", "width": 1 } }, "name": "Normal", "orientation": "v", "text": "", "type": "bar", "x": ["ariana_grande.csv", "bts.csv", "chungha.csv", "doja_cat.csv", "dualipa.csv", "fifth_harmony.csv", "g_idle.csv", "in_real_life.csv", "itzy.csv", "justin_bieber.csv", "kangdaniel.csv", "little_mix.csv", "mamamoo.csv", "nct.csv", "oh_my_girl.csv", "onedirection.csv", "prettymuch.csv", "why_dont_we.csv", "winner.csv", "zico.csv"], "y": [29.66475095785441, 29.02979373567609, 32.87356321839081, 41.221007090493934, 41.46285714285714, 32.70877944325482, 36.074980872226476, 32.87904599659284, 36.27664201826881, 32.56560836850798, 27.525252525252526, 35.426478283621144, 34.791059280855194, 43.01848049281315, 31.855277475516868, 40.83769633507853, 45.337620578778136, 43.50252458145097, 31.399521531100476, 25.597269624573375] }],
+                                { "legend": { "bgcolor": "#F5F6F9", "font": { "color": "#4D5663" } }, "paper_bgcolor": "#F5F6F9", "plot_bgcolor": "#F5F6F9", "template": { "data": { "bar": [{ "error_x": { "color": "#2a3f5f" }, "error_y": { "color": "#2a3f5f" }, "marker": { "line": { "color": "#E5ECF6", "width": 0.5 } }, "type": "bar" }], "barpolar": [{ "marker": { "line": { "color": "#E5ECF6", "width": 0.5 } }, "type": "barpolar" }], "carpet": [{ "aaxis": { "endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f" }, "baxis": { "endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f" }, "type": "carpet" }], "choropleth": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "choropleth" }], "contour": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour" }], "contourcarpet": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "contourcarpet" }], "heatmap": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap" }], "heatmapgl": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl" }], "histogram": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "histogram" }], "histogram2d": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d" }], "histogram2dcontour": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour" }], "mesh3d": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "mesh3d" }], "parcoords": [{ "line": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "parcoords" }], "pie": [{ "automargin": true, "type": "pie" }], "scatter": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatter" }], "scatter3d": [{ "line": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatter3d" }], "scattercarpet": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattercarpet" }], "scattergeo": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattergeo" }], "scattergl": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattergl" }], "scattermapbox": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattermapbox" }], "scatterpolar": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterpolar" }], "scatterpolargl": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterpolargl" }], "scatterternary": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterternary" }], "surface": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface" }], "table": [{ "cells": { "fill": { "color": "#EBF0F8" }, "line": { "color": "white" } }, "header": { "fill": { "color": "#C8D4E3" }, "line": { "color": "white" } }, "type": "table" }] }, "layout": { "annotationdefaults": { "arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1 }, "coloraxis": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "colorscale": { "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]] }, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": { "color": "#2a3f5f" }, "geo": { "bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white" }, "hoverlabel": { "align": "left" }, "hovermode": "closest", "mapbox": { "style": "light" }, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": { "angularaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "bgcolor": "#E5ECF6", "radialaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" } }, "scene": { "xaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" }, "yaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" }, "zaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" } }, "shapedefaults": { "line": { "color": "#2a3f5f" } }, "ternary": { "aaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "baxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "bgcolor": "#E5ECF6", "caxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" } }, "title": { "x": 0.05 }, "xaxis": { "automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": { "standoff": 15 }, "zerolinecolor": "white", "zerolinewidth": 2 }, "yaxis": { "automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": { "standoff": 15 }, "zerolinecolor": "white", "zerolinewidth": 2 } } }, "title": { "font": { "color": "#4D5663" } }, "xaxis": { "gridcolor": "#E1E5ED", "showgrid": true, "tickfont": { "color": "#4D5663" }, "title": { "font": { "color": "#4D5663" }, "text": "" }, "zerolinecolor": "#E1E5ED" }, "yaxis": { "gridcolor": "#E1E5ED", "showgrid": true, "tickfont": { "color": "#4D5663" }, "title": { "font": { "color": "#4D5663" }, "text": "" }, "zerolinecolor": "#E1E5ED" } },
+                                { "responsive": true }
+                            )
+                        };
+
+                    </script>
+
+                    <br><br><br><br>
+                    <h2 class="mt-0">국내 vs 해외</h2>
+
+                    <hr class="divider my-4" />
+                    <div id="9ecbdb41-d7e1-4ede-ac2e-b16d1d8dfefe" class="plotly-graph-div"
+                        style="height:500px; width: auto;"></div>
+                    <script type="text/javascript">
+
+                        window.PLOTLYENV = window.PLOTLYENV || {};
+
+                        if (document.getElementById("9ecbdb41-d7e1-4ede-ac2e-b16d1d8dfefe")) {
+                            Plotly.newPlot(
+                                '9ecbdb41-d7e1-4ede-ac2e-b16d1d8dfefe',
+                                [{ "marker": { "color": "rgba(255, 153, 51, 0.6)", "line": { "color": "rgba(255, 153, 51, 1.0)", "width": 1 } }, "name": "Positive", "orientation": "v", "text": "", "type": "bar", "x": ["\uad6d\ub0b4", "\ud574\uc678"], "y": [57.906730259671434, 46.03764688814739] }, { "marker": { "color": "rgba(55, 128, 191, 0.6)", "line": { "color": "rgba(55, 128, 191, 1.0)", "width": 1 } }, "name": "Negative", "orientation": "v", "text": "", "type": "bar", "x": ["\uad6d\ub0b4", "\ud574\uc678"], "y": [8.600953895071543, 16.897577252284925] }, { "marker": { "color": "rgba(50, 171, 96, 0.6)", "line": { "color": "rgba(50, 171, 96, 1.0)", "width": 1 } }, "name": "Normal", "orientation": "v", "text": "", "type": "bar", "x": ["\uad6d\ub0b4", "\ud574\uc678"], "y": [33.49231584525702, 37.064775859567675] }],
+                                { "legend": { "bgcolor": "#F5F6F9", "font": { "color": "#4D5663" } }, "paper_bgcolor": "#F5F6F9", "plot_bgcolor": "#F5F6F9", "template": { "data": { "bar": [{ "error_x": { "color": "#2a3f5f" }, "error_y": { "color": "#2a3f5f" }, "marker": { "line": { "color": "#E5ECF6", "width": 0.5 } }, "type": "bar" }], "barpolar": [{ "marker": { "line": { "color": "#E5ECF6", "width": 0.5 } }, "type": "barpolar" }], "carpet": [{ "aaxis": { "endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f" }, "baxis": { "endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f" }, "type": "carpet" }], "choropleth": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "choropleth" }], "contour": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour" }], "contourcarpet": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "contourcarpet" }], "heatmap": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap" }], "heatmapgl": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl" }], "histogram": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "histogram" }], "histogram2d": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d" }], "histogram2dcontour": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour" }], "mesh3d": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "mesh3d" }], "parcoords": [{ "line": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "parcoords" }], "pie": [{ "automargin": true, "type": "pie" }], "scatter": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatter" }], "scatter3d": [{ "line": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatter3d" }], "scattercarpet": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattercarpet" }], "scattergeo": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattergeo" }], "scattergl": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattergl" }], "scattermapbox": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattermapbox" }], "scatterpolar": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterpolar" }], "scatterpolargl": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterpolargl" }], "scatterternary": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterternary" }], "surface": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface" }], "table": [{ "cells": { "fill": { "color": "#EBF0F8" }, "line": { "color": "white" } }, "header": { "fill": { "color": "#C8D4E3" }, "line": { "color": "white" } }, "type": "table" }] }, "layout": { "annotationdefaults": { "arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1 }, "coloraxis": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "colorscale": { "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]] }, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": { "color": "#2a3f5f" }, "geo": { "bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white" }, "hoverlabel": { "align": "left" }, "hovermode": "closest", "mapbox": { "style": "light" }, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": { "angularaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "bgcolor": "#E5ECF6", "radialaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" } }, "scene": { "xaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" }, "yaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" }, "zaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" } }, "shapedefaults": { "line": { "color": "#2a3f5f" } }, "ternary": { "aaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "baxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "bgcolor": "#E5ECF6", "caxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" } }, "title": { "x": 0.05 }, "xaxis": { "automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": { "standoff": 15 }, "zerolinecolor": "white", "zerolinewidth": 2 }, "yaxis": { "automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": { "standoff": 15 }, "zerolinecolor": "white", "zerolinewidth": 2 } } }, "title": { "font": { "color": "#4D5663" } }, "xaxis": { "gridcolor": "#E1E5ED", "showgrid": true, "tickfont": { "color": "#4D5663" }, "title": { "font": { "color": "#4D5663" }, "text": "" }, "zerolinecolor": "#E1E5ED" }, "yaxis": { "gridcolor": "#E1E5ED", "showgrid": true, "tickfont": { "color": "#4D5663" }, "title": { "font": { "color": "#4D5663" }, "text": "" }, "zerolinecolor": "#E1E5ED" } },
+                                { "responsive": true }
+                            )
+                        };
+
+                    </script>
+                    <br><br><br><br>
+                    <h2 class="mt-0">남성 vs 여성</h2>
+
+                    <hr class="divider my-4" />
+                    <div id="a14a67c3-4934-42cd-9751-d62e2645a840" class="plotly-graph-div"
+                        style="height:500px; width: auto;"></div>
+                    <script type="text/javascript">
+
+                        window.PLOTLYENV = window.PLOTLYENV || {};
+
+                        if (document.getElementById("a14a67c3-4934-42cd-9751-d62e2645a840")) {
+                            Plotly.newPlot(
+                                'a14a67c3-4934-42cd-9751-d62e2645a840',
+                                [{ "marker": { "color": "rgba(255, 153, 51, 0.6)", "line": { "color": "rgba(255, 153, 51, 1.0)", "width": 1 } }, "name": "Positive", "orientation": "v", "text": "", "type": "bar", "x": ["\ub0a8\uc131", "\uc5ec\uc131"], "y": [50.74017908723282, 48.061228895893606] }, { "marker": { "color": "rgba(55, 128, 191, 0.6)", "line": { "color": "rgba(55, 128, 191, 1.0)", "width": 1 } }, "name": "Negative", "orientation": "v", "text": "", "type": "bar", "x": ["\ub0a8\uc131", "\uc5ec\uc131"], "y": [13.539861351819757, 15.525281747916578] }, { "marker": { "color": "rgba(50, 171, 96, 0.6)", "line": { "color": "rgba(50, 171, 96, 1.0)", "width": 1 } }, "name": "Normal", "orientation": "v", "text": "", "type": "bar", "x": ["\ub0a8\uc131", "\uc5ec\uc131"], "y": [35.71995956094743, 36.41348935618982] }],
+                                { "legend": { "bgcolor": "#F5F6F9", "font": { "color": "#4D5663" } }, "paper_bgcolor": "#F5F6F9", "plot_bgcolor": "#F5F6F9", "template": { "data": { "bar": [{ "error_x": { "color": "#2a3f5f" }, "error_y": { "color": "#2a3f5f" }, "marker": { "line": { "color": "#E5ECF6", "width": 0.5 } }, "type": "bar" }], "barpolar": [{ "marker": { "line": { "color": "#E5ECF6", "width": 0.5 } }, "type": "barpolar" }], "carpet": [{ "aaxis": { "endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f" }, "baxis": { "endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f" }, "type": "carpet" }], "choropleth": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "choropleth" }], "contour": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour" }], "contourcarpet": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "contourcarpet" }], "heatmap": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap" }], "heatmapgl": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl" }], "histogram": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "histogram" }], "histogram2d": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d" }], "histogram2dcontour": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour" }], "mesh3d": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "mesh3d" }], "parcoords": [{ "line": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "parcoords" }], "pie": [{ "automargin": true, "type": "pie" }], "scatter": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatter" }], "scatter3d": [{ "line": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatter3d" }], "scattercarpet": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattercarpet" }], "scattergeo": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattergeo" }], "scattergl": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattergl" }], "scattermapbox": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattermapbox" }], "scatterpolar": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterpolar" }], "scatterpolargl": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterpolargl" }], "scatterternary": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterternary" }], "surface": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface" }], "table": [{ "cells": { "fill": { "color": "#EBF0F8" }, "line": { "color": "white" } }, "header": { "fill": { "color": "#C8D4E3" }, "line": { "color": "white" } }, "type": "table" }] }, "layout": { "annotationdefaults": { "arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1 }, "coloraxis": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "colorscale": { "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]] }, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": { "color": "#2a3f5f" }, "geo": { "bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white" }, "hoverlabel": { "align": "left" }, "hovermode": "closest", "mapbox": { "style": "light" }, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": { "angularaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "bgcolor": "#E5ECF6", "radialaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" } }, "scene": { "xaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" }, "yaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" }, "zaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" } }, "shapedefaults": { "line": { "color": "#2a3f5f" } }, "ternary": { "aaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "baxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "bgcolor": "#E5ECF6", "caxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" } }, "title": { "x": 0.05 }, "xaxis": { "automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": { "standoff": 15 }, "zerolinecolor": "white", "zerolinewidth": 2 }, "yaxis": { "automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": { "standoff": 15 }, "zerolinecolor": "white", "zerolinewidth": 2 } } }, "title": { "font": { "color": "#4D5663" } }, "xaxis": { "gridcolor": "#E1E5ED", "showgrid": true, "tickfont": { "color": "#4D5663" }, "title": { "font": { "color": "#4D5663" }, "text": "" }, "zerolinecolor": "#E1E5ED" }, "yaxis": { "gridcolor": "#E1E5ED", "showgrid": true, "tickfont": { "color": "#4D5663" }, "title": { "font": { "color": "#4D5663" }, "text": "" }, "zerolinecolor": "#E1E5ED" } },
+                                { "responsive": true }
+                            )
+                        };
+
+                    </script>
+                    <br><br><br><br>
+                    <h2 class="mt-0">국내 남성 vs 국내 여성 vs 해외 남성 vs 해외 여성</h2>
+
+                    <hr class="divider my-4" />
+
+
+                    <div id="a1c18d85-ba71-4504-9123-44ba7c279ba6" class="plotly-graph-div"
+                        style="height:500px; width: auto;"></div>
+                    <script type="text/javascript">
+
+                        window.PLOTLYENV = window.PLOTLYENV || {};
+
+                        if (document.getElementById("a1c18d85-ba71-4504-9123-44ba7c279ba6")) {
+                            Plotly.newPlot(
+                                'a1c18d85-ba71-4504-9123-44ba7c279ba6',
+                                [{ "marker": { "color": "rgba(255, 153, 51, 0.6)", "line": { "color": "rgba(255, 153, 51, 1.0)", "width": 1 } }, "name": "Positive", "orientation": "v", "text": "", "type": "bar", "x": ["\uad6d\ub0b4 \ub0a8\uc131", "\uad6d\ub0b4 \uc5ec\uc131", "\ud574\uc678 \ub0a8\uc131", "\ud574\uc678 \uc5ec\uc131"], "y": [59.42475603492553, 56.83992059195091, 47.34277677315652, 45.300261096605745] }, { "marker": { "color": "rgba(55, 128, 191, 0.6)", "line": { "color": "rgba(55, 128, 191, 1.0)", "width": 1 } }, "name": "Negative", "orientation": "v", "text": "", "type": "bar", "x": ["\uad6d\ub0b4 \ub0a8\uc131", "\uad6d\ub0b4 \uc5ec\uc131", "\ud574\uc678 \ub0a8\uc131", "\ud574\uc678 \uc5ec\uc131"], "y": [8.307652799178221, 8.80707453528244, 15.586698814546915, 17.638210920649335] }, { "marker": { "color": "rgba(50, 171, 96, 0.6)", "line": { "color": "rgba(50, 171, 96, 1.0)", "width": 1 } }, "name": "Normal", "orientation": "v", "text": "", "type": "bar", "x": ["\uad6d\ub0b4 \ub0a8\uc131", "\uad6d\ub0b4 \uc5ec\uc131", "\ud574\uc678 \ub0a8\uc131", "\ud574\uc678 \uc5ec\uc131"], "y": [32.267591165896256, 34.35300487276665, 37.070524412296564, 37.06152798274492] }],
+                                { "legend": { "bgcolor": "#F5F6F9", "font": { "color": "#4D5663" } }, "paper_bgcolor": "#F5F6F9", "plot_bgcolor": "#F5F6F9", "template": { "data": { "bar": [{ "error_x": { "color": "#2a3f5f" }, "error_y": { "color": "#2a3f5f" }, "marker": { "line": { "color": "#E5ECF6", "width": 0.5 } }, "type": "bar" }], "barpolar": [{ "marker": { "line": { "color": "#E5ECF6", "width": 0.5 } }, "type": "barpolar" }], "carpet": [{ "aaxis": { "endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f" }, "baxis": { "endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f" }, "type": "carpet" }], "choropleth": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "choropleth" }], "contour": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour" }], "contourcarpet": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "contourcarpet" }], "heatmap": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap" }], "heatmapgl": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl" }], "histogram": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "histogram" }], "histogram2d": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d" }], "histogram2dcontour": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour" }], "mesh3d": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "mesh3d" }], "parcoords": [{ "line": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "parcoords" }], "pie": [{ "automargin": true, "type": "pie" }], "scatter": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatter" }], "scatter3d": [{ "line": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatter3d" }], "scattercarpet": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattercarpet" }], "scattergeo": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattergeo" }], "scattergl": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattergl" }], "scattermapbox": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattermapbox" }], "scatterpolar": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterpolar" }], "scatterpolargl": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterpolargl" }], "scatterternary": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterternary" }], "surface": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface" }], "table": [{ "cells": { "fill": { "color": "#EBF0F8" }, "line": { "color": "white" } }, "header": { "fill": { "color": "#C8D4E3" }, "line": { "color": "white" } }, "type": "table" }] }, "layout": { "annotationdefaults": { "arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1 }, "coloraxis": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "colorscale": { "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]] }, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": { "color": "#2a3f5f" }, "geo": { "bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white" }, "hoverlabel": { "align": "left" }, "hovermode": "closest", "mapbox": { "style": "light" }, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": { "angularaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "bgcolor": "#E5ECF6", "radialaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" } }, "scene": { "xaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" }, "yaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" }, "zaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" } }, "shapedefaults": { "line": { "color": "#2a3f5f" } }, "ternary": { "aaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "baxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "bgcolor": "#E5ECF6", "caxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" } }, "title": { "x": 0.05 }, "xaxis": { "automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": { "standoff": 15 }, "zerolinecolor": "white", "zerolinewidth": 2 }, "yaxis": { "automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": { "standoff": 15 }, "zerolinecolor": "white", "zerolinewidth": 2 } } }, "title": { "font": { "color": "#4D5663" } }, "xaxis": { "gridcolor": "#E1E5ED", "showgrid": true, "tickfont": { "color": "#4D5663" }, "title": { "font": { "color": "#4D5663" }, "text": "" }, "zerolinecolor": "#E1E5ED" }, "yaxis": { "gridcolor": "#E1E5ED", "showgrid": true, "tickfont": { "color": "#4D5663" }, "title": { "font": { "color": "#4D5663" }, "text": "" }, "zerolinecolor": "#E1E5ED" } },
+                                { "responsive": true }
+                            )
+                        };
+
+                    </script>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-10 text-center">
+                    <br><br><br><br>
+                    <hr class="divider my-4" />
+                    <br><br>
+                    <h3 class="text-muted mb-5">댓글의 긍부정 비율은 성별보다 문화권의 영향을 더 크게 받는다</h3>
+                    <p class="text-muted mb-4">일반적으로 해외가 국내에 비해 표현이 직접적이고 부정적인 의견을 보다 잘 표현하기 때문에 <br>부정적인 댓글의 비율이 국내의 약
+                        2배 정도이다.
+                    </p>
                 </div>
             </div>
         </div>
@@ -216,7 +726,9 @@
 
     <!-- Footer-->
     <footer class="bg-light py-5">
-        <div class="container"><div class="small text-center text-muted">Copyright © 2020 - Start Bootstrap</div></div>
+        <div class="container">
+            <div class="small text-center text-muted">Copyright © 2020 YONSEI UNIV. ALL RIGHT RESERVED.</div>
+        </div>
     </footer>
     <!-- Bootstrap core JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
